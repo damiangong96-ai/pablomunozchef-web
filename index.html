@@ -1,0 +1,1318 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pablo Muñoz · Dirección culinaria y gastronomía de autor</title>
+<meta name="description" content="Curaduría gastronómica y cocina de temporada para residencias exclusivas, villas y entornos corporativos en Barcelona, Costa Brava, Península y Baleares.">
+<link rel="icon" type="image/png" href="img/favicon64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<style>
+:root{
+  --ink:#000;--soft:rgba(0,0,0,.68);--muted:rgba(0,0,0,.52);--line:rgba(0,0,0,.12);
+  --cyan:#009EE2;--cyan-deep:#007db4;--paper:#fff;--wash:#f3f8fb;
+  --display:"Tan Mon Cheri","Italiana","Didot",serif;
+  --script:"Golden Hopes","Birthstone","Brush Script MT",cursive;
+  --sans:"Figtree","Helvetica Neue",Arial,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --wave-front:clamp(28px,4.2vw,64px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+html.lenis{overscroll-behavior:none}
+.lenis.lenis-stopped{overflow:hidden}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img,video,canvas{display:block;max-width:100%}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:400}
+button{font:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+[hidden]{display:none!important}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+main{overflow-x:clip}
+
+/* Tipografía compartida de la plantilla: mayúsculas finas + palabra manuscrita girada */
+.kick{font:400 10px/1.35 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.cap{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:0;color:var(--cyan)}
+.scr{display:block;font-family:var(--script);text-transform:none;color:var(--ink);transform:rotate(-3deg);line-height:.9}
+
+/* Revelado editorial: imagen, título, texto (opacidad + desenfoque + subida) */
+.pmjs [data-rv]{opacity:0;filter:blur(5px);transform:translate3d(0,24px,0);transition:opacity 1.05s var(--ease),filter 1.05s var(--ease),transform 1.05s var(--ease);transition-delay:var(--d,0ms)}
+.pmjs [data-rv].in{opacity:1;filter:blur(0);transform:none}
+
+/* Brillo de luz que cruza las secciones con foto */
+.wash{position:absolute;inset:-18% 0;z-index:1;pointer-events:none;background:linear-gradient(112deg,transparent 28%,rgba(255,244,205,.1) 44%,rgba(255,255,255,.035) 51%,transparent 66%);background-size:140% 100%;mix-blend-mode:screen;opacity:.58;animation:wash 18s ease-in-out infinite alternate}
+@keyframes wash{to{background-position:100% 50%}}
+
+/* ===== Cabecera: transparente sobre el vídeo y cristal blanco al bajar ===== */
+header.site{position:fixed!important;top:var(--abar,0px)!important;left:0!important;right:0!important;z-index:9990!important;display:grid!important;grid-template-columns:1fr auto 1fr!important;align-items:center!important;
+  height:var(--hh,116px);margin:0!important;padding:0 clamp(22px,4vw,60px)!important;color:#fff;background:transparent;border-bottom:1px solid transparent;box-shadow:none!important;
+  transition:height .5s var(--ease),background-color .45s ease,color .45s ease,border-color .45s ease}
+header.site::before{content:"";position:absolute;inset:0 0 -40px;z-index:-1;background:linear-gradient(180deg,rgba(0,12,20,.38),rgba(0,12,20,0));transition:opacity .45s ease;pointer-events:none}
+header.site.glass{--hh:70px;color:var(--ink);background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);border-bottom-color:rgba(0,0,0,.07)}
+header.site.glass::before,header.site.open::before{opacity:0}
+.hl{display:flex!important;align-items:center;gap:clamp(22px,2.6vw,42px);margin:0;padding:0}
+.hl a{font:400 11px/1 var(--sans)!important;letter-spacing:.22em!important;text-transform:uppercase!important;text-decoration:none!important;color:inherit!important;padding:8px 0!important;margin:0!important;background:none!important;border:0!important;position:relative}
+.hl a::after{content:"";position:absolute;left:0;right:.22em;bottom:2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+@media (hover:hover) and (pointer:fine){.hl a:hover::after{transform:scaleX(1)}}
+.lg{position:relative;display:grid!important;place-items:center;height:100%;width:170px;margin:0!important;padding:0!important;text-decoration:none!important;border:0!important;background:none!important}
+.lg img{grid-area:1/1;display:block!important;width:auto!important;max-width:none!important;margin:0!important;transition:opacity .25s ease,transform .45s var(--ease)}
+.lg .full{height:68px!important}
+.lg .icon{height:38px!important;opacity:0;transform:scale(.9)}
+header.glass .lg .full{opacity:0;transform:scale(.94)}
+header.glass .lg .icon{opacity:1;transform:none;transition-delay:.06s}
+header.site.open{color:var(--ink);background:transparent;border-bottom-color:transparent}
+header.site.open .lg .full{opacity:0}header.site.open .lg .icon{opacity:1;transform:none}
+.menu-btn{justify-self:end;display:flex!important;align-items:center;gap:14px;background:none!important;border:0!important;padding:8px 0!important;margin:0!important;box-shadow:none!important;color:inherit!important;cursor:pointer;font:400 12px/1 var(--sans)!important;letter-spacing:.2em!important;text-transform:uppercase!important;border-radius:0!important}
+.menu-btn i{position:relative;display:block;width:34px;height:12px}
+.menu-btn i::before,.menu-btn i::after{content:"";position:absolute;left:0;right:0;height:1px;background:currentColor;transition:transform .5s var(--ease),top .5s var(--ease)}
+.menu-btn i::before{top:2px}.menu-btn i::after{top:10px;left:10px}
+.menu-btn[aria-expanded="true"] i::before{top:6px;transform:rotate(25deg)}
+.menu-btn[aria-expanded="true"] i::after{top:6px;left:0;transform:rotate(-25deg)}
+
+.ov{position:fixed;inset:0;z-index:85;background:#fff;display:grid;grid-template-columns:1.1fr .9fr;opacity:0;visibility:hidden;clip-path:inset(0 0 100% 0);transition:clip-path .9s var(--ease),opacity .4s ease,visibility 0s linear .9s}
+.ov.open{opacity:1;visibility:visible;clip-path:inset(0 0 0 0);transition:clip-path .9s var(--ease),opacity .2s ease}
+.ov nav{display:flex;flex-direction:column;justify-content:center;gap:2px;padding:140px clamp(22px,6vw,90px) 60px}
+.ov nav a{font:400 clamp(30px,3.6vw,54px)/1.12 var(--display);text-transform:uppercase;color:var(--ink);text-decoration:none;opacity:0;transform:translateY(18px);transition:color .3s ease,opacity .6s var(--ease),transform .8s var(--ease)}
+.ov.open nav a{opacity:1;transform:none;transition-delay:calc(.25s + var(--i)*.05s)}
+.ov nav a:hover{color:var(--cyan)}
+.ov nav a small{font:400 10px/1 var(--sans);letter-spacing:.18em;color:var(--muted);margin-left:12px;vertical-align:middle}
+.ov aside{position:relative;overflow:hidden}
+.ov aside img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.4s var(--ease)}
+.ov.open aside img{transform:none}
+.ov aside p{position:absolute;left:30px;bottom:28px;right:30px;color:#fff;z-index:2}
+.ov aside p a{color:#fff}
+.ov aside::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.45))}
+
+/* ===== 1 · Portada con el vídeo del cliente ===== */
+.hero{position:relative;isolation:isolate;height:100vh;height:100svh;min-height:560px;overflow:hidden;background:#0b2230}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,10,18,.42),rgba(0,10,18,.12) 38%,rgba(0,10,18,.18) 62%,rgba(0,10,18,.5));pointer-events:none}
+.hero-mob{position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+.hero-win{display:none}
+.hero-arc{position:absolute;left:50%;top:var(--arc-top,max(44vh,300px));z-index:3;width:min(98vw,1280px);height:auto;transform:translate(-50%,-50%);color:#fff;overflow:visible;filter:drop-shadow(0 6px 22px rgba(0,0,0,.35));animation:presence 1.15s var(--ease) .4s both}
+.hero-arc text{fill:currentColor;font-family:var(--display);font-size:96px;text-transform:uppercase;letter-spacing:.01em}
+.hero-sub{position:absolute;left:clamp(22px,4vw,60px);bottom:clamp(150px,22vh,240px);z-index:4;max-width:300px;color:rgba(255,255,255,.9);font-size:14px;line-height:1.6;text-shadow:0 2px 14px rgba(0,0,0,.45);animation:presence 1.15s var(--ease) .9s both}
+.hero-sub b{display:block;font:400 10px/1.35 var(--sans);letter-spacing:.18em;text-transform:uppercase;margin-bottom:8px;color:#fff}
+.hero .hero-cta{position:absolute;right:clamp(22px,4vw,60px);bottom:clamp(150px,22vh,240px);z-index:4;background:#fff;border-color:#fff;color:var(--ink);animation:presence 1.15s var(--ease) 1s both}
+.hero .hero-cta::before{background:var(--cyan)}
+.hero .hero-cta:hover{border-color:var(--cyan);color:#fff}
+.hero .wave{fill:#fff}
+.lg .full.d{display:none}
+.hero-mh{display:none}
+.wave{position:absolute;left:0;right:0;bottom:-1px;z-index:1;display:block;width:100%;height:clamp(110px,15vw,220px);fill:#fff;pointer-events:none}
+.wave--front{z-index:5;height:var(--wave-front)}
+@keyframes presence{from{opacity:0}to{opacity:1}}
+
+/* Botón de la plantilla (blanco, recto, se llena de agua al pasar) */
+.btn{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;min-width:168px;min-height:46px;padding:0 28px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:400 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none!important;cursor:pointer;border-radius:0;transition:color .55s ease,border-color .55s ease,transform .55s var(--ease)}
+.btn::before{content:"";position:absolute;inset:100% 0 auto;z-index:-1;height:120%;background:var(--cyan);border-radius:50% 50% 0 0/18% 18% 0 0;transition:transform .7s var(--ease)}
+.btn:hover,.btn:focus-visible{color:#fff;border-color:var(--cyan);transform:translateY(-3px)}
+.btn:hover::before,.btn:focus-visible::before{transform:translateY(-96%)}
+.btn.w{background:#fff;border-color:rgba(255,255,255,.78);color:var(--ink)}
+.btn.w:hover{border-color:#fff}
+.btn.c{background:var(--cyan);border-color:var(--cyan);color:#fff}
+.btn.c::before{background:var(--ink)}
+.btn.c:hover{border-color:var(--ink)}
+.lnk{font:400 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--ink);padding-bottom:6px;border-bottom:1px solid var(--cyan);transition:color .3s ease}
+.lnk:hover{color:var(--cyan)}
+
+/* ===== 2 + 3 · Manifiesto y plato que gira ===== */
+.jr{position:relative;isolation:isolate;height:760vh;min-height:5200px;background:#fff;--side:clamp(22px,4vw,58px)}
+.jr-pin{position:sticky;top:0;height:100vh;height:100svh;min-height:560px;display:grid;place-items:center;overflow:hidden}
+.jr-corner{position:absolute;z-index:6;margin:0;pointer-events:none}
+.jr-corner.k{top:calc(var(--side) + 60px);left:var(--side)}
+.jr-corner.f{left:var(--side);bottom:clamp(14px,1.8vw,24px);max-width:min(315px,74vw);font-size:10px;line-height:1.45;color:var(--muted)}
+.jr-corner.f::before{content:"";display:block;width:clamp(62px,8vw,116px);height:1px;margin-bottom:12px;background:currentColor}
+.about{position:absolute;inset:0;z-index:7;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;pointer-events:none;will-change:transform,opacity}
+.about .kick{margin-bottom:26px}
+.about h2{font-size:clamp(34px,4.85vw,64px);line-height:1.18;max-width:min(100%,900px)}
+.about h2 > span{display:block;white-space:nowrap}
+.about h2 .w{display:inline-block;margin:0 -.04em;font-family:var(--script);font-size:1.18em;line-height:1;text-transform:none;color:var(--ink);transform:translateY(-.01em) rotate(-3deg)}
+.about .sig{margin-top:-4px;font:400 clamp(30px,3.2vw,46px)/1 var(--script);color:var(--ink)}
+.about .mono{width:30px;height:64px;margin-top:18px;animation:float 9s ease-in-out infinite}
+@keyframes float{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -7px;rotate:1.2deg}}
+.jr-stage{position:absolute;inset:0;display:grid;place-items:center}
+.drift{position:absolute;inset:0;z-index:1;pointer-events:none}
+.df{position:absolute;margin:0;opacity:0;visibility:hidden;will-change:transform,opacity;backface-visibility:hidden}
+.df.img{overflow:hidden;background:var(--wash);border:6px solid rgba(255,255,255,.92);border-radius:4px;box-shadow:0 18px 42px rgba(0,40,70,.16)}
+.df.img img{width:100%;height:100%;object-fit:cover}
+.df.left{left:clamp(-18px,5vw,86px);bottom:12%;width:clamp(150px,23vw,330px);aspect-ratio:.82}
+.df.top{left:clamp(48px,11vw,180px);bottom:28%;width:clamp(140px,20vw,278px);aspect-ratio:1.08/.78}
+.df.right{right:clamp(-18px,5vw,86px);bottom:10%;width:clamp(160px,25vw,360px);aspect-ratio:1.18/.88}
+.df.right-high{right:clamp(52px,12vw,188px);bottom:31%;width:clamp(140px,20vw,280px);aspect-ratio:.86}
+.df.center-low{left:clamp(170px,27vw,420px);bottom:7%;width:clamp(140px,20vw,282px);aspect-ratio:1/1.18}
+.df.ico{width:clamp(56px,6vw,104px)}
+.df.ico.wide{width:clamp(110px,11vw,190px)}
+.df.ico img{width:100%;height:auto}
+.ico-1{left:clamp(8px,3vw,56px);top:10%}
+.ico-2{left:clamp(2px,1.5vw,28px);top:78%}
+.ico-3{right:clamp(10px,3.4vw,62px);top:11%}
+.ico-4{right:clamp(4px,2.4vw,44px);top:48%}
+.ico-5{left:clamp(18px,4vw,74px);top:34%}
+.ico-6{right:clamp(10px,3vw,58px);top:70%}
+.plate{position:absolute;left:50%;top:50%;z-index:2;width:min(88vh,820px);backface-visibility:hidden;aspect-ratio:1;transform:translate(-50%,-50%);will-change:transform;pointer-events:none}
+.plate-spin{position:absolute;inset:0;will-change:transform;backface-visibility:hidden}
+.plate-disc{position:absolute;inset:0;border-radius:50%;background:
+  radial-gradient(circle at 50% 50%,#fff 0 30%,#fbfdfe 31%,#f4f8fa 33.5%,#fff 35.5%,#fff 60%,#eef4f7 62%,#fff 64%,#fbfdfe 92%,#e9f0f3 96%,#dfe8ec 100%);
+  box-shadow:0 40px 80px -30px rgba(0,50,80,.32),0 12px 30px rgba(0,40,60,.1),inset 0 -8px 20px rgba(0,40,60,.06),inset 0 6px 16px rgba(255,255,255,.9)}
+.plate-rim{position:absolute;inset:0;width:100%;height:100%;color:var(--cyan);overflow:visible}
+.plate-rim text{font:400 15px var(--sans);letter-spacing:.42em;text-transform:uppercase;fill:var(--cyan)}
+.jr-content{position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(360px,62vw);min-height:330px;text-align:center;opacity:0;pointer-events:none;will-change:transform,opacity}
+.jr-content h2{font-size:clamp(26px,3vw,40px);line-height:1.02}
+.jr-content .scr{margin-top:.02em;font-size:clamp(34px,3.4vw,46px);line-height:.6}
+.jr-content p{max-width:300px;margin:22px auto 0;font-size:13px;line-height:1.5;color:var(--soft)}
+.jr-content .ct{transition:opacity .46s var(--ease),transform .46s var(--ease),filter .46s var(--ease)}
+.jr-content .ct.sw{opacity:0;transform:translateY(10px);filter:blur(2px);transition:none}
+.pag{display:grid;gap:10px;width:min(210px,54vw);margin-top:20px}
+.pag .n{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.2em;color:var(--muted)}
+.pag .bar{height:1px;background:var(--line);overflow:hidden}
+.pag .bar i{display:block;height:100%;background:var(--cyan);transform-origin:left;transform:scaleX(.2)}
+
+/* ===== 4 · Ambiente (foto a sangre con ola arriba) ===== */
+.atm{position:relative;isolation:isolate;display:grid;place-items:center;min-height:140vh;overflow:hidden;color:#fff;background:#0b2230}
+.atm-bg{position:absolute;inset:-6% 0;z-index:0;width:100%;height:112%;object-fit:cover;object-position:50% 40%;transform:translate3d(0,var(--py,0px),0) scale(var(--ps,1.06));will-change:transform}
+.atm::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(3,8,12,.22),rgba(3,8,12,.06) 24%,rgba(3,8,12,0) 50%)}
+.atm::after{content:"";position:absolute;left:0;right:0;bottom:-1px;z-index:2;height:clamp(160px,24vh,320px);background:linear-gradient(180deg,rgba(255,255,255,0),#fff)}
+.wave-top{position:absolute;left:0;right:0;top:-1px;z-index:3;width:100%;height:clamp(52px,7vw,104px);fill:#fff;pointer-events:none}
+.wave-top--front{z-index:4;height:clamp(18px,2.8vw,36px)}
+.atm-c{position:relative;z-index:3;text-align:center;padding:clamp(72px,10vw,120px) 24px;transform:translateY(-145px);text-shadow:0 4px 24px rgba(0,0,0,.46)}
+.atm-c h2{color:#fff;font-size:52px;line-height:1;white-space:nowrap}
+.atm-c .scr{margin-top:.04em;color:#fff;font-size:62px;line-height:.5}
+
+/* ===== 5 · Experiencias (carrusel con tarjetas) ===== */
+.fx{position:relative;z-index:3;margin-top:calc(clamp(-130px,-12vh,-90px) + 42px);padding:60px 0 60px clamp(28px,4.2vw,60px);background:#fff;min-height:100vh}
+.fx-grid{display:grid;grid-template-columns:minmax(240px,30%) minmax(0,1fr);gap:clamp(34px,4vw,48px);min-height:calc(100vh - 120px)}
+.fx-head{position:relative;display:flex;flex-direction:column;justify-content:center;max-width:360px;min-height:500px;padding:clamp(52px,6vw,76px) 0 clamp(92px,8vw,120px)}
+.fx-head .kick{position:absolute;top:calc(clamp(90px,12vh,130px) - 86px);left:0}
+.fx-head h2{font-size:32px;line-height:1.18;white-space:nowrap}
+.fx-head h2 span{display:block}
+.fx-head .scr{margin:-.2em 0 0 1.1em;font-size:34px}
+.fx-head p.intro{width:min(100%,320px);margin-top:10px;font-size:13px;line-height:1.66;color:var(--soft)}
+.fx-head .foot{position:absolute;left:0;bottom:0;max-width:315px;font-size:10px;line-height:1.45;color:var(--muted)}
+.fx-head .foot::before{content:"";display:block;width:clamp(62px,8vw,116px);height:1px;margin-bottom:12px;background:currentColor}
+.fx-panel{position:relative;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.fx-shell{position:relative;overflow:hidden;padding:10px 0 8px;--peek:clamp(44px,5vw,72px);--gap:20px}
+.fx-track{display:flex;align-items:center;gap:var(--gap);transition:transform .8s var(--ease);will-change:transform}
+.fx-card{flex:0 0 calc((100% - var(--peek) - var(--gap)*2)/2);display:grid;grid-template-rows:240px minmax(0,1fr);height:clamp(470px,38vw,530px);overflow:hidden;border:1px solid var(--line);background:#fff;opacity:.5;filter:saturate(.94);transform:scale(.98);text-decoration:none;color:inherit;transition:transform .8s var(--ease),opacity .8s var(--ease),filter .8s var(--ease),border-color .4s ease}
+.fx-card.is-active{opacity:1;filter:none;transform:none;border-color:rgba(0,0,0,.18)}
+.fx-card.is-prev{opacity:0}
+.fx-card.is-next{opacity:.64}
+.fx-media{overflow:hidden;position:relative}
+.fx-media img{width:100%;height:100%;object-fit:cover;object-position:50% 26%;filter:grayscale(35%) brightness(.92);transform:scale(1.02);transition:filter .8s var(--ease),transform .8s var(--ease)}
+.fx-card.is-active .fx-media img{filter:none;transform:none}
+.fx-body{display:flex;flex-direction:column;padding:clamp(24px,2.8vw,34px) clamp(24px,3.2vw,44px) 28px}
+.fx-body h3{font-size:22px;line-height:1.2;color:var(--cyan)}
+.fx-body p{margin-top:8px;font-size:12.5px;line-height:1.6;color:var(--soft)}
+.fx-body .meta{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.fx-next{position:absolute;top:50%;right:clamp(14px,2vw,28px);z-index:5;display:grid;place-items:center;width:50px;height:50px;padding:0;border:1px solid rgba(255,255,255,.6)!important;border-radius:0!important;background:rgba(6,13,20,.26)!important;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:#fff!important;opacity:0;transform:translate3d(10px,-50%,0);transition:opacity .25s ease,transform .25s ease;cursor:pointer}
+.fx-shell:hover .fx-next,.fx-next:focus-visible{opacity:1;transform:translate3d(0,-50%,0)}
+.fx-next svg,.ar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.ctl{display:flex;align-items:center;gap:18px;margin-top:22px;padding-right:clamp(28px,4.2vw,60px)}
+.ctl .c{display:flex;align-items:center;gap:14px;cursor:pointer;user-select:none;background:none;border:0;padding:0;color:inherit}
+.ctl .c b{font:400 24px/1 var(--display);color:var(--ink)}
+.ctl .c small{font-size:9px;letter-spacing:.22em;color:var(--muted)}
+.ctl .pr{flex:1;height:1px;background:var(--line);position:relative;overflow:hidden}
+.ctl .pr i{position:absolute;inset:0 auto 0 0;background:var(--cyan);transition:width .6s var(--ease)}
+
+/* ===== 6 · Aperitivo (cóctel, hojas y limón con las proporciones de la plantilla) ===== */
+.ap{position:relative;isolation:isolate;height:115vh;min-height:max(115svh,680px);background:#fff;overflow:clip}
+.ap-scene{position:absolute;left:0;right:0;top:50%;height:0}
+.ap-lemon{position:absolute;left:50%;top:0;z-index:0;width:clamp(340px,43vw,820px);height:auto;max-width:none;transform:translate(-50%,-46%);pointer-events:none}
+.ap-tw{position:absolute;left:20.5vw;top:-3.6vw;z-index:1}
+.ap-tw .kick{font-size:13px;margin:0 0 2.6vw .2vw;white-space:nowrap}
+.ap-tw h2{font-size:8.66vw;line-height:.78;white-space:nowrap}
+.ap-note{position:absolute;z-index:4;left:58.1vw;top:11.4vw;width:min(23vw,440px);font-size:clamp(12px,.95vw,15px);line-height:1.6;color:var(--soft)}
+.ap-note .lnk{display:inline-block;margin-top:14px}
+.ap-drink{position:absolute;z-index:2;left:32.3vw;top:-17vw;width:28.4vw;height:auto;max-width:none;transform:translate3d(0,var(--dy,0px),0);filter:drop-shadow(0 26px 38px rgba(0,60,90,.18));pointer-events:none;user-select:none}
+.ap-leaves{position:absolute;inset:0;z-index:3;pointer-events:none}
+.leaf{position:absolute;display:block;height:auto;max-width:none;pointer-events:none;user-select:none}
+.leaf.t{right:0;top:calc(50% - 23vw);width:12.1vw;transform:translate3d(0,var(--ly,0px),0)}
+.leaf.b{left:0;top:calc(50% + 3.1vw);width:11.4vw;transform:translate3d(0,var(--ly2,0px),0)}
+
+/* ===== 7 · Galería «de la cocina a tu mesa» ===== */
+.gl{position:relative;z-index:3;display:flex;flex-direction:column;height:100vh;min-height:720px;padding:60px 0 clamp(28px,4.2vw,60px);overflow:hidden;background:#fff;--g:clamp(28px,4.2vw,60px)}
+.gl-head{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;padding:0 var(--g)}
+.gl-head h2{font-size:32px;line-height:1.18}
+.gl-head h2 span{display:block}
+.gl-head .scr{margin:-.2em 0 0 1.1em;font-size:34px;width:max-content}
+.gl-head .side{max-width:320px;text-align:right}
+.gl-head .side p{margin-top:10px;font-size:13px;line-height:1.6;color:var(--soft)}
+.gl-vp{position:relative;flex:1 1 auto;min-height:0;margin-top:clamp(42px,6vh,68px);overflow:hidden;touch-action:pan-y;user-select:none}
+.gl-track{display:flex;height:100%;gap:clamp(10px,1vw,16px);width:max-content;padding:0 var(--g);transition:transform .9s var(--ease);will-change:transform}
+.gl.reset .gl-track,.gl.reset .gl-card,.gl.reset .gl-card img{transition:none!important}
+.gl-card{position:relative;flex:0 0 auto;height:100%;aspect-ratio:3/4;margin:0;overflow:hidden;background:var(--wash);opacity:.68;transform:scale(.97);transition:opacity .65s ease,transform .85s var(--ease)}
+.gl-card.is-active{opacity:1;transform:none}
+.gl-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(0,10,14,.5));pointer-events:none}
+.gl-card img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 1.1s var(--ease)}
+.gl-card.is-active img{transform:none}
+.gl-card figcaption{position:absolute;left:18px;right:18px;bottom:17px;z-index:2;color:#fff;font-size:9px;letter-spacing:.18em;line-height:1.4;text-transform:uppercase}
+.ar{position:absolute;top:50%;z-index:6;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid rgba(255,255,255,.68)!important;border-radius:0!important;background:rgba(6,19,24,.38)!important;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff!important;cursor:pointer;opacity:0;transform:translateY(-50%) scale(.86);transition:opacity .3s ease,transform .45s var(--ease),background .3s ease}
+.ar.p{left:clamp(18px,2vw,30px)}.ar.n{right:clamp(18px,2vw,30px)}
+.gl-vp:hover .ar,.gl-vp:focus-within .ar{opacity:1;transform:translateY(-50%) scale(1)}
+.gl .ctl{padding:24px var(--g) 0;margin:0}
+
+/* ===== 8 · Del día a la noche (cortinilla al hacer scroll) ===== */
+.dn{position:relative;height:240vh;min-height:1700px;background:#061318;--p:0;--ds:1.06;--ns:1.1;--dy:1.5%;--ny:3%;--nc:100%;--sh:.22;--dtc:0%;--ntc:100%;--pw:0%}
+.dn-pin{position:sticky;top:0;height:100vh;min-height:620px;overflow:hidden;background:#061318}
+.dn-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform,clip-path}
+.dn-img.d{transform:translate3d(0,var(--dy),0) scale(var(--ds));filter:saturate(.95) brightness(1.04)}
+.dn-img.n{clip-path:inset(0 var(--nc) 0 0);transform:translate3d(0,var(--ny),0) scale(var(--ns));filter:saturate(.85) brightness(.7) contrast(1.08)}
+.dn-sh{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(2,12,16,.5),transparent 48%,rgba(2,12,16,.16)),linear-gradient(180deg,rgba(2,12,16,.05),rgba(2,12,16,var(--sh)));pointer-events:none}
+.dn-cp{position:absolute;left:0;top:50%;z-index:3;width:100%;padding:48px 6vw 24px;color:#fff;text-align:center;transform:translateY(-50%)}
+.dn-cp .kick{color:#fff;margin-bottom:18px}
+.dn-cp h2{color:#fff;font-size:clamp(40px,4.8vw,72px);line-height:1}
+.dn-cp .scr{width:max-content;margin:.1em auto 0;color:#fff;font-size:clamp(40px,4vw,62px);line-height:.72}
+.dn-cp.d{clip-path:inset(0 0 0 var(--dtc))}
+.dn-cp.n{clip-path:inset(0 var(--ntc) 0 0)}
+.dn-cp.n .scr{color:#8fd8f7}
+.dn-pr{position:absolute;left:50%;bottom:clamp(28px,4vw,56px);z-index:4;width:120px;height:1px;background:rgba(255,255,255,.28);transform:translateX(-50%);overflow:hidden}
+.dn-pr i{display:block;height:100%;width:var(--pw);background:#fff}
+
+/* ===== 9 · La carta (lista a la derecha + foto tipo copia impresa, como la plantilla) ===== */
+.dr{position:relative;isolation:isolate;min-height:100vh;overflow:hidden;padding:60px clamp(28px,4.2vw,60px);background:#fff}
+.dr .kick.k{position:absolute;top:60px;left:clamp(28px,4.2vw,60px);z-index:9}
+.dr .foot{position:absolute;left:clamp(28px,4.2vw,60px);bottom:60px;z-index:9;max-width:min(315px,27vw);font-size:10px;line-height:1.35;color:var(--muted)}
+.dr .foot::before{content:"";display:block;width:clamp(62px,8vw,116px);height:1px;margin-bottom:12px;background:currentColor}
+.dr-ed{position:absolute;top:50%;left:clamp(28px,4.2vw,60px);z-index:8;width:min(32vw,460px);transform:translateY(-50%)}
+.dr-ed h2{display:flex;flex-direction:column;font-size:32px;line-height:1.18;white-space:nowrap}
+.dr-ed .scr{align-self:flex-start;margin:-.2em 0 0 1.1em;font-size:30px;width:max-content}
+.dr-ed p{width:min(100%,420px);margin-top:8px;font-size:13px;line-height:1.7;color:var(--soft)}
+.dr-ed .dr-desc{min-height:3.4em;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);color:var(--ink);transition:opacity .35s ease}
+.dr-ed .lnk{display:inline-block;margin-top:16px}
+.dr-stage{position:relative;z-index:1;width:100%;min-height:calc(100vh - 120px)}
+.dr-names{position:absolute;top:50%;right:calc(min(34vw,500px) + clamp(26px,3vw,46px));z-index:10;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:7px;width:min(16vw,220px);margin:0;padding:0;list-style:none;transform:translateY(-50%)}
+.dr-names li{display:block}
+.dr-name{display:block;padding:5px 0!important;margin:0!important;background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;color:var(--ink)!important;opacity:.42;font:400 12px/1.2 var(--sans)!important;letter-spacing:.13em!important;text-transform:uppercase!important;text-align:right;white-space:nowrap;cursor:pointer;transition:opacity .35s ease,transform .45s var(--ease),color .35s ease}
+.dr-names.has-active .dr-name:not(.is-active){opacity:.28}
+.dr-name.is-active{opacity:1;color:var(--cyan)!important;transform:translateX(-8px)}
+@media (hover:hover) and (pointer:fine){.dr-name:hover{opacity:1}}
+.dr-vis{position:absolute;right:0;top:52%;z-index:3;width:min(34vw,500px);height:min(72vh,680px);transform:translateY(-50%);pointer-events:none}
+.dr-v{position:absolute;inset:0;margin:0;background:linear-gradient(135deg,#f6f6f3,#ececE8);opacity:0;visibility:hidden;transform-origin:50% 90%;transition:opacity .5s ease,visibility .5s ease,transform .7s var(--ease),box-shadow .85s var(--ease)}
+.dr-v:nth-child(2n){transform:translate(20px,14px) rotate(2.4deg) scale(.965)}
+.dr-v:nth-child(3n){transform:translate(-20px,20px) rotate(-2.6deg) scale(.95)}
+.dr-v.is-active{opacity:1;visibility:visible;transform:translate(0,-8px) rotate(-.45deg) scale(1);box-shadow:0 10px 24px rgba(20,30,40,.08),0 32px 80px rgba(0,50,80,.12)}
+.dr-v img{position:absolute;top:9px;left:9px;width:calc(100% - 18px);height:calc(100% - 75px)!important;object-fit:cover}
+.dr-v figcaption{position:absolute;left:20px;right:20px;bottom:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;opacity:0;transform:translateY(8px);transition:opacity .55s ease .18s,transform .7s var(--ease) .18s}
+.dr-v.is-active figcaption{opacity:1;transform:none}
+.dr-v figcaption b{font:400 8px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.dr-v figcaption em{font:400 clamp(20px,1.9vw,28px)/.72 var(--script);font-style:normal;color:var(--cyan);white-space:nowrap;transform:rotate(-3deg)}
+.dr-mob{display:none}
+
+/* ===== 10 · Llamada final sobre el mar (se mueve al hacer scroll) ===== */
+.cta{position:relative;isolation:isolate;height:330vh;min-height:2400px;margin:-2px 0;background:#0a6e86;color:#fff}
+.cta::before{content:"";position:absolute;top:0;left:0;right:0;z-index:4;height:clamp(100px,16vh,190px);background:linear-gradient(180deg,#fff,rgba(255,255,255,.72) 28%,rgba(255,255,255,0));pointer-events:none}
+.cta::after{content:"";position:absolute;left:0;right:0;bottom:-2px;z-index:3;height:calc(clamp(96px,14vh,180px) + 3px);background:linear-gradient(180deg,rgba(255,255,255,0),#fff);pointer-events:none}
+.cta-pin{position:sticky;top:0;height:100vh;min-height:620px;overflow:hidden}
+.cta-pin::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,30,45,.5),rgba(0,30,45,.85) 58%,rgba(0,30,45,.7));opacity:var(--ov,0);pointer-events:none}
+.sea{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;transform:translate3d(0,var(--ey,0px),0) scale(1.1);will-change:transform}
+.cta-c{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(92vw,1180px);height:100%;margin:0 auto;padding:clamp(64px,9vw,112px) 24px;text-align:center;opacity:0;will-change:transform,opacity,clip-path}
+.cta-c h2{color:#fff;font-size:clamp(44px,5vw,78px);line-height:1;text-shadow:0 2px 22px rgba(0,30,40,.45)}
+.cta-c .scr{text-shadow:0 2px 16px rgba(0,30,40,.4)}
+.cta-c .scr{margin-top:.06em;color:#fff;font-size:clamp(46px,5vw,76px);line-height:.5}
+.cta-c .btn{margin-top:46px;opacity:0}
+
+/* ===== 11 · Reserva ===== */
+.rs{position:relative;padding:clamp(70px,9vw,130px) clamp(22px,5vw,76px);background:#fff}
+.rs-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,6vw,110px);max-width:1280px;margin:0 auto}
+.rs-head .kick,.ft-top .kick{margin-bottom:14px}
+.rs-head h2{font-size:clamp(36px,3.6vw,54px);line-height:1.05}
+.rs-head h2 span{display:block}
+.rs-head .scr{margin:-.12em 0 0 1em;font-size:clamp(40px,3.6vw,56px);width:max-content}
+.rs-head p{max-width:420px;margin-top:20px;font-size:14px;line-height:1.7;color:var(--soft)}
+.pol{margin-top:34px;max-width:420px;border-top:1px solid var(--line)}
+.pol div{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}
+.pol div b{font-weight:400;color:var(--cyan);white-space:nowrap}
+.rs-head .wa{display:inline-flex;align-items:center;gap:10px;margin-top:28px;text-decoration:none;font-size:13px}
+.rs-head .wa svg{width:20px;height:20px;fill:var(--cyan)}
+form.f{display:grid;grid-template-columns:1fr 1fr;column-gap:22px;row-gap:24px}
+.fld{display:flex;flex-direction:column;gap:6px;grid-column:span 2}
+.fld.h{grid-column:span 1}
+.fld label{font:400 10px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.fld label i{font-style:normal;color:var(--cyan)}
+.fld input,.fld select,.fld textarea{font:300 16px/1.4 var(--sans);color:var(--ink);background:transparent;border:0;border-bottom:1px solid rgba(0,0,0,.24);border-radius:0;padding:10px 0;width:100%;outline:0;box-shadow:none;-webkit-appearance:none;appearance:none;transition:border-color .25s ease}
+.fld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23000' stroke-width='1.2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 2px center;padding-right:24px}
+.fld textarea{min-height:64px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-bottom-color:var(--cyan)}
+.fld.bad input,.fld.bad select,.fld.bad textarea{border-bottom-color:#C0362C}
+.err{font-size:12px;color:#C0362C}
+.chk{grid-column:span 2;display:flex;gap:10px;align-items:flex-start;font-size:12px;line-height:1.6;color:var(--soft);cursor:pointer}
+.chk input{width:16px;height:16px;margin:3px 0 0;accent-color:var(--cyan);flex:none}
+.chk.bad span{color:#C0362C}
+.send{grid-column:span 2}
+.done{padding:34px;background:var(--wash)}
+.done h3{font:400 34px/1.1 var(--display);text-transform:uppercase;color:var(--cyan)}
+.done p{margin-top:10px;color:var(--soft)}
+.done .acts{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}
+
+/* ===== Botón fijo de reservas ===== */
+.fab{white-space:nowrap;position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:9980;display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px 0 20px;border-radius:999px;background:var(--cyan);color:#fff!important;font:500 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none!important;box-shadow:0 14px 34px -10px rgba(0,90,140,.55);opacity:0;visibility:hidden;transform:translate(-50%,20px);transition:opacity .45s var(--ease),transform .55s var(--ease),visibility 0s linear .55s,background-color .3s ease}
+.fab.on{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .45s var(--ease),transform .55s var(--ease),background-color .3s ease}
+.fab svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@media (hover:hover) and (pointer:fine){.fab:hover{background:var(--ink)}}
+
+/* ===== 12 · Pie ===== */
+.ft{position:relative;padding:clamp(60px,7vw,100px) clamp(22px,5vw,76px) 26px;background:#fff;border-top:1px solid var(--line)}
+.ft-top{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding-bottom:clamp(40px,5vw,70px);border-bottom:1px solid var(--line)}
+.ft-top h2{font-size:clamp(40px,5vw,78px);line-height:.95}
+.ft-top .scr{margin:-.1em 0 0 1.2em;font-size:clamp(38px,4vw,60px);width:max-content}
+.ft-top .r{text-align:right;font-size:13px;color:var(--soft)}
+.ft-top .r img{height:110px;width:auto;margin:0 0 16px auto}
+.ft-top .r a{color:var(--ink)}
+.ft-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(22px,3vw,48px);padding:clamp(40px,5vw,64px) 0}
+.ft-cols h3{margin:10px 0 0;font:400 22px/1.1 var(--display);text-transform:uppercase;color:var(--cyan)}
+.ft-cols p{margin-top:10px;font-size:12.5px;line-height:1.6;color:var(--soft)}
+.ft-cols .lnk{display:inline-block;margin-top:16px}
+.ft-bot{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:22px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+.soc{display:flex;gap:10px}
+.soc a{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:background .3s ease,border-color .3s ease}
+.soc a svg{width:17px;height:17px;fill:var(--ink);transition:fill .3s ease}
+.soc a:hover{background:var(--cyan);border-color:var(--cyan)}
+.soc a:hover svg{fill:#fff}
+
+/* ===== Tableta ===== */
+@media (min-width:768px) and (max-width:1280px){.hero{--arc-top:max(44vh,280px)}}
+@media (max-width:1100px){
+  .fx-grid{grid-template-columns:minmax(220px,34%) minmax(0,1fr)}
+  .ft-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+/* ===== Móvil ===== */
+@media (max-width:767px){
+  header.site{--hh:84px;padding:0 20px!important}
+  header.site.glass{--hh:60px}
+  .hl{visibility:hidden}
+  .hl a{display:none!important}
+  .atm-c h2,.dn-cp h2,.cta-c h2,.fx-head h2,.fx-body h3,.gl-head h2,.dr-ed h2,.rs-head h2,.ft-top h2,.jr-content h2{line-height:1.12!important}
+  .lg{width:110px}.lg .full{height:52px!important}.lg .icon{height:32px!important}
+  .menu-btn span{display:none}
+  .ov{grid-template-columns:1fr}
+  .ov aside{display:none}
+  .ov nav{padding:110px 26px 40px}
+  .ov nav a{font-size:30px}
+  .hero{height:100svh;min-height:560px}
+  .hero-arc,.hero-sub{display:none}
+  .hero{background:#0b2230}
+  .hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,10,18,.35),rgba(0,10,18,.08) 40%,rgba(0,10,18,.45))}
+  .hero-mob{display:block;position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;transform:translate3d(0,var(--bgy,0px),0) scale(1.06)}
+  .hero-mh{position:absolute;left:50%;top:38%;z-index:3;display:flex;flex-direction:column;align-items:center;width:min(96vw,460px);transform:translate(-50%,-50%);color:#fff;text-align:center;filter:drop-shadow(0 7px 18px rgba(0,0,0,.34));animation:presence 1.15s var(--ease) .5s both}
+  .hero-mh .l{font:400 clamp(40px,12.6vw,62px)/1 var(--display);text-transform:uppercase;white-space:nowrap}
+  .hero-mh .s{font:400 clamp(54px,17vw,84px)/.7 var(--script);transform:rotate(-3deg);margin:.02em 0 .08em}
+  .hero .hero-cta{left:50%;right:auto;bottom:150px;transform:translateX(-50%);background:#fff;border-color:#fff;color:var(--ink)}
+  .jr{height:620vh;min-height:4000px}
+  .jr-corner.k{top:86px}
+  .about{padding:28px}
+  .about h2{font-size:clamp(24px,8.4vw,40px);line-height:1.16}
+  .about h2 > span{white-space:normal}
+  .plate{width:128vw;max-width:none}
+  .plate-rim text{font-size:18px}
+  .jr-content{width:min(300px,72vw)}
+  .df.ico{width:clamp(44px,12vw,70px)}
+  .df.ico.wide{width:clamp(90px,24vw,130px)}
+  .atm{min-height:116svh}
+  .atm-c{transform:translateY(-90px)}
+  .atm-c h2{font-size:clamp(24px,7.4vw,32px);white-space:normal}
+  .atm-c .scr{font-size:clamp(36px,11vw,48px);margin-top:.15em}
+  .fx{margin-top:-60px;padding:50px 0 40px;min-height:0}
+  .fx-grid{grid-template-columns:1fr;gap:26px;min-height:0}
+  .fx-head{min-height:0;padding:0 26px;max-width:none}
+  .fx-head .kick{position:static;margin-bottom:22px}
+  .fx-head .foot{display:none}
+  .fx-shell{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0;scroll-padding-left:26px}
+  .fx-shell::-webkit-scrollbar{display:none}
+  .fx-track{transform:none!important;width:max-content;padding:0 26px;gap:14px}
+  .fx-card{flex:0 0 calc(100vw - 92px);width:calc(100vw - 92px);height:470px;grid-template-rows:230px minmax(0,1fr);opacity:1!important;transform:none!important;filter:none!important;scroll-snap-align:start}
+  .fx-card .fx-media img{filter:none;transform:none}
+  .fx-card[data-clone]{display:none}
+  .fx-next{display:none}
+  .ctl{padding:0 26px}
+  .ap{height:auto;min-height:max(100svh,680px)}
+  .ap-scene{top:0;height:100%}
+  .ap-tw{left:0;right:0;top:15%;text-align:center}
+  .ap-tw .kick{margin:0 0 22px;font-size:10px}
+  .ap-tw h2{font-size:13vw}
+  .ap-lemon{top:50%;width:min(96vw,420px)}
+  .ap-drink{left:50%;top:22%;width:min(64vw,300px);transform:translate3d(-50%,var(--dy,0px),0)}
+  .ap-note{left:26px;right:26px;top:auto;bottom:5%;width:auto;text-align:center;font-size:13px}
+  .leaf.t{top:auto;bottom:36%;width:24vw}
+  .leaf.b{top:auto;bottom:21%;width:22vw}
+  .ap-note{bottom:3%}
+  .gl{height:auto;min-height:0;padding:60px 0 50px}
+  .gl-head{flex-direction:column;gap:14px;padding:0 26px}
+  .gl-head .side{text-align:left}
+  .gl-vp{margin-top:30px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;flex:none;height:auto;touch-action:auto}
+  .gl-vp::-webkit-scrollbar{display:none}
+  .gl-track{transform:none!important;padding:0 26px;gap:14px;height:auto}
+  .gl-card{height:auto;width:calc(100vw - 92px);opacity:1;transform:none;scroll-snap-align:start}
+  .gl-card[data-clone]{display:none}
+  .ar{display:none}
+  .gl .ctl{padding:22px 26px 0}
+  .dn{height:220vh;min-height:1300px}
+  .dn-pin,.cta-pin{height:100svh}
+  .df.img{box-shadow:0 10px 24px rgba(0,40,70,.14)}
+  .plate-disc{box-shadow:0 26px 50px -24px rgba(0,50,80,.3),inset 0 -6px 14px rgba(0,40,60,.05)}
+  .dn-cp h2{font-size:clamp(30px,9vw,42px)}
+  .dn-cp .scr{font-size:clamp(34px,10vw,46px)}
+  .cta{height:300vh;min-height:2000px}
+  .cta::before{height:clamp(180px,28vh,260px);background:linear-gradient(180deg,#fff,#fff 12%,rgba(255,255,255,.9) 34%,rgba(255,255,255,.5) 62%,rgba(255,255,255,0))}
+  .cta-c h2{font-size:clamp(30px,9vw,42px)}
+  .cta-c .scr{font-size:clamp(36px,11vw,50px)}
+  .rs{padding:70px 26px}
+  .rs-grid{grid-template-columns:1fr;gap:40px}
+  form.f{grid-template-columns:1fr}
+  .fld,.fld.h,.chk,.send{grid-column:1/-1}
+  .send .btn{width:100%}
+  .ft{padding:60px 26px 24px}
+  .ft-top{flex-direction:column;align-items:flex-start}
+  .ft-top .r{text-align:left}
+  .ft-top .r img{margin:0 0 14px}
+  .ft-cols{grid-template-columns:1fr}
+  .ft-bot{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:900px){
+  .dr{min-height:0;padding:60px 0 50px}
+  .dr .kick.k,.dr .foot{position:static;padding:0 26px}
+  .dr .foot{display:none}
+  .dr-ed{position:static;transform:none;width:auto;text-align:left;padding:18px 26px 0;max-width:none}
+  .dr-ed .dr-desc{display:none}
+  .dr-ed .scr{margin-left:1em}
+  .dr-stage{display:none}
+  .dr-mob{display:block;margin-top:30px}
+  .dr-mob .sh{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .dr-mob .sh::-webkit-scrollbar{display:none}
+  .dr-mob .tr{display:flex;gap:14px;width:max-content;padding:0 26px}
+  .dr-mob article{width:calc(100vw - 92px);scroll-snap-align:start;border:1px solid var(--line)}
+  .dr-mob .m{aspect-ratio:4/3;overflow:hidden}
+  .dr-mob .m img{width:100%;height:100%;object-fit:cover}
+  .dr-mob .b{padding:20px 22px 24px}
+  .dr-mob .b small{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .dr-mob .b h3{margin-top:8px;font:400 26px/1 var(--display);text-transform:uppercase;color:var(--cyan)}
+  .dr-mob .b h3 em{font:400 26px var(--script);text-transform:none;color:var(--ink);margin-left:8px}
+  .dr-mob .b p{margin-top:10px;font-size:13px;line-height:1.6;color:var(--soft)}
+  .dr-mob .ctl{padding:22px 26px 0}
+}
+@media (max-width:767px){
+  /* Escala tipográfica móvil de la plantilla (títulos contenidos) */
+  .about h2{font-size:clamp(22px,6.6vw,30px)!important}
+  .about .sig{font-size:28px}
+  .jr-content h2{font-size:22px!important}
+  .jr-content .scr{font-size:30px}
+  .jr-content p{font-size:12.5px}
+  .atm-c h2{font-size:clamp(20px,6vw,26px)!important}
+  .atm-c .scr{font-size:clamp(28px,8.5vw,36px)}
+  .fx-head h2{font-size:26px!important}
+  .fx-head .scr{font-size:28px}
+  .fx-body h3{font-size:18px!important}
+  .gl-head h2{font-size:26px!important}
+  .gl-head .scr{font-size:28px}
+  .dn-cp h2{font-size:clamp(22px,6.4vw,28px)!important}
+  .dn-cp .scr{font-size:clamp(30px,8.6vw,38px)}
+  .dr-ed h2{font-size:26px!important}
+  .dr-ed .scr{font-size:28px}
+  .dr-mob .b h3{font-size:20px;overflow-wrap:anywhere}
+  .cta-c h2{font-size:clamp(22px,6.6vw,30px)!important}
+  .cta-c .scr{font-size:clamp(30px,9vw,40px)}
+  .rs-head h2{font-size:30px!important}
+  .rs-head .scr{font-size:34px}
+  .ft-top h2{font-size:34px!important}
+  .ft-top .scr{font-size:32px}
+  .ft-cols h3{font-size:19px}
+  .ap-tw h2{font-size:12vw}
+  .hero-mh .l{font-size:clamp(34px,10.5vw,48px)}
+  .hero-mh .s{font-size:clamp(50px,15vw,72px)}
+  /* Recorridos más cortos: menos scroll «atrapado» en el móvil */
+  .jr{height:440vh;min-height:3000px}
+  .dn{height:170vh;min-height:1100px}
+  .cta{height:200vh;min-height:1400px}
+  /* Del día a la noche: fundido en vez de cortinilla */
+}
+/* ===== Móvil y tableta táctil: nada ligado al scroll ===== */
+.pmt .wash{display:none}
+.pmt [data-rv]{filter:none!important;transition-property:opacity,transform!important}
+.pmt header.site.glass{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(255,255,255,.97)}
+.pmt .jr{height:auto!important;min-height:0!important}
+.pmt .jr-pin{position:relative;height:auto;min-height:0;display:flex;flex-direction:column;padding:96px 0 40px;overflow:hidden}
+.pmt .jr-corner.k{order:1}.pmt .about{order:2}.pmt .jr-stage{order:3}.pmt .jr-corner.f{order:4;margin-top:24px!important}
+.pmt .jr-corner.k{position:relative;top:auto;left:auto;padding:0 26px}
+.pmt .jr-corner.f{position:relative;left:auto;bottom:auto;margin:10px 26px 0}
+.pmt .about{position:relative;inset:auto;padding:46px 26px 10px;opacity:1!important;transform:none!important}
+.pmt .jr-stage{position:relative;inset:auto;height:min(132vw,640px);margin-top:10px}
+.pmt .plate{transform:translate3d(-50%,-50%,0)}
+.pmt .plate-spin{animation:spin 90s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pmt .jr-content{opacity:1;transform:none}
+.pmt .df{opacity:1!important;visibility:visible!important;transform:none;animation:bob 7s ease-in-out infinite alternate}
+.pmt .df:nth-child(2n){animation-duration:9s;animation-delay:-3s}
+.pmt .df.center-low,.pmt .df.right-high,.pmt .df.ico-5,.pmt .df.ico-6,.pmt .df.top{display:none}
+.pmt .df.left{left:-6vw;bottom:auto;top:2%;width:30vw}
+.pmt .df.right{right:-6vw;bottom:2%;width:34vw}
+.pmt .ico-1{left:4vw;top:auto;bottom:6%}.pmt .ico-2{display:none}
+.pmt .ico-3{right:5vw;top:4%}.pmt .ico-4{right:auto;left:6vw;top:38%}
+@keyframes bob{from{transform:translate3d(0,-6px,0) rotate(-1.5deg)}to{transform:translate3d(0,8px,0) rotate(1.5deg)}}
+.pmt .dn{height:auto!important;min-height:0!important}
+.pmt .dn-pin{position:relative;height:100svh;min-height:560px}
+.pmt .dn-img.d,.pmt .dn-img.n{transform:scale(1.04);clip-path:none}
+.pmt .dn-img.n{opacity:0;clip-path:none;animation:night 12s ease-in-out infinite}
+.pmt .dn-cp.n{opacity:0;clip-path:none;animation:nightT 12s ease-in-out infinite}
+.pmt .dn-cp.d{clip-path:none;animation:dayT 12s ease-in-out infinite}
+.pmt .dn-pr{display:none}
+@keyframes night{0%,38%{opacity:0}50%,88%{opacity:1}100%{opacity:0}}
+@keyframes dayT{0%,36%{opacity:1}43%,93%{opacity:0}100%{opacity:1}}
+@keyframes nightT{0%,45%{opacity:0}52%,86%{opacity:1}92%,100%{opacity:0}}
+.pmt .cta{height:auto!important;min-height:0!important;margin:0}
+.pmt .cta-pin{position:relative;height:100svh;min-height:560px}
+.pmt .cta-pin::before{opacity:.32}
+.pmt .cta-c{opacity:1!important;transform:none!important;clip-path:none!important}
+.pmt .cta-c .btn{opacity:1!important;transform:none!important}
+.pmt .sea{transform:none}
+@media (prefers-reduced-motion:reduce){
+  .wash,.about .mono{animation:none}
+  .jr{height:auto;min-height:0}
+  .jr-pin{position:relative;height:auto;min-height:100vh;padding:120px 0}
+  .dn{height:100vh;min-height:620px}
+  .cta{height:100vh;min-height:620px}
+}
+
+/* =====================================================================
+   v3 · Gris dominante + celeste · Cormorant Garamond + Inter · todo recto
+   ===================================================================== */
+:root{
+  --paper:#FFFFFF;--stone:#F4F5F6;--graphite:#2A2F34;
+  --ink:#2A2F34;--soft:#545B62;--muted:#7D848B;--line:rgba(42,47,52,.14);
+  --cyan:#5BB2DE;--cyan-deep:#2B80AE;--sky:#A9D8EF;--wash:#F1F3F4;
+  --display:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --script:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+  --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+}
+body{background:var(--paper);color:var(--ink);font-weight:300;letter-spacing:0}
+::selection{background:var(--sky);color:var(--graphite)}
+:focus-visible{outline-color:var(--cyan-deep)}
+/* Nada redondeado */
+*{border-radius:0!important}
+
+/* Títulos: serif editorial, sin mayúsculas forzadas; segunda línea en cursiva celeste, recta */
+.cap{font-family:var(--display);font-weight:500;text-transform:none;letter-spacing:-.012em;color:var(--ink)}
+.scr{font-family:var(--display);font-style:italic;font-weight:400;color:var(--cyan-deep);transform:none!important;line-height:1.02;letter-spacing:-.01em}
+.kick{font:500 10px/1.4 var(--sans);letter-spacing:.2em;color:var(--muted)}
+
+/* Botones rectos: gris grafito, se llenan de celeste */
+.btn{border-color:var(--graphite);color:var(--graphite);font:500 10px/1 var(--sans);letter-spacing:.2em;min-height:48px;transition:color .4s ease,border-color .4s ease,transform .16s ease-out}
+.btn::before{background:var(--cyan-deep);transition:transform .55s var(--ease)}
+.btn:hover,.btn:focus-visible{transform:none;border-color:var(--cyan-deep)}
+.btn:active{transform:scale(.97)}
+.btn.c{background:var(--graphite);border-color:var(--graphite);color:#fff}
+.btn.c::before{background:var(--cyan-deep)}
+.btn.c:hover{border-color:var(--cyan-deep)}
+.btn.w{background:#fff;border-color:#fff;color:var(--graphite)}
+.btn.lo{background:transparent;border-color:rgba(255,255,255,.7);color:#fff}
+.btn.lo::before{background:#fff}
+.btn.lo:hover{color:var(--graphite);border-color:#fff}
+.lnk{font:500 10px/1 var(--sans);letter-spacing:.2em;color:var(--graphite);border-bottom-color:var(--cyan)}
+.lnk:hover{color:var(--cyan-deep)}
+
+/* Cabecera y menú en gris claro */
+header.site.glass{background:rgba(255,255,255,.86);border-bottom-color:rgba(42,47,52,.08)}
+.pmt header.site.glass{background:rgba(255,255,255,.97)}
+.ov{background:var(--paper)}
+.ov nav a{font:500 clamp(30px,3.4vw,50px)/1.12 var(--display);text-transform:none;letter-spacing:-.01em}
+.ov nav a:hover{color:var(--cyan-deep)}
+
+/* ===== Portada: título recto, alineado a la izquierda ===== */
+.hero{background:#1d2226}
+.hero::before{background:linear-gradient(180deg,rgba(18,22,26,.42),rgba(18,22,26,.1) 34%,rgba(18,22,26,.32) 62%,rgba(18,22,26,.72))}
+.hero-c{position:absolute;left:clamp(22px,4vw,60px);right:clamp(22px,4vw,60px);bottom:clamp(44px,7vh,76px);z-index:4;color:#fff}
+.hero-c .kick{color:rgba(255,255,255,.85);margin-bottom:22px}
+.hero-c h1{max-width:1060px;font:500 clamp(40px,5.2vw,82px)/1.02 var(--display);letter-spacing:-.022em;text-wrap:balance}
+.hero-c h1 .ln{display:inline}
+.hero-c h1 .it{font-style:italic;font-weight:400;color:var(--sky)}
+.hero-f{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.28)}
+.hero-f p{max-width:440px;font-size:14px;line-height:1.65;color:rgba(255,255,255,.86)}
+.hero-f .acts{display:flex;gap:12px;flex:none}
+@media (prefers-reduced-motion:no-preference){
+  .hero-c .kick,.hero-c h1 .ln,.hero-f{opacity:0;animation:rise 1.1s var(--ease) both}
+  .hero-c .kick{animation-delay:.25s}.hero-c h1 .ln{display:inline-block;animation-delay:.4s}.hero-c h1 .it{animation-delay:.55s}.hero-f{animation-delay:.8s}
+}
+@keyframes rise{from{opacity:0;transform:translate3d(0,22px,0)}to{opacity:1;transform:none}}
+
+/* ===== Concepto + recorrido (sin plato redondo: panel recto de piedra clara) ===== */
+.jr{background:var(--paper)}
+.about h2{font-size:clamp(44px,6vw,92px);line-height:1}
+.about h2 .w{font-family:var(--display);font-style:italic;font-weight:400;font-size:1em;color:var(--cyan-deep);transform:none;margin:0}
+.about .sig{max-width:520px;margin-top:26px;font:300 16px/1.65 var(--sans);color:var(--soft)}
+/* El plato redondo que sube y gira al bajar (lo único curvo, a petición) */
+.plate-disc{border-radius:50%!important}
+.plate-rim text{fill:var(--cyan-deep)}
+.plate-rim{color:var(--cyan)}
+.df.img{border:6px solid #fff;background:var(--stone);box-shadow:0 18px 42px rgba(30,40,50,.16)}
+.jr-content h2{font-size:clamp(30px,3.2vw,46px);line-height:1.04}
+.jr-content .scr{font-size:clamp(24px,2.4vw,34px);line-height:1.05;margin-top:.1em}
+.jr-content p{font-size:14px;line-height:1.6}
+.pag .bar i{background:var(--cyan)}
+
+/* ===== Personalización: foto a sangre sin ola ===== */
+.atm{background:#1d2226}
+.atm::after{background:linear-gradient(180deg,rgba(255,255,255,0),#fff)}
+.atm::before{background:linear-gradient(180deg,rgba(18,22,26,.5),rgba(18,22,26,.42) 45%,rgba(18,22,26,.2) 75%)}
+.atm-c h2,.atm-c p{text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.atm-c{max-width:980px}
+.atm-c h2{font-size:clamp(46px,5.4vw,84px);line-height:1;white-space:normal;color:#fff}
+.atm-c .scr{font-size:clamp(34px,3.8vw,58px);line-height:1.05;margin-top:.12em;color:var(--sky)}
+.atm-c p{margin-top:24px;font-size:15px;color:rgba(255,255,255,.9)}
+
+/* ===== Cuatro pilares (carrusel) ===== */
+.fx{background:var(--paper)}
+.fx-head h2{font-size:clamp(40px,3.6vw,54px);line-height:1.02;white-space:normal}
+.fx-head .scr{margin:.06em 0 0;font-size:clamp(30px,2.6vw,40px)}
+.fx-card{background:#fff;border-color:var(--line)}
+.fx-card.is-active{border-color:rgba(42,47,52,.22)}
+.fx-media img{object-position:50% 50%;filter:grayscale(40%) brightness(.95)}
+.fx-body h3{font-size:28px;line-height:1.05;color:var(--ink)}
+.fx-body p{font-size:13px}
+.ctl .c b{font:500 28px/1 var(--display)}
+.ctl .pr i{background:var(--cyan)}
+
+/* ===== Servicios en detalle ===== */
+.sv{background:#fff;border-top:1px solid var(--line);padding:clamp(70px,9vw,140px) clamp(22px,5vw,76px);display:grid;gap:clamp(90px,11vw,170px)}
+.sv-i{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,6vw,110px);align-items:start;max-width:1320px;width:100%;margin:0 auto;scroll-margin-top:80px}
+.sv-i.rev .sv-m{order:2}
+.sv-m{position:sticky;top:110px;aspect-ratio:4/5;overflow:visible}
+.sv-img{width:100%;height:100%;object-fit:cover;background:var(--wash)}
+.sv-vid{position:absolute;left:-1px;bottom:-1px;width:min(44%,232px);aspect-ratio:464/832;margin:0;background:#1d2226;border:8px solid var(--stone);border-left:0;border-bottom:0}
+.sv-i.rev .sv-vid{left:auto;right:-1px;border-left:8px solid var(--stone);border-right:0}
+.sv-vid video{width:100%;height:100%;object-fit:cover}
+.sv-vid figcaption{position:absolute;left:12px;bottom:10px;font:500 9px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.sv-t{padding-top:8px}
+.sv-t .kick{margin-bottom:18px;color:var(--cyan-deep)}
+.sv-t h2{font-size:clamp(40px,4.4vw,68px);line-height:1}
+.sv-t h2 .scr{display:block;font-size:.66em;margin-top:.12em}
+.sv-sub{margin-top:24px;font:400 italic clamp(20px,1.6vw,24px)/1.35 var(--display);color:var(--ink)}
+.sv-lead{margin-top:18px;max-width:600px;font-size:15px;line-height:1.75;color:var(--soft)}
+.sv-pts{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr}
+.sv-pts li{padding:22px 24px 24px 0;border-bottom:1px solid var(--line)}
+.sv-pts li:nth-child(2n){padding:22px 0 24px 24px;border-left:1px solid var(--line)}
+.sv-pts h4{margin:0;font:500 13px/1.35 var(--sans);letter-spacing:.01em;color:var(--ink)}
+.sv-pts h4::before{content:"";display:block;width:22px;height:2px;margin-bottom:14px;background:var(--cyan)}
+.sv-pts p{margin-top:8px;font-size:13.5px;line-height:1.65;color:var(--soft)}
+.sv-q{margin-top:36px;padding:28px 30px 30px;background:var(--stone);border-left:2px solid var(--cyan)}
+.sv-q .q{font:500 clamp(22px,1.9vw,28px)/1.2 var(--display);color:var(--ink)}
+.sv-q p+p{margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--soft)}
+.sv-q .btn{margin-top:22px}
+
+/* ===== Aperitivo, galería, día/noche, carta ===== */
+.ap,.gl,.dr,.rs{background:var(--paper)}
+.ap-tw h2{line-height:.9;letter-spacing:-.03em}
+.gl-head h2,.dr-ed h2{font-size:clamp(40px,3.6vw,54px);line-height:1.02;white-space:normal}
+.gl-head .scr,.dr-ed .scr{margin:.06em 0 0;font-size:clamp(28px,2.4vw,38px)}
+.gl-card{background:var(--stone)}
+.gl-card::after{display:none}
+.dn{background:#1d2226}.dn-pin{background:#1d2226}
+.dn-cp h2{font-size:clamp(46px,5.4vw,84px);line-height:1}
+.dn-cp .scr{font-size:clamp(30px,3.2vw,48px);margin-top:.16em;color:#fff}
+.dn-cp.n .scr{color:var(--sky)}
+.dr-name{font:500 12px/1.2 var(--sans)!important;letter-spacing:.14em!important}
+.dr-name.is-active{color:var(--cyan-deep)!important}
+.dr-v{background:#fff;transform:none!important;opacity:0}
+.dr-v.is-active{opacity:1;transform:none!important;box-shadow:0 30px 70px -30px rgba(30,36,42,.35)}
+.dr-v figcaption em{font:italic 400 clamp(20px,1.8vw,26px)/1 var(--display);color:var(--cyan-deep);transform:none}
+
+/* ===== Llamada final sobre el mar ===== */
+.cta{background:#24313a}
+.cta::before{background:linear-gradient(180deg,var(--paper),rgba(238,239,240,.72) 28%,rgba(238,239,240,0))}
+.cta::after{background:linear-gradient(180deg,rgba(238,239,240,0),var(--paper))}
+.cta-c h2{font-size:clamp(50px,5.6vw,88px);line-height:1}
+.cta-c .scr{font-size:clamp(36px,3.8vw,58px);line-height:1.05;margin-top:.1em;color:#fff}
+
+/* ===== Formulario ===== */
+.rs-head h2{font-size:clamp(44px,4.2vw,64px);line-height:1}
+.rs-head .scr{margin:.08em 0 0;font-size:clamp(32px,3vw,46px)}
+.pol div b{color:var(--cyan-deep)}
+.rs-head .wa svg{fill:var(--cyan-deep)}
+.fld label{font-weight:500;color:var(--muted)}
+.fld label i{color:var(--cyan-deep)}
+.fld input,.fld select,.fld textarea{border-bottom-color:rgba(42,47,52,.28)}
+.fld input:focus,.fld select:focus,.fld textarea:focus{border-bottom-color:var(--cyan-deep)}
+.chk input{accent-color:var(--cyan-deep)}
+.done{background:var(--stone)}
+.done h3{font:500 36px/1.1 var(--display);text-transform:none;color:var(--ink)}
+
+/* ===== Botón fijo: recto, grafito con detalle celeste ===== */
+.fab{background:var(--graphite);box-shadow:0 14px 30px -12px rgba(20,24,28,.55);border-bottom:2px solid var(--cyan)}
+.fab svg{stroke:var(--sky)}
+@media (hover:hover) and (pointer:fine){.fab:hover{background:var(--cyan-deep)}}
+
+/* ===== Pie blanco ===== */
+.ft{background:#fff;border-top:1px solid var(--line)}
+.ft-top h2{font-size:clamp(48px,5.4vw,84px);line-height:1}
+.ft-top .scr{margin:.08em 0 0;font-size:clamp(30px,3vw,46px)}
+.ft-cols h3{font:500 26px/1.1 var(--display);text-transform:none;color:var(--ink)}
+.soc a:hover{background:var(--cyan-deep);border-color:var(--cyan-deep)}
+
+/* ===== Tableta ===== */
+@media (max-width:1100px){
+  .sv-pts{grid-template-columns:1fr}
+  .sv-pts li,.sv-pts li:nth-child(2n){padding:20px 0 22px;border-left:0}
+}
+@media (max-width:900px){
+  .sv-i{grid-template-columns:1fr;gap:34px}
+  .sv-i.rev .sv-m{order:0}
+  .sv-m{position:relative;top:auto;aspect-ratio:4/4.4}
+  .hero-f{flex-direction:column;align-items:flex-start;gap:22px}
+}
+/* ===== Móvil ===== */
+@media (max-width:767px){
+  .hero-c{left:22px;right:22px;bottom:calc(36px + env(safe-area-inset-bottom,0px))}
+  .hero-c .kick{margin-bottom:16px}
+  .hero-c h1{font-size:clamp(32px,9.2vw,42px)!important;line-height:1.04;letter-spacing:-.02em}
+  .hero-f{margin-top:22px;padding-top:18px}
+  .hero-f p{font-size:13px}
+  .hero-f .acts{flex-direction:column;width:100%}
+  .hero-f .acts .btn{width:100%}
+  .about h2{font-size:clamp(38px,11vw,52px)!important;line-height:1.02}
+  .about .sig{font-size:14.5px}
+  .jr-content h2{font-size:26px!important}
+  .jr-content .scr{font-size:22px}
+  .atm-c h2{font-size:clamp(34px,9.6vw,44px)!important;line-height:1.02}
+  .atm-c .scr{font-size:clamp(26px,7.4vw,34px)}
+  .fx-head h2,.gl-head h2,.dr-ed h2{font-size:36px!important;line-height:1.02}
+  .fx-head .scr,.gl-head .scr,.dr-ed .scr{font-size:27px;margin-left:0}
+  .fx-body h3{font-size:24px!important}
+  .sv{padding:70px 22px;gap:90px}
+  .sv-t h2{font-size:38px}
+  .sv-sub{font-size:20px}
+  .sv-lead{font-size:14.5px}
+  .sv-vid{width:38%}
+  .sv-q{padding:22px 20px 24px}
+  .sv-q .btn{width:100%;padding:0 16px;letter-spacing:.14em}
+  .dn-cp h2{font-size:clamp(34px,9.6vw,44px)!important;line-height:1.04}
+  .dn-cp .scr{font-size:clamp(24px,7vw,32px)}
+  .dr-mob .b h3{font:500 26px/1.05 var(--display);text-transform:none;color:var(--ink)}
+  .cta-c h2{font-size:clamp(36px,10vw,46px)!important}
+  .cta-c .scr{font-size:clamp(26px,7.6vw,34px)}
+  .rs-head h2{font-size:42px!important}
+  .rs-head .scr{font-size:32px}
+  .ft-top h2{font-size:44px!important}
+  .ft-top .scr{font-size:30px}
+  .ap-tw h2{font-size:15vw}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero-c .kick,.hero-c h1 .ln,.hero-f{animation:none;opacity:1}
+}
+@media (prefers-reduced-transparency:reduce){
+  header.site.glass{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none}
+}
+/* Portada con la brasa: velo lateral para que el titular se lea sobre la chaqueta blanca */
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(18,22,26,.62),rgba(18,22,26,.28) 46%,rgba(18,22,26,0) 72%)}
+.hero-c h1,.hero-c .kick,.hero-f p{text-shadow:0 2px 22px rgba(0,0,0,.45)}
+.hero-mob{object-position:58% 40%}
+@media (max-width:767px){.hero::after{background:linear-gradient(180deg,rgba(18,22,26,0) 30%,rgba(18,22,26,.55) 62%,rgba(18,22,26,.72))}}
+/* ===== Tira de fotos (de la versión 23): avanza al bajar en escritorio, se mueve sola en el móvil ===== */
+.gs{overflow:hidden;background:#fff;padding:clamp(20px,3vw,40px) 0 clamp(80px,9vw,130px)}
+.gs-t{display:flex;gap:clamp(12px,1.4vw,20px);width:max-content;transform:translate3d(var(--gx,0px),0,0);will-change:transform}
+.gs figure{margin:0;flex:none;width:clamp(220px,26vw,380px);aspect-ratio:3/4;border-radius:16px!important;overflow:hidden;background:var(--stone)}
+.gs figure:nth-child(2n){aspect-ratio:4/5;margin-top:clamp(30px,4vw,60px)}
+.gs img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+@media (hover:hover){.gs figure:hover img{transform:scale(1.05)}}
+.pmt .gs-t{animation:gsmq 50s linear infinite;transform:none!important}
+@keyframes gsmq{to{transform:translate3d(-50%,0,0)}}
+@media (max-width:767px){.gs-t{animation:gsmq 50s linear infinite;transform:none!important}.gs figure{width:62vw}}
+@media (prefers-reduced-motion:reduce){.gs-t{animation:none!important}}
+
+/* ===== Botón fijo «Reservar fecha» (de la versión 23): píldora cyan ===== */
+.fab{gap:10px;min-height:52px;padding:0 24px 0 20px;border:0;border-bottom:0;border-radius:999px!important;background:#009EE2;color:#fff!important;font:500 15px/1 var(--sans);letter-spacing:0;text-transform:none;box-shadow:0 14px 34px -12px rgba(0,90,140,.6)}
+.fab svg{stroke:#fff;width:18px;height:18px}
+@media (hover:hover) and (pointer:fine){.fab:hover{background:#0077ab}}
+.fab:active{transform:translate(-50%,0) scale(.97)}
+/* ===== Menús completos (desplegables) ===== */
+.mn{background:#fff;padding:clamp(70px,9vw,130px) clamp(22px,5vw,76px);border-top:1px solid var(--line)}
+.mn-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,90px);align-items:end;max-width:1320px;margin:0 auto}
+.mn-h h2{font-size:clamp(44px,4.4vw,68px);line-height:1}
+.mn-h .scr{display:block;font-size:.66em;margin-top:.1em}
+.mn-h p:not(.kick){max-width:520px;font-size:14.5px;line-height:1.7;color:var(--soft)}
+.mn-h .kick{margin-bottom:16px}
+.mn-l{max-width:1320px;margin:clamp(44px,5vw,70px) auto 0;border-top:1px solid var(--ink)}
+.mn-i{border-bottom:1px solid var(--line);interpolate-size:allow-keywords}
+.mn-i summary{list-style:none;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto 28px;align-items:baseline;gap:24px;padding:26px 0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mn-i summary::-webkit-details-marker{display:none}
+.mn-n{font:500 clamp(28px,2.6vw,40px)/1.05 var(--display);letter-spacing:-.01em;color:var(--ink);transition:color .3s ease}
+.mn-s{font:italic 400 clamp(18px,1.5vw,22px)/1.2 var(--display);color:var(--cyan-deep)}
+.mn-p{font:500 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.mn-i .pl{align-self:center;width:20px;height:20px;fill:none;stroke:var(--ink);stroke-width:1.4;transition:transform .45s var(--ease)}
+.mn-i[open] .pl{transform:rotate(45deg)}
+@media (hover:hover) and (pointer:fine){.mn-i summary:hover .mn-n{color:var(--cyan-deep)}}
+.mn-i::details-content{block-size:0;overflow:hidden;transition:block-size .55s var(--ease),content-visibility .55s allow-discrete}
+.mn-i[open]::details-content{block-size:auto}
+.mn-b{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr);gap:clamp(30px,4vw,70px);padding:4px 0 44px}
+.mn-c{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;align-content:start}
+.mn-g .kick{color:var(--cyan-deep);margin-bottom:10px}
+.mn-g ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.mn-g li{font-size:13.5px;line-height:1.6;color:var(--soft)}
+.mn-g li b{display:block;font-weight:500;color:var(--ink)}
+.mn-a{align-self:start;padding:26px 28px 28px;background:var(--stone);border-top:2px solid var(--cyan)}
+.mn-pr{list-style:none;margin:14px 0 0;padding:0}
+.mn-pr li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.mn-pr li b{display:block;font-weight:500;font-size:13.5px;color:var(--ink)}
+.mn-pr li span{display:block;margin-top:4px;font-size:12.5px;line-height:1.55;color:var(--soft)}
+.mn-pr li em{font:500 clamp(20px,1.6vw,24px)/1.1 var(--display);font-style:normal;color:var(--ink);white-space:nowrap;text-align:right}
+.mn-note{margin-top:16px;font-size:12px;line-height:1.6;color:var(--muted)}
+.mn-a .btn{margin-top:20px;width:100%}
+@media (max-width:900px){
+  .mn-h{grid-template-columns:1fr;gap:18px}
+  .mn-i summary{grid-template-columns:minmax(0,1fr) 24px;grid-template-areas:"n pl" "s pl" "p pl";gap:6px 16px;padding:22px 0}
+  .mn-n{grid-area:n}.mn-s{grid-area:s}.mn-p{grid-area:p;margin-top:6px}.mn-i .pl{grid-area:pl}
+  .mn-b{grid-template-columns:1fr}
+}
+@media (max-width:767px){
+  .mn{padding:70px 22px}
+  .mn-h h2{font-size:42px}
+  .mn-c{grid-template-columns:1fr;gap:24px}
+  .mn-a{padding:22px 20px 24px}
+}
+.mn-pr li em small{display:block;margin-top:4px;font:400 11px/1.3 var(--sans);color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="site" id="pmHdr">
+  <nav class="hl" aria-label="Accesos"><a href="#servicios">Servicios</a><a href="#reservar">Cuestionario</a></nav>
+  <a class="lg" href="index.html" aria-label="Pablo Muñoz, chef y asesor culinario. Inicio"><img class="full w" src="img/logo-white.png" alt="Pablo Muñoz, chef y asesor culinario" width="440" height="347"><img class="full d" src="img/logo.png" alt="" width="440" height="347"><img class="icon" src="img/mono-t.png" alt="" width="65" height="140"></a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="pmMenu"><span>Menú</span><i aria-hidden="true"></i></button>
+</header>
+<div class="ov" id="pmMenu" aria-hidden="true">
+  <nav aria-label="Principal">
+    <a href="index.html" style="--i:0">Inicio</a><a href="#sv-b2b" style="--i:1">B2B & Chef Concierge</a><a href="del-chef-a-tu-mesa.html" style="--i:2">Batch Cooking & Meal Prep</a><a href="chef-privado.html" style="--i:3">Private Dining<small>VIP</small></a><a href="asesor-gastronomico.html" style="--i:4">Asesor gastronómico</a><a href="menu-deportistas.html" style="--i:5">Menú deportistas</a><a href="el-chef.html" style="--i:6">El chef</a><a href="blog.html" style="--i:7">Blog</a><a href="contacto.html" style="--i:8">Contacto</a><a href="#reservar" style="--i:9">Cuestionario a medida</a>
+  </nav>
+  <aside><img src="img/bunker-brazos.jpg" alt="Pablo Muñoz con los brazos abiertos sobre Barcelona" loading="lazy" decoding="async"><p class="kick" style="color:#fff">WhatsApp · <a href="https://wa.me/34661100731" target="_blank" rel="noopener">+34 661 10 07 31</a></p></aside>
+</div>
+<div id="pmPage">
+<script>(function(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;var p=document.getElementById('pmPage');p.classList.add('pmjs');if(matchMedia('(hover: none) and (pointer: coarse)').matches)p.classList.add('pmt')})()</script>
+<main>
+<section class="hero" id="hero" aria-labelledby="h1">
+  <video class="hero-mob" id="heroVid" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Pablo Muñoz cocinando en la brasa al aire libre" poster="img/pm-brasa-hero.jpg"><source src="img/pm-brasa-hero.mp4" type="video/mp4"></video>
+  <div class="hero-c">
+    <p class="kick">Pablo Muñoz · Dirección culinaria</p>
+    <h1 id="h1"><span class="ln">Curaduría gastronómica y cocina de temporada</span> <span class="ln it">a la medida exacta de cada estancia, equipo o celebración.</span></h1>
+    <div class="hero-f">
+      <p>Gastronomía de autor y gestión integral para residencias exclusivas, villas y entornos corporativos. Barcelona, Costa Brava, Península y Baleares.</p>
+      <div class="acts"><a class="btn w" href="#reservar">Solicitar cuestionario</a><a class="btn lo" href="#servicios">Ver servicios</a></div>
+    </div>
+  </div>
+</section>
+<section class="jr" id="jr" aria-label="Concepto">
+  <div class="jr-pin">
+    <p class="kick jr-corner k">Pablo Muñoz · Dirección culinaria</p>
+    <p class="jr-corner f">Gastronomía de autor concebida como un servicio de conserjería culinaria: precisión, origen y bienestar sin salir de casa.</p>
+    <div class="about" id="about">
+      <p class="kick">Concepto</p>
+      <h2 class="cap"><span>No hay menús</span><span><em class="w">predeterminados.</em></span></h2>
+      <p class="sig">Diseñamos el perfil gastronómico y nutricional exacto de tu residencia, villa o espacio corporativo.</p>
+      <img class="mono" src="img/mono-t.png" alt="" width="65" height="140">
+    </div>
+    <div class="jr-stage">
+    <div class="drift" aria-hidden="true"><figure class="df img left" data-s="0" data-e="0.46" data-l="320" data-w="-22" data-r="-4"><img src="img/pm-drift-chef.webp" srcset="img/pm-drift-chef-m.webp 934w, img/pm-drift-chef.webp 1707w" sizes="(max-width:767px) 34vw, 23vw" alt="" loading="lazy" decoding="async"></figure><span class="df ico ico-1 wide" data-s="0.02" data-e="0.44" data-l="260" data-w="16" data-r="-8"><img src="img/ico-pez.png" alt="" loading="lazy" decoding="async"></span><span class="df ico ico-2" data-s="0.5" data-e="0.98" data-l="300" data-w="-6" data-r="8"><img src="img/ico-pina.png" alt="" loading="lazy" decoding="async"></span><figure class="df img top" data-s="0.16" data-e="0.76" data-l="380" data-w="18" data-r="3"><img src="img/pm-drift-plate.webp" srcset="img/pm-drift-plate-m.webp 1050w, img/pm-drift-plate.webp 1536w" sizes="20vw" alt="" loading="lazy" decoding="async"></figure><figure class="df img right" data-s="0.36" data-e="0.96" data-l="360" data-w="24" data-r="4"><img src="img/pm-drift-board.webp" srcset="img/pm-drift-board-m.webp 1400w, img/pm-drift-board.webp 2560w" sizes="(max-width:767px) 34vw, 25vw" alt="" loading="lazy" decoding="async"></figure><figure class="df img center-low" data-s="0.3" data-e="0.98" data-l="330" data-w="-10" data-r="-2"><img src="img/pm-drift-duck.webp" srcset="img/pm-drift-duck-m.webp 933w, img/pm-drift-duck.webp 1280w" sizes="20vw" alt="" loading="lazy" decoding="async"></figure><span class="df ico ico-3" data-s="0.24" data-e="0.82" data-l="280" data-w="-16" data-r="7"><img src="img/ico-martini.png" alt="" loading="lazy" decoding="async"></span><span class="df ico ico-4" data-s="0.48" data-e="1.08" data-l="280" data-w="-18" data-r="9"><img src="img/ico-copa.png" alt="" loading="lazy" decoding="async"></span><span class="df ico ico-5" data-s="0.72" data-e="1.24" data-l="260" data-w="8" data-r="-7"><img src="img/ico-martini.png" alt="" loading="lazy" decoding="async"></span><span class="df ico ico-6 wide" data-s="0.72" data-e="1.22" data-l="300" data-w="-12" data-r="8"><img src="img/ico-pez.png" alt="" loading="lazy" decoding="async"></span><figure class="df img right-high" data-s="0.58" data-e="1.16" data-l="410" data-w="-18" data-r="-3"><img src="img/pm-drift-meat.webp" srcset="img/pm-drift-meat-m.webp 1050w, img/pm-drift-meat.webp 1920w" sizes="20vw" alt="" loading="lazy" decoding="async"></figure></div>
+    <div class="plate" id="plate" aria-hidden="true"><div class="plate-spin" id="plateSpin"><div class="plate-disc"></div><svg class="plate-rim" viewBox="0 0 1000 1000" aria-hidden="true"><defs><path id="rimp" d="M500,500 m-405,0 a405,405 0 1,1 810,0 a405,405 0 1,1 -810,0"/></defs><circle cx="500" cy="500" r="472" fill="none" stroke="currentColor" stroke-opacity=".55" stroke-width="2"/><g fill="currentColor" fill-opacity=".55"><circle cx="952.0" cy="500.0" r="3"/><circle cx="949.5" cy="547.2" r="3"/><circle cx="942.1" cy="594.0" r="3"/><circle cx="929.9" cy="639.7" r="3"/><circle cx="912.9" cy="683.8" r="3"/><circle cx="891.4" cy="726.0" r="3"/><circle cx="865.7" cy="765.7" r="3"/><circle cx="835.9" cy="802.4" r="3"/><circle cx="802.4" cy="835.9" r="3"/><circle cx="765.7" cy="865.7" r="3"/><circle cx="726.0" cy="891.4" r="3"/><circle cx="683.8" cy="912.9" r="3"/><circle cx="639.7" cy="929.9" r="3"/><circle cx="594.0" cy="942.1" r="3"/><circle cx="547.2" cy="949.5" r="3"/><circle cx="500.0" cy="952.0" r="3"/><circle cx="452.8" cy="949.5" r="3"/><circle cx="406.0" cy="942.1" r="3"/><circle cx="360.3" cy="929.9" r="3"/><circle cx="316.2" cy="912.9" r="3"/><circle cx="274.0" cy="891.4" r="3"/><circle cx="234.3" cy="865.7" r="3"/><circle cx="197.6" cy="835.9" r="3"/><circle cx="164.1" cy="802.4" r="3"/><circle cx="134.3" cy="765.7" r="3"/><circle cx="108.6" cy="726.0" r="3"/><circle cx="87.1" cy="683.8" r="3"/><circle cx="70.1" cy="639.7" r="3"/><circle cx="57.9" cy="594.0" r="3"/><circle cx="50.5" cy="547.2" r="3"/><circle cx="48.0" cy="500.0" r="3"/><circle cx="50.5" cy="452.8" r="3"/><circle cx="57.9" cy="406.0" r="3"/><circle cx="70.1" cy="360.3" r="3"/><circle cx="87.1" cy="316.2" r="3"/><circle cx="108.6" cy="274.0" r="3"/><circle cx="134.3" cy="234.3" r="3"/><circle cx="164.1" cy="197.6" r="3"/><circle cx="197.6" cy="164.1" r="3"/><circle cx="234.3" cy="134.3" r="3"/><circle cx="274.0" cy="108.6" r="3"/><circle cx="316.2" cy="87.1" r="3"/><circle cx="360.3" cy="70.1" r="3"/><circle cx="406.0" cy="57.9" r="3"/><circle cx="452.8" cy="50.5" r="3"/><circle cx="500.0" cy="48.0" r="3"/><circle cx="547.2" cy="50.5" r="3"/><circle cx="594.0" cy="57.9" r="3"/><circle cx="639.7" cy="70.1" r="3"/><circle cx="683.8" cy="87.1" r="3"/><circle cx="726.0" cy="108.6" r="3"/><circle cx="765.7" cy="134.3" r="3"/><circle cx="802.4" cy="164.1" r="3"/><circle cx="835.9" cy="197.6" r="3"/><circle cx="865.7" cy="234.3" r="3"/><circle cx="891.4" cy="274.0" r="3"/><circle cx="912.9" cy="316.2" r="3"/><circle cx="929.9" cy="360.3" r="3"/><circle cx="942.1" cy="406.0" r="3"/><circle cx="949.5" cy="452.8" r="3"/></g><circle cx="500" cy="500" r="432" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1.2"/><text><textPath href="#rimp">Pablo Muñoz · Dirección culinaria · Barcelona · Costa Brava · Pablo Muñoz · Dirección culinaria · Barcelona · Costa Brava · </textPath></text><circle cx="500" cy="500" r="372" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1.2"/><circle cx="500" cy="500" r="318" fill="none" stroke="currentColor" stroke-opacity=".18" stroke-width="10" stroke-dasharray="2 22"/></svg></div></div>
+    <article class="jr-content" id="jrc" aria-live="polite">
+      <h2 class="cap ct"><span id="jrT">B2B & Chef Concierge</span><span class="scr" id="jrS">gestión integral</span></h2>
+      <p class="ct" id="jrP">Pensión completa y dirección culinaria para off-sites, villas de trabajo y estancias ejecutivas.</p>
+      <div class="pag" aria-hidden="true"><div class="n"><span id="jrN">01</span><span>/ 05</span></div><div class="bar"><i id="jrB"></i></div></div>
+    </article>
+    </div>
+  </div>
+</section>
+<section class="atm" id="atm" aria-label="Personalización">
+  <img src="img/pm-atm.webp" srcset="img/pm-atm-m.webp 1050w, img/pm-atm.webp 1920w" sizes="100vw" alt="Arroz meloso con setas y flores comestibles" class="atm-bg" loading="lazy" decoding="async">
+  <div class="atm-c"><h2 class="cap" data-rv>La alta cocina evoluciona<span class="scr">hacia la absoluta personalización</span></h2><p data-rv style="--d:160ms">Diseño, salud y técnica adaptados a cada cliente único.</p></div>
+</section>
+<section class="fx" id="servicios" aria-labelledby="fxT">
+  <div class="fx-grid">
+    <div class="fx-head">
+      <p class="kick">Cuatro pilares de servicio</p>
+      <h2 class="cap" id="fxT" data-rv><span>Dirección culinaria</span><span class="scr">a la medida exacta</span></h2>
+      <p class="intro" data-rv style="--d:160ms">De la pensión completa de un equipo directivo a una cena íntima en tu villa: diseño, salud y técnica adaptados a cada cliente.</p>
+      <p class="foot">Cada servicio empieza con nuestro Cuestionario Culinario Exclusivo.</p>
+    </div>
+    <div class="fx-panel">
+      <div class="fx-shell" id="fxShell"><div class="fx-track" id="fxTrack"><a class="fx-card" href="#sv-b2b"><div class="fx-media"><img src="img/pm-fx-b2b.webp" srcset="img/pm-fx-b2b-m.webp 787w, img/pm-fx-b2b.webp 1440w" sizes="(max-width:767px) 90vw, 36vw" alt="Pablo Muñoz cocinando en la cocina de una residencia" loading="lazy" decoding="async"></div><div class="fx-body"><h3 class="cap">B2B & Chef Concierge</h3><p>Gestión culinaria integral y pensión completa para estancias corporativas y residencias VIP.</p><div class="meta">Off-sites / Workstations / Directivos</div></div></a><a class="fx-card" href="#sv-batch"><div class="fx-media"><img src="img/pm-fx-batch.webp" srcset="img/pm-fx-batch-m.webp 1050w, img/pm-fx-batch.webp 1920w" sizes="(max-width:767px) 90vw, 36vw" alt="Bandeja de pescado limpio y porcionado" loading="lazy" decoding="async"></div><div class="fx-body"><h3 class="cap">Private Batch Cooking & Meal Prep</h3><p>Nutrición técnica, salud y tiempo de calidad para ejecutivos, deportistas de élite y residencias privadas.</p><div class="meta">Obrador / Vacío técnico / Nutrición</div></div></a><a class="fx-card" href="#sv-dining"><div class="fx-media"><img src="img/pm-fx-dining.webp" srcset="img/pm-fx-dining-m.webp 1050w, img/pm-fx-dining.webp 1920w" sizes="(max-width:767px) 90vw, 36vw" alt="Mesa con cristalería y carta personalizada" loading="lazy" decoding="async"></div><div class="fx-body"><h3 class="cap">Private Dining & Experiencias VIP</h3><p>Cenas de autor y gastronomía hecha a medida en la intimidad de tu hogar, villa o yate.</p><div class="meta">Casa / Villa / Yate</div></div></a><a class="fx-card" href="#sv-boutique"><div class="fx-media"><img src="img/pm-fx-boutique.webp" srcset="img/pm-fx-boutique-m.webp 1050w, img/pm-fx-boutique.webp 1536w" sizes="(max-width:767px) 90vw, 36vw" alt="Mesa de celebración en una azotea al atardecer" loading="lazy" decoding="async"></div><div class="fx-body"><h3 class="cap">Boutique Catering & Live Cooking</h3><p>Experiencias gastronómicas a medida para celebraciones exclusivas, de 15 a 80 invitados.</p><div class="meta">15–80 invitados / Estaciones / Bodas</div></div></a><a class="fx-card" href="#sv-b2b" data-clone aria-hidden="true" tabindex="-1"><div class="fx-media"><img src="img/pm-fx-b2b.webp" srcset="img/pm-fx-b2b-m.webp 787w, img/pm-fx-b2b.webp 1440w" sizes="(max-width:767px) 90vw, 36vw" alt="" loading="lazy" decoding="async"></div><div class="fx-body"><h3 class="cap">B2B & Chef Concierge</h3><p>Gestión culinaria integral y pensión completa para estancias corporativas y residencias VIP.</p><div class="meta">Off-sites / Workstations / Directivos</div></div></a><a class="fx-card" href="#sv-batch" data-clone aria-hidden="true" tabindex="-1"><div class="fx-media"><img src="img/pm-fx-batch.webp" srcset="img/pm-fx-batch-m.webp 1050w, img/pm-fx-batch.webp 1920w" sizes="(max-width:767px) 90vw, 36vw" alt="" loading="lazy" decoding="async"></div><div class="fx-body"><h3 class="cap">Private Batch Cooking & Meal Prep</h3><p>Nutrición técnica, salud y tiempo de calidad para ejecutivos, deportistas de élite y residencias privadas.</p><div class="meta">Obrador / Vacío técnico / Nutrición</div></div></a><a class="fx-card" href="#sv-dining" data-clone aria-hidden="true" tabindex="-1"><div class="fx-media"><img src="img/pm-fx-dining.webp" srcset="img/pm-fx-dining-m.webp 1050w, img/pm-fx-dining.webp 1920w" sizes="(max-width:767px) 90vw, 36vw" alt="" loading="lazy" decoding="async"></div><div class="fx-body"><h3 class="cap">Private Dining & Experiencias VIP</h3><p>Cenas de autor y gastronomía hecha a medida en la intimidad de tu hogar, villa o yate.</p><div class="meta">Casa / Villa / Yate</div></div></a><a class="fx-card" href="#sv-boutique" data-clone aria-hidden="true" tabindex="-1"><div class="fx-media"><img src="img/pm-fx-boutique.webp" srcset="img/pm-fx-boutique-m.webp 1050w, img/pm-fx-boutique.webp 1536w" sizes="(max-width:767px) 90vw, 36vw" alt="" loading="lazy" decoding="async"></div><div class="fx-body"><h3 class="cap">Boutique Catering & Live Cooking</h3><p>Experiencias gastronómicas a medida para celebraciones exclusivas, de 15 a 80 invitados.</p><div class="meta">15–80 invitados / Estaciones / Bodas</div></div></a></div>
+        <button class="fx-next" id="fxNext" type="button" aria-label="Siguiente servicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div>
+      <div class="ctl"><button class="c" id="fxCount" type="button" aria-label="Siguiente servicio"><b id="fxN">01</b><small>/ 04</small></button><div class="pr"><i id="fxBar" style="width:25%"></i></div></div>
+    </div>
+  </div>
+</section>
+<section class="sv" id="pilares" aria-label="Servicios en detalle">
+  <article class="sv-i" id="sv-b2b" aria-labelledby="sv-b2b-t">
+    <div class="sv-m" data-rv><img src="img/pm-sv-b2b.webp" srcset="img/pm-sv-b2b-m.webp 1050w, img/pm-sv-b2b.webp 1920w" sizes="(max-width:900px) 100vw, 46vw" alt="Pablo Muñoz con una bandeja de producto en la cocina de una residencia" class="sv-img" loading="lazy" decoding="async" style="object-position:50% 40%"></div>
+    <div class="sv-t">
+      <p class="kick" data-rv>Corporativo y residencias VIP</p>
+      <h2 class="cap" id="sv-b2b-t" data-rv>B2B & Chef Concierge<span class="scr">gestión culinaria integral</span></h2>
+      <p class="sv-sub" data-rv style="--d:80ms">Gestión culinaria integral y pensión completa para estancias corporativas y residencias VIP.</p>
+      <p class="sv-lead" data-rv style="--d:140ms">Diseñado para off-sites de empresa, villas de trabajo (workstations), delegaciones ejecutivas y estancias de media-larga duración. Nos encargamos de toda la parcela gastronómica de tu equipo o residencia para que tú solo te concentres en tus objetivos.</p>
+      <ul class="sv-pts"><li><h4>Dirección & aprovisionamiento</h4><p>Gestión 100% integral. Realizamos la compra de producto local de origen, la logística de cocina y el aprovisionamiento continuo de la residencia (pantry stock).</p></li><li><h4>Menús a medida para equipos</h4><p>Propuestas diarias equilibradas: desde desayunos energéticos (energy boost) y lunches ágiles que no interrumpen el ritmo de trabajo, hasta coffee breaks continuos y cenas ejecutivas de cierre.</p></li><li><h4>Filtro nutricional & dietas especiales</h4><p>Adaptación absoluta a cualquier necesidad. Cubrimos de forma precisa menús keto, low FODMAP, halal, vegetarianos o intolerancias complejas sin perder la excelencia ni el sabor.</p></li><li><h4>Flexibilidad & ritmo corporativo</h4><p>La cocina se ajusta al ritmo de tus reuniones y agenda, no al revés.</p></li></ul>
+      <div class="sv-q" data-rv><p class="q">¿Diseñamos la propuesta para tu próxima estancia o evento corporativo?</p><p>Te enviaremos nuestro Cuestionario Culinario Exclusivo para analizar el perfil exacto de tu equipo y confeccionar una propuesta a medida.</p><a class="btn c" href="#reservar" data-serv="B2B & Chef Concierge">Solicitar cuestionario culinario a medida</a></div>
+    </div>
+  </article><article class="sv-i rev" id="sv-batch" aria-labelledby="sv-batch-t">
+    <div class="sv-m" data-rv><img src="img/pm-sv-batch.webp" srcset="img/pm-sv-batch-m.webp 787w, img/pm-sv-batch.webp 1440w" sizes="(max-width:900px) 100vw, 46vw" alt="Platos de carne con salsa emplatados en serie sobre la encimera" class="sv-img" loading="lazy" decoding="async" style="object-position:50% 50%"></div>
+    <div class="sv-t">
+      <p class="kick" data-rv>Ejecutivos, deportistas y residencias</p>
+      <h2 class="cap" id="sv-batch-t" data-rv>Private Batch Cooking<span class="scr">& meal prep de autor</span></h2>
+      <p class="sv-sub" data-rv style="--d:80ms">Nutrición técnica, salud y tiempo de calidad para ejecutivos, deportistas de élite y residencias privadas.</p>
+      <p class="sv-lead" data-rv style="--d:140ms">Para quienes entienden la alimentación como la base de su rendimiento, su salud y su lifestyle. Un servicio que traslada mi experiencia como chef privado de deportistas de élite a tu día a día: eliminamos la carga de cocinar para que ganes tiempo de calidad sin renunciar a una cocina 100% saludable.</p>
+      <ul class="sv-pts"><li><h4>Elaboración profesional & tupper de cristal</h4><p>Preparación semanal con la máxima calidad alimentaria en contenedores de cristal reutilizables. Cada plato lleva su etiqueta con la información nutricional personalizada: macros, ingredientes y calorías.</p></li><li><h4>Nutrición saludable & pautas personalizadas</h4><p>Adaptación absoluta a tus objetivos y a las pautas de tu nutricionista o médico deportivo: dietas halal, veganas, vegetarianas, keto o intolerancias complejas, con un sabor y una presentación impecables.</p></li><li><h4>Máxima calidad de tiempo</h4><p>Olvídate de hacer la compra, planificar o cocinar. Tu nevera queda abastecida para la semana con opciones saludables listas para calentar en minutos.</p></li><li><h4>Flexibilidad a tu medida</h4><p>Entrega semanal a domicilio o elaboración del meal prep in situ, en tu propia cocina, con servicio de chef privado.</p></li></ul>
+      <div class="sv-q" data-rv><p class="q">¿Quieres transformar tu alimentación y ganar tiempo cada semana?</p><p>Con el Cuestionario Culinario Exclusivo analizamos tus metas nutricionales, preferencias e intolerancias, y diseñamos tu plan semanal a medida.</p><a class="btn c" href="#reservar" data-serv="Private Batch Cooking & Meal Prep">Solicitar cuestionario culinario a medida</a></div>
+    </div>
+  </article><article class="sv-i" id="sv-dining" aria-labelledby="sv-dining-t">
+    <div class="sv-m" data-rv><img src="img/pm-sv-dining.webp" srcset="img/pm-sv-dining-m.webp 1050w, img/pm-sv-dining.webp 1536w" sizes="(max-width:900px) 100vw, 46vw" alt="Mesa vestida de blanco con una vela encendida" class="sv-img" loading="lazy" decoding="async" style="object-position:50% 55%"></div>
+    <div class="sv-t">
+      <p class="kick" data-rv>Hogar, villa o yate</p>
+      <h2 class="cap" id="sv-dining-t" data-rv>Private Dining<span class="scr">& experiencias VIP</span></h2>
+      <p class="sv-sub" data-rv style="--d:80ms">Cenas de autor, residencias exclusivas y gastronomía hecha a medida en la intimidad de tu hogar, villa o yate.</p>
+      <p class="sv-lead" data-rv style="--d:140ms">Un concepto para los amantes de la buena mesa que buscan una experiencia culinaria inolvidable. Bajo la dirección de Pablo, cada velada se convierte en un evento único donde la cocina mediterránea de autor y de temporada y un servicio en mesa impecable crean un recuerdo perdurable. Aquí no hay propuestas rígidas: cada menú se diseña en exclusiva para ti y tus invitados.</p>
+      <ul class="sv-pts"><li><h4>Cocina mediterránea de autor & temporada</h4><p>Platos basados en el producto local de estación que combinan tradición, brasa y técnica, en respuesta directa a tus deseos y preferencias.</p></li><li><h4>Diseño exclusivo & personalización absoluta</h4><p>La experiencia se construye mano a mano a través de nuestro cuestionario previo: un menú singular, pensado únicamente para esa noche.</p></li><li><h4>Atención privada & servicio impecable</h4><p>Un profesional volcado por completo en tu mesa. Con la máxima discreción nos ocupamos del servicio de sala, la vajilla y la cristalería.</p></li><li><h4>Una experiencia completa</h4><p>Desde la selección del producto hasta el maridaje con vinos de origen y la recogida final del espacio: la atmósfera de un gran restaurante en tu propia casa.</p></li></ul>
+      <div class="sv-q" data-rv><p class="q">¿Quieres vivir una velada única creada en exclusiva para ti y tus invitados?</p><p>Solicita el Cuestionario Culinario Exclusivo y Pablo empezará a diseñar la propuesta de tu próxima cena o estancia VIP.</p><a class="btn c" href="#reservar" data-serv="Private Dining & Experiencias VIP">Solicitar cuestionario culinario a medida</a></div>
+    </div>
+  </article><article class="sv-i rev" id="sv-boutique" aria-labelledby="sv-boutique-t">
+    <div class="sv-m" data-rv><img src="img/pm-sv-boutique.webp" srcset="img/pm-sv-boutique-m.webp 1050w, img/pm-sv-boutique.webp 1200w" sizes="(max-width:900px) 100vw, 46vw" alt="Pablo Muñoz emplatando una línea de platos en una cocina abovedada" class="sv-img" loading="lazy" decoding="async" style="object-position:50% 40%"></div>
+    <div class="sv-t">
+      <p class="kick" data-rv>Celebraciones exclusivas</p>
+      <h2 class="cap" id="sv-boutique-t" data-rv>Boutique Catering<span class="scr">& live cooking</span></h2>
+      <p class="sv-sub" data-rv style="--d:80ms">Experiencias gastronómicas y cocina a medida para celebraciones exclusivas en casa, villa o yate.</p>
+      <p class="sv-lead" data-rv style="--d:140ms">Convertimos cualquier celebración en el equivalente a un restaurante de lujo, en la intimidad de tu espacio privado: cenas entre amigos, aniversarios, despedidas selectas, bodas íntimas o eventos corporativos clave, bajo la dirección directa de Pablo.</p>
+      <ul class="sv-pts"><li><h4>Cocina en vivo & experiencia inmersiva</h4><p>Estaciones de live cooking (brasas, sushi de autor o pastas emulsionadas) donde tus invitados disfrutan del plato servido al momento.</p></li><li><h4>Maridaje & coctelería de autor</h4><p>Seleccionamos vinos y champagnes con maridaje regional y diseñamos una barra de coctelería de autor, como nuestro Mimosa Bar o los cócteles de bienvenida.</p></li><li><h4>Vajilla, cristalería & puesta en sala</h4><p>Aportamos vajilla, cristalería y cubertería de diseño, junto con un servicio de sala profesional.</p></li><li><h4>Todo creado a medida</h4><p>No existen dos eventos iguales: formato, duración y menús se adaptan a la visión de tu grupo y a cualquier necesidad nutricional.</p></li></ul>
+      <div class="sv-q" data-rv><p class="q">¿Estás organizando una celebración especial, una boda íntima o una cena privada?</p><p>Con el Cuestionario Culinario Exclusivo analizamos la visión de tu evento, las preferencias de los invitados y los servicios que necesitas, y creamos una experiencia irrepetible desde cero.</p><a class="btn c" href="#reservar" data-serv="Boutique Catering & Live Cooking">Solicitar cuestionario culinario a medida</a></div>
+    </div>
+  </article>
+</section>
+<section class="gs" aria-label="Galería"><div class="gs-t" id="gsT"><figure><img src="img/pm-tira-01.webp" srcset="img/pm-tira-01-m.webp 934w, img/pm-tira-01.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="Pablo Muñoz señalando Barcelona desde los Búnkers del Carmel" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-02.webp" srcset="img/pm-tira-02-m.webp 1050w, img/pm-tira-02.webp 1920w" sizes="(max-width:767px) 62vw, 26vw" alt="Guiso de ternera con caña de hueso y ñoquis" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-03.webp" srcset="img/pm-tira-03-m.webp 934w, img/pm-tira-03.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="Pablo Muñoz abriendo una ostra sobre Barcelona" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-04.webp" srcset="img/pm-tira-04-m.webp 934w, img/pm-tira-04.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="Pato en láminas con cerezas sobre mármol" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-05.webp" srcset="img/pm-tira-05-m.webp 1050w, img/pm-tira-05.webp 1920w" sizes="(max-width:767px) 62vw, 26vw" alt="Pablo Muñoz emplatando en la cocina de una residencia" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-06.webp" srcset="img/pm-tira-06-m.webp 787w, img/pm-tira-06.webp 1440w" sizes="(max-width:767px) 62vw, 26vw" alt="Cazuela de bogavante sobre tabla de madera" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-07.webp" srcset="img/pm-tira-07-m.webp 1106w, img/pm-tira-07.webp 2023w" sizes="(max-width:767px) 62vw, 26vw" alt="Vieiras con caviar sobre crema" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-08.webp" srcset="img/pm-tira-08-m.webp 934w, img/pm-tira-08.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="Bogavante y ostras sobre hielo frente a Barcelona" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-09.webp" srcset="img/pm-tira-09-m.webp 1400w, img/pm-tira-09.webp 2560w" sizes="(max-width:767px) 62vw, 26vw" alt="Postre de chocolate con brotes y salsas" loading="lazy" decoding="async"></figure><figure><img src="img/pm-tira-10.webp" srcset="img/pm-tira-10-m.webp 934w, img/pm-tira-10.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="Pablo Muñoz terminando un plato con pinzas" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-01.webp" srcset="img/pm-tira-01-m.webp 934w, img/pm-tira-01.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-02.webp" srcset="img/pm-tira-02-m.webp 1050w, img/pm-tira-02.webp 1920w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-03.webp" srcset="img/pm-tira-03-m.webp 934w, img/pm-tira-03.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-04.webp" srcset="img/pm-tira-04-m.webp 934w, img/pm-tira-04.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-05.webp" srcset="img/pm-tira-05-m.webp 1050w, img/pm-tira-05.webp 1920w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-06.webp" srcset="img/pm-tira-06-m.webp 787w, img/pm-tira-06.webp 1440w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-07.webp" srcset="img/pm-tira-07-m.webp 1106w, img/pm-tira-07.webp 2023w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-08.webp" srcset="img/pm-tira-08-m.webp 934w, img/pm-tira-08.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-09.webp" srcset="img/pm-tira-09-m.webp 1400w, img/pm-tira-09.webp 2560w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure><figure aria-hidden="true"><img src="img/pm-tira-10.webp" srcset="img/pm-tira-10-m.webp 934w, img/pm-tira-10.webp 1707w" sizes="(max-width:767px) 62vw, 26vw" alt="" loading="lazy" decoding="async"></figure></div></section>
+<section class="ap" id="aperitivo" aria-labelledby="apT">
+  <div class="ap-scene">
+    <img class="ap-lemon" src="img/limon.png" alt="" aria-hidden="true" decoding="async" loading="lazy">
+    <div class="ap-tw"><p class="kick" data-rv>Maridaje & coctelería de autor</p><h2 class="cap" id="apT" data-rv style="--d:100ms">Aperitivo</h2></div>
+    <p class="ap-note" data-rv style="--d:220ms">Vinos y champagnes con maridaje regional y una barra de coctelería de autor, como nuestro Mimosa Bar o los cócteles de bienvenida, para elevar cada brindis.<br><a class="lnk" href="#reservar">Solicitar cuestionario</a></p>
+    <img class="ap-drink" id="apDrink" src="img/coctel.webp" alt="Cóctel margarita con borde de sal y lima" decoding="async" loading="lazy">
+  </div>
+  <div class="ap-leaves" aria-hidden="true"><img class="leaf t" id="leafT" src="img/hoja-dcha.webp" alt="" decoding="async" loading="lazy"><img class="leaf b" id="leafB" src="img/hoja-izq.webp" alt="" decoding="async" loading="lazy"></div>
+</section>
+<section class="gl" id="galeria" aria-labelledby="glT">
+  <header class="gl-head">
+    <h2 class="cap" id="glT" data-rv><span>Origen</span><span class="scr">y temporada</span></h2>
+    <div class="side"><p class="kick">De nuestra cocina</p><p>Producto local de estación, tradición, brasa y técnica: una muestra de lo que sale de la cocina de Pablo.</p></div>
+  </header>
+  <div class="gl-vp" id="glVp"><div class="gl-track" id="glTrack"><figure class="gl-card"><img src="img/pm-gal-01.webp" srcset="img/pm-gal-01-m.webp 1050w, img/pm-gal-01.webp 1200w" sizes="(max-width:767px) 80vw, 34vw" alt="Paella de verduras servida en paellera" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-02.webp" srcset="img/pm-gal-02-m.webp 1120w, img/pm-gal-02.webp 1280w" sizes="(max-width:767px) 80vw, 34vw" alt="Pâté en croûte con encurtidos" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-03.webp" srcset="img/pm-gal-03-m.webp 934w, img/pm-gal-03.webp 1707w" sizes="(max-width:767px) 80vw, 34vw" alt="Pablo Muñoz emplatando con pinzas" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-04.webp" srcset="img/pm-gal-04-m.webp 1185w, img/pm-gal-04.webp 2166w" sizes="(max-width:767px) 80vw, 34vw" alt="Bogavantes y vieiras sobre arroz" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-05.webp" srcset="img/pm-gal-05-m.webp 1400w, img/pm-gal-05.webp 2560w" sizes="(max-width:767px) 80vw, 34vw" alt="Bocado de sepia negra con salsas" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-06.webp" srcset="img/pm-gal-06-m.webp 1399w, img/pm-gal-06.webp 1574w" sizes="(max-width:767px) 80vw, 34vw" alt="Setas y colmenillas en mortero de piedra" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-07.webp" srcset="img/pm-gal-07-m.webp 1050w, img/pm-gal-07.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Arroz meloso con setas y flores" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-08.webp" srcset="img/pm-gal-08-m.webp 1050w, img/pm-gal-08.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Acelgas y frambuesas en cuenco de cerámica" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-09.webp" srcset="img/pm-gal-09-m.webp 1050w, img/pm-gal-09.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Guiso de carne en paellera" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-10.webp" srcset="img/pm-gal-10-m.webp 1050w, img/pm-gal-10.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Cazuela de pescado y marisco" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-11.webp" srcset="img/pm-gal-11-m.webp 1050w, img/pm-gal-11.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Carne en cazuela sobre el fuego" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-12.webp" srcset="img/pm-gal-12-m.webp 1050w, img/pm-gal-12.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Postre de vino tinto sobre fondo blanco" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-13.webp" srcset="img/pm-gal-13-m.webp 1050w, img/pm-gal-13.webp 1200w" sizes="(max-width:767px) 80vw, 34vw" alt="Bocados servidos en cristal" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-14.webp" srcset="img/pm-gal-14-m.webp 1050w, img/pm-gal-14.webp 1200w" sizes="(max-width:767px) 80vw, 34vw" alt="Pablo Muñoz preparando producto en cocina" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-15.webp" srcset="img/pm-gal-15-m.webp 1400w, img/pm-gal-15.webp 1600w" sizes="(max-width:767px) 80vw, 34vw" alt="Cazuelas de cobre y fondos de cocina" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-16.webp" srcset="img/pm-gal-16-m.webp 1050w, img/pm-gal-16.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Pasta de tinta en el mercado" decoding="async"></figure></div>
+    <button class="ar p" id="glPrev" type="button" aria-label="Foto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button class="ar n" id="glNext" type="button" aria-label="Foto siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div>
+  <div class="ctl"><span class="c" id="glCount" style="font-size:9px;letter-spacing:.16em;min-width:52px">01 / 16</span><div class="pr"><i id="glBar" style="width:6.25%"></i></div></div>
+</section>
+<div class="dn" id="dn" aria-label="Del mediodía a la noche">
+  <section class="dn-pin">
+    <img src="img/pm-dn-dia.webp" srcset="img/pm-dn-dia-m.webp 1050w, img/pm-dn-dia.webp 1920w" sizes="100vw" alt="Mesa larga preparada en el porche de una villa a mediodía" class="dn-img d" loading="lazy" decoding="async">
+    <img src="img/pm-dn-noche.webp" srcset="img/pm-dn-noche-m.webp 1050w, img/pm-dn-noche.webp 1920w" sizes="100vw" alt="Brasa de leña encendida en la parrilla" class="dn-img n" loading="lazy" decoding="async">
+    <div class="dn-sh"></div>
+    <div class="dn-cp d"><p class="kick">Mediodía</p><h2 class="cap">Precisión y origen</h2><span class="scr">producto local de estación</span></div>
+    <div class="dn-cp n" aria-hidden="true"><p class="kick">Noche</p><h2 class="cap">Bienestar sin salir de casa</h2><span class="scr">brasa, vino y buena mesa</span></div>
+    <div class="dn-pr" aria-hidden="true"><i></i></div>
+  </section>
+</div>
+<section class="dr" id="carta" aria-labelledby="drT">
+  <p class="kick k" data-rv>Menús 2026 · por orden de celebración</p>
+  <div class="dr-ed"><h2 class="cap" id="drT" data-rv>Menús de celebración<span class="scr">para cada fecha del año</span></h2><p data-rv style="--d:160ms">Nueve propuestas con elaboración in situ, servicio de mesa y recogida, y todas admiten adaptaciones nutricionales. Pasa por cada nombre para ver el plato.</p><p class="dr-desc" id="drDesc" aria-live="polite">Fusión con la cocina española. Desde 155 € / persona, IVA incluido.</p><a class="lnk" href="#menus">Ver los menús completos</a></div>
+  <p class="foot">Todo se adapta a tus objetivos nutricionales y a cualquier alergia o intolerancia.</p>
+  <div class="dr-stage"><ul class="dr-names" id="drNames" aria-label="Menús de celebración"><li><button class="dr-name" type="button" data-i="0" data-d="Fusión con la cocina española. Desde 155 € / persona, IVA incluido.">Acción de Gracias</button></li><li><button class="dr-name" type="button" data-i="1" data-d="Healthy Morning Experience. Desde 75 € / persona, IVA incluido.">Brunch</button></li><li><button class="dr-name" type="button" data-i="2" data-d="High-Performance Breakfast. Desde 65 € / persona, IVA incluido.">Executive Brunch</button></li><li><button class="dr-name" type="button" data-i="3" data-d="Menú degustación. Desde 132 € / persona, IVA incluido.">Catalan Experience</button></li><li><button class="dr-name" type="button" data-i="4" data-d="Cena romántica. Desde 385 € / pareja, IVA incluido.">San Valentín</button></li><li><button class="dr-name" type="button" data-i="5" data-d="Experiencia gastronómica 2026. Desde 125 € / persona, IVA incluido.">Fusión Japó-Ibérica</button></li><li><button class="dr-name" type="button" data-i="6" data-d="Cocina italiana para compartir. Desde 75 € / persona, IVA incluido.">Italian Soul Food</button></li><li><button class="dr-name" type="button" data-i="7" data-d="Ritual ibérico & fuego mediterráneo. Desde 95 € / persona, IVA incluido.">Grill Experience</button></li><li><button class="dr-name" type="button" data-i="8" data-d="Experiencia mediterránea. Desde 85 € / persona, IVA incluido.">Tapas & Arroces de Autor</button></li></ul><div class="dr-vis" id="drVis" aria-hidden="true"><figure class="dr-v"><img src="img/pm-gal-11.webp" srcset="img/pm-gal-11-m.webp 1050w, img/pm-gal-11.webp 1920w" sizes="34vw" alt="Carne guisada en cazuela sobre el fuego" loading="lazy" decoding="async"><figcaption><b>01 / Menús 2026 / Fusión con la cocina española</b><em>otoño</em></figcaption></figure><figure class="dr-v"><img src="img/pm-menu-brunch.webp" srcset="img/pm-menu-brunch-m.webp 1400w, img/pm-menu-brunch.webp 2560w" sizes="34vw" alt="Salmón ahumado y caviar sobre hielo" loading="lazy" decoding="async"><figcaption><b>02 / Menús 2026 / Healthy Morning Experience</b><em>mañanas</em></figcaption></figure><figure class="dr-v"><img src="img/pm-dn-dia.webp" srcset="img/pm-dn-dia-m.webp 1050w, img/pm-dn-dia.webp 1920w" sizes="34vw" alt="Mesa larga preparada en el porche de una villa" loading="lazy" decoding="async"><figcaption><b>03 / Menús 2026 / High-Performance Breakfast</b><em>ritmo ejecutivo</em></figcaption></figure><figure class="dr-v"><img src="img/pm-carta-cat.webp" srcset="img/pm-carta-cat-m.webp 1050w, img/pm-carta-cat.webp 1920w" sizes="34vw" alt="Guiso de ternera con caña de hueso" loading="lazy" decoding="async"><figcaption><b>04 / Menús 2026 / Menú degustación</b><em>la tierra</em></figcaption></figure><figure class="dr-v"><img src="img/pm-sv-dining.webp" srcset="img/pm-sv-dining-m.webp 1050w, img/pm-sv-dining.webp 1536w" sizes="34vw" alt="Mesa vestida de blanco con una vela encendida" loading="lazy" decoding="async"><figcaption><b>05 / Menús 2026 / Cena romántica</b><em>en pareja</em></figcaption></figure><figure class="dr-v"><img src="img/pm-carta-japo.webp" srcset="img/pm-carta-japo-m.webp 1050w, img/pm-carta-japo.webp 1920w" sizes="34vw" alt="Vieira con caviar sobre crema" loading="lazy" decoding="async"><figcaption><b>06 / Menús 2026 / Experiencia gastronómica 2026</b><em>dos mundos</em></figcaption></figure><figure class="dr-v"><img src="img/pm-carta-nutri.webp" srcset="img/pm-carta-nutri-m.webp 1050w, img/pm-carta-nutri.webp 1920w" sizes="34vw" alt="Pasta fresca rellena en forma de rosa" loading="lazy" decoding="async"><figcaption><b>07 / Menús 2026 / Cocina italiana para compartir</b><em>para compartir</em></figcaption></figure><figure class="dr-v"><img src="img/pm-carta-live.webp" srcset="img/pm-carta-live-m.webp 1050w, img/pm-carta-live.webp 1920w" sizes="34vw" alt="Pescado entero en la parrilla sobre brasas" loading="lazy" decoding="async"><figcaption><b>08 / Menús 2026 / Ritual ibérico & fuego mediterráneo</b><em>a la brasa</em></figcaption></figure><figure class="dr-v"><img src="img/pm-gal-01.webp" srcset="img/pm-gal-01-m.webp 1050w, img/pm-gal-01.webp 1200w" sizes="34vw" alt="Arroz servido en paellera" loading="lazy" decoding="async"><figcaption><b>09 / Menús 2026 / Experiencia mediterránea</b><em>mediterráneo</em></figcaption></figure></div></div>
+  <div class="dr-mob"><div class="sh" id="drSh"><div class="tr"><article><div class="m"><img src="img/pm-gal-11.webp" srcset="img/pm-gal-11-m.webp 1050w, img/pm-gal-11.webp 1920w" sizes="80vw" alt="Carne guisada en cazuela sobre el fuego" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · Fusión con la cocina española</small><h3>Acción de Gracias</h3><p>Fusión con la cocina española. Desde 155 € / persona, IVA incluido.</p></div></article><article><div class="m"><img src="img/pm-menu-brunch.webp" srcset="img/pm-menu-brunch-m.webp 1400w, img/pm-menu-brunch.webp 2560w" sizes="80vw" alt="Salmón ahumado y caviar sobre hielo" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · Healthy Morning Experience</small><h3>Brunch</h3><p>Healthy Morning Experience. Desde 75 € / persona, IVA incluido.</p></div></article><article><div class="m"><img src="img/pm-dn-dia.webp" srcset="img/pm-dn-dia-m.webp 1050w, img/pm-dn-dia.webp 1920w" sizes="80vw" alt="Mesa larga preparada en el porche de una villa" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · High-Performance Breakfast</small><h3>Executive Brunch</h3><p>High-Performance Breakfast. Desde 65 € / persona, IVA incluido.</p></div></article><article><div class="m"><img src="img/pm-carta-cat.webp" srcset="img/pm-carta-cat-m.webp 1050w, img/pm-carta-cat.webp 1920w" sizes="80vw" alt="Guiso de ternera con caña de hueso" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · Menú degustación</small><h3>Catalan Experience</h3><p>Menú degustación. Desde 132 € / persona, IVA incluido.</p></div></article><article><div class="m"><img src="img/pm-sv-dining.webp" srcset="img/pm-sv-dining-m.webp 1050w, img/pm-sv-dining.webp 1536w" sizes="80vw" alt="Mesa vestida de blanco con una vela encendida" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · Cena romántica</small><h3>San Valentín</h3><p>Cena romántica. Desde 385 € / pareja, IVA incluido.</p></div></article><article><div class="m"><img src="img/pm-carta-japo.webp" srcset="img/pm-carta-japo-m.webp 1050w, img/pm-carta-japo.webp 1920w" sizes="80vw" alt="Vieira con caviar sobre crema" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · Experiencia gastronómica 2026</small><h3>Fusión Japó-Ibérica</h3><p>Experiencia gastronómica 2026. Desde 125 € / persona, IVA incluido.</p></div></article><article><div class="m"><img src="img/pm-carta-nutri.webp" srcset="img/pm-carta-nutri-m.webp 1050w, img/pm-carta-nutri.webp 1920w" sizes="80vw" alt="Pasta fresca rellena en forma de rosa" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · Cocina italiana para compartir</small><h3>Italian Soul Food</h3><p>Cocina italiana para compartir. Desde 75 € / persona, IVA incluido.</p></div></article><article><div class="m"><img src="img/pm-carta-live.webp" srcset="img/pm-carta-live-m.webp 1050w, img/pm-carta-live.webp 1920w" sizes="80vw" alt="Pescado entero en la parrilla sobre brasas" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · Ritual ibérico & fuego mediterráneo</small><h3>Grill Experience</h3><p>Ritual ibérico & fuego mediterráneo. Desde 95 € / persona, IVA incluido.</p></div></article><article><div class="m"><img src="img/pm-gal-01.webp" srcset="img/pm-gal-01-m.webp 1050w, img/pm-gal-01.webp 1200w" sizes="80vw" alt="Arroz servido en paellera" loading="lazy" decoding="async"></div><div class="b"><small>Menús 2026 · Experiencia mediterránea</small><h3>Tapas & Arroces de Autor</h3><p>Experiencia mediterránea. Desde 85 € / persona, IVA incluido.</p></div></article></div></div><div class="ctl"><span class="c" id="drCount" style="font-size:9px;letter-spacing:.16em;min-width:52px">01 / 9</span><div class="pr"><i id="drBar" style="width:11%"></i></div></div></div>
+</section>
+<section class="mn" id="menus" aria-labelledby="mnT">
+  <div class="mn-h"><div><p class="kick">Menús 2026</p><h2 class="cap" id="mnT" data-rv>Los menús<span class="scr">plato a plato</span></h2></div>
+  <p data-rv style="--d:120ms">Precios por persona con IVA incluido, válidos dentro de la ciudad de Barcelona. Fuera de la ciudad, en villas o a bordo, preparamos un presupuesto a medida. Reserva con señal del 50% según nuestra <a class="lnk" href="#politica">política de cancelación</a>.</p></div>
+  <div class="mn-l"><details class="mn-i" id="menu-1"><summary><span class="mn-n">Acción de Gracias</span><span class="mn-s">Fusión con la cocina española</span><span class="mn-p">Desde 155 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Entrantes</p><ul><li><b>Crema aterciopelada de calabaza y castañas</b> crema otoñal de verduras asadas, coronada con crujiente jamón ibérico.</li><li><b>Brocheta de foie gras y membrillo</b> Foie gras marcado a la plancha, acompañado de dulce de membrillo local y una reducción ácida de arándanos.</li></ul></div><div class="mn-g"><p class="kick">Plato principal</p><ul><li><b>Pavo asado relleno de chorizo</b> pavo asado a fuego lento con un sabroso relleno de chorizo, servido con su propio jugo a la naranja, cazuela de batata al horno con costra de nueces pecanas y un puré de patatas de textura sedosa.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Tarta de nueces pecanas y crema catalana</b> base crujiente de tarta de nueces pecanas, cubierta con una suave crema catalana caramelizada.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Thanksgiving</b><span>Menú de 3 pases, elaboración in situ, servicio de mesa y recogida.</span></div><em>155 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje</b><span>Incluye 3 vinos de origen seleccionados.</span></div><em>205 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos para la asadura del pavo entero). Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Acción de Gracias">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-2"><summary><span class="mn-n">Brunch</span><span class="mn-s">Healthy Morning Experience</span><span class="mn-p">Desde 75 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Bebidas Refreshing & Vitality</p><ul><li><b>Smoothie Detox</b> kiwi, pera, espinacas frescas y toque de jengibre.</li><li><b>Infusión de Autor</b> selección exclusiva de tés artesanales.</li></ul></div><div class="mn-g"><p class="kick">Obrador Artesano & Acompañamientos</p><ul><li><b>Cesta del Horno</b> tostadas de pan de masa madre integral, muffins de maíz con queso Taleggio fundido y brioche artesanal.</li><li><b>Quesos y embutidos ibéricos</b> selección de quesos catalanes y embutidos ibéricos</li><li><b>Mantequilla de Autor</b> infusionada con finas hierbas y escamas de sal marina de la costa catalana.</li><li><b>Mermelada Estacional</b> elaboración propia a partir de frutas locales de temporada.</li></ul></div><div class="mn-g"><p class="kick">Platos Estrella</p><ul><li><b>Aguacate Marinado</b> miel de pomelo, láminas de queso azul y avellanas tostadas.</li><li><b>Huevos de Corral al Gusto</b> benedictine sobre brioche, fritos, revueltos o en tortilla, acompañados de salsa holandesa al estragón.</li><li><b>Salmón Gravlax</b> curado en casa con crema de remolacha y kimchi sobre crujiente de pan artesano.</li></ul></div><div class="mn-g"><p class="kick">Fruta & Lácteos</p><ul><li><b>Fruta Fresca</b> selección de frutas locales de temporada.</li><li><b>Yogur Griego Premium</b> granola artesana de frutos secos y miel pura de flores.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Brunch Healthy Morning</b><span>Incluye menú degustación completo servido en mesa, servicio de zumos e infusiones, elaboración in situ, servicio de mesa y recogida.</span></div><em>75 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú Brunch + Mimosa & Cava Bar</b><span>Incluye barra libre durante el brunch de Mimosas recién preparadas y Cava artesanal de finca.</span></div><em>125 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Brunch">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-3"><summary><span class="mn-n">Executive Brunch</span><span class="mn-s">High-Performance Breakfast</span><span class="mn-p">Desde 65 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Bebidas Energizantes</p><ul><li><b>Smoothie Detox</b> kiwi, pera, espinacas frescas y toque de jengibre.</li><li><b>Café & Té de Autor</b> café de especialidad recién tostado, variedad de leches (entera, sin lactosa, avena y soja) e infusiones seleccionadas.</li></ul></div><div class="mn-g"><p class="kick">Obrador y Esenciales</p><ul><li><b>Panadería Artesana</b> tostadas de pan integral de masa madre y brioche de mantequilla.</li><li><b>Acompañamientos</b> mermelada artesanal de frutas locales y mantequilla infusionada con finas hierbas y escamas de sal.</li></ul></div><div class="mn-g"><p class="kick">Platos de Firma (A elegir)</p><ul><li><b>Tabla de Quesos y Embutidos Ibéricos</b> selección de quesos artesanos españoles y embutidos ibéricos de bellota acompañados de frutos secos.</li><li><b>Huevos de Corral</b> benedictine sobre brioche, fritos o revueltos con salsa holandesa al estragón.</li></ul></div><div class="mn-g"><p class="kick">Fruta & Vitalidad</p><ul><li><b>Seasonal Fruit Bowl</b> fruta fresca de temporada.</li><li><b>Yogur Griego Premium</b> granola artesana de frutos secos y miel pura de flores.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Executive Brunch</b><span>Incluye montaje, servicio completo de café de especialidad y cocina in situ, servicio de mesa y recogida.</span></div><em>65 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Executive Brunch Premium (con Cava & Cold Press Juice Bar)</b><span>Incluye estación de zumos prensados en frío y Cava de finca para cierres de jornada o celebraciones corporativas.</span></div><em>85 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 8 comensales (o tarifa equivalente a 8 cubiertos). Adaptaciones nutricionales y opciones sin gluten/veganas disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Executive Brunch">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-4"><summary><span class="mn-n">Catalan Experience</span><span class="mn-s">Menú degustación</span><span class="mn-p">Desde 132 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Aperitivo</p><ul><li><b>El bocado del Chef</b> sorpresa de temporada con producto fresco del mercado.</li></ul></div><div class="mn-g"><p class="kick">Pre-entrantes</p><ul><li><b>Galets rellenos</b> pasta tradicional rellena de ragú de setas y castañas con reducción de manzana y regaliz.</li><li><b>Bombón de Trinxat</b> plato tradicional del Pirineo sobre base crujiente y demi-glace de anís.</li></ul></div><div class="mn-g"><p class="kick">Entrantes (A elegir)</p><ul><li><b>Canelón negro</b> Relleno de gamba roja y gratinado con bechamel de fumet y vieiras.</li><li><b>Canelón de montaña</b> Relleno de carne y Moixernons con bechamel de trufa.</li></ul></div><div class="mn-g"><p class="kick">Plato Principal (A elegir)</p><ul><li><b>Solomillo de Angus</b> corte a la pimienta en su propio jugo con bizcocho de patata.</li><li><b>Rodaballo</b> asado al punto con puré de manzana y coliflor, alcaparras crujientes.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Canutillo crujiente</b> relleno de cremoso de chocolate blanco, mermelada de mandarina y helado de trufa blanca.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Catalán Experience</b><span>Menú degustación completo, elaboración in situ, servicio de mesa y recogida.</span></div><em>132 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje</b><span>Incluye selección de 4 vinos de origen catalán.</span></div><em>185 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales. Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Catalan Experience">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-5"><summary><span class="mn-n">San Valentín</span><span class="mn-s">Cena romántica</span><span class="mn-p">Desde 385 € / pareja</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Aperitivo Botánico</p><ul><li><b>Timur & Bubbles</b> Cóctel de ginebra botánica, té negro, esencia de frambuesa y Cava rosado con aroma de baya de Timur.</li></ul></div><div class="mn-g"><p class="kick">Pre-entrante</p><ul><li><b>Tartaleta de Yema Curada</b> Yema curada en remolacha y pimienta rosa sobre base crujiente con Caviar Amur Osetra (10 g / pareja).</li></ul></div><div class="mn-g"><p class="kick">Entrante</p><ul><li><b>Ravioli Nero de Gamba Roja</b> Pasta fresca artesanal rellena de gamba roja del Mediterráneo con mantequilla noisette, vainilla de Madagascar y azafrán D.O.</li></ul></div><div class="mn-g"><p class="kick">Plato Principal</p><ul><li><b>Solomillo Wellington "Grand Cru"</b> Centro de solomillo de ternera en costra de hojaldre de mantequilla, duxelles de setas y chalotas al Oporto, acompañado de jugo de carne de 24 horas y patata confitada.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Canutillo de Almendras</b> Relleno de cremoso de chocolate blanco y jengibre, acompañado de helado artesanal de kumquat confit y sutil toque de trufa blanca.</li></ul></div><div class="mn-g"><p class="kick">Detalles de la Experiencia (Ambientación)</p><ul><li><b>Diseño de mesa exclusivo</b> Velas de cera de abeja natural (sin humo ni olores)</li><li><b>Flor del gusto de la enamorada/o</b> pieza de flor fresca</li><li><b>Atmósfera</b> Selección musical curada para acompañar la progresión de la cena.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Experiencia San Valentín</b><span>Incluye cóctel de bienvenida, menú degustación completo, ambientación de mesa, elaboración in situ, servicio y recogida.</span></div><em>385 €<small>/ pareja · IVA incl.</small></em></li></ul><p class="mn-note">Precio válido dentro de la ciudad de Barcelona. Adaptaciones para requerimientos alimentarios o alergias disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="San Valentín">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-6"><summary><span class="mn-n">Fusión Japó-Ibérica</span><span class="mn-s">Experiencia gastronómica 2026</span><span class="mn-p">Desde 125 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Bienvenida</p><ul><li><b>Cóctel del Chef</b> Elaboración de autor con notas cítricas y botánicas.</li></ul></div><div class="mn-g"><p class="kick">Entrantes</p><ul><li><b>Tempura de Setas de Temporada</b> rebozado shiragiku, servida con un consomé de jamón de bellota infusionado con jengibre joven.</li><li><b>Ensalada Wakame "Royal"</b> algas wakame y tosaka marinadas en sésamo tostado, acompañadas de tartar de manzana verde ácida, pepino encurtido en mirin y perlas de yuzu.</li></ul></div><div class="mn-g"><p class="kick">Selección de Makis & Uramakis Fusión</p><ul><li><b>California Roll de Salmón Ahumado</b> con mango maduro, pepino baby y una emulsión de queso trufado.</li><li><b>Maki de Atún Rojo y Wakame</b> Atún Balfegó marinado en soja envejecida y alga wakame orgánica.</li><li><b>Uramaki Ebi Furai</b> gamba en panko crujiente, gel de frambuesa ácida y crema de wasabi dulce.</li><li><b>Uramaki "Tesoro del Mar"</b> con Caviar Amur Osetra, láminas de katsuobushi y sésamo negro tostado.</li></ul></div><div class="mn-g"><p class="kick">Plato Principal</p><ul><li><b>Tataki de Vaca Madurada</b> con salsa Ponzu-Togarashi, yema de huevo de corral confitada y escamas de sal Maldon.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Cremoso de Lichi y Menta</b> con compota de kiwi gold, crujiente de menta piperita y un toque de sake dulce.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Fusión Japó-Ibérica</b><span>Incluye cóctel de bienvenida, menú degustación completo, elaboración in situ, servicio de mesa y recogida.</span></div><em>125 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje</b><span>Incluye selección de sakes y vinos blancos de finca.</span></div><em>180 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Fusión Japó-Ibérica">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-7"><summary><span class="mn-n">Italian Soul Food</span><span class="mn-s">Cocina italiana para compartir</span><span class="mn-p">Desde 75 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Aperitivo Italiano & Bienvenida</p><ul><li><b>Aperol Spritz</b> Cóctel clásico de Aperol, Cava y soda con naranja (2 por persona).</li><li><b>Bocados para Compartir</b> Aceitunas sicilianas seleccionadas y patatas fritas artesanas.</li></ul></div><div class="mn-g"><p class="kick">Entrantes (Para compartir)</p><ul><li><b>Trofie al Pesto Genovese</b> Pasta fresca de Liguria con pesto de albahaca, piñones tostados y Parmigiano Reggiano curado.</li><li><b>Melanzane alla Parmigiana</b> Berenjena asada en capas con salsa de tomate a fuego lento, mozzarella fundida y albahaca fresca.</li></ul></div><div class="mn-g"><p class="kick">Plato Principal</p><ul><li><b>Pollo alla Cacciatora</b> Pollo de corral estofado en salsa de tomate San Marzano, hierbas mediterráneas y aceitunas negras.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Tiramisú del Chef</b> Bizcocho empapado en espresso y Amaretto con crema de mascarpone y cacao amargo.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Italian Soul Food</b><span>Incluye 2 cócteles Spritz por persona, aperitivos, menú completo, elaboración in situ, servicio de mesa y recogida.</span></div><em>75 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Selezione di Vini (Maridaje)</b><span>Incluye selección de 3 vinos italianos (Chianti y Pinot Grigio) para acompañar la comida.</span></div><em>115 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones vegetarianas y alimentarias disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Italian Soul Food">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-8"><summary><span class="mn-n">Grill Experience</span><span class="mn-s">Ritual ibérico & fuego mediterráneo</span><span class="mn-p">Desde 95 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">El Ritual del Vermut (Aperitivo)</p><ul><li><b>Vermut del Chef</b> infusionado con hierbas silvestres y notas cítricas.</li><li><b>Montadito Ibérico</b> pan crujiente con jamón de bellota y pimiento de Padrón a la llama.</li><li><b>Esenciales</b> Aceitunas maceradas en cítricos y Pan de Pagès a la brasa con tomate de colgar y ajo.</li></ul></div><div class="mn-g"><p class="kick">Entrante</p><ul><li><b>Escalivada al Rescoldo</b> pimientos, berenjenas y cebollas asadas a la leña con queso de cabra gratinado y nueces.</li></ul></div><div class="mn-g"><p class="kick">Degustación de Carnes a la Brasa</p><ul><li><b>Pluma Ibérica</b> corte seleccionado de cerdo ibérico braseado al punto.</li><li><b>Entrecot de Angus Nacional</b> ternera de pasto con maduración óptima.</li><li><b>Butifarra de Pagès</b> embutido artesanal catalán a la brasa.</li></ul></div><div class="mn-g"><p class="kick">Guarnición & Salsas</p><ul><li><b>Patatas al Caliu</b> patatas asadas en ceniza con mojo verde de cilantro.</li><li><b>Salsas de Mesa</b> All i Oli hecho a mano, Romesco de avellanas, Chimichurri artesanal y AOVE.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Tarta de Queso "Signature"</b> tarta cremosa de queso infusionada con lavanda y ralladura de lima verde.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Grill Experience</b><span>Incluye vermut de bienvenida, servicio completo de brasas y cocina in situ, servicio de mesa y recogida.</span></div><em>95 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje de Vinos</b><span>Incluye selección de 3 vinos tintos y blancos de alta gama de la D.O. Montsant y Priorat.</span></div><em>165 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales y opciones vegetarianas/pescetarianas disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Grill Experience">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-9"><summary><span class="mn-n">Tapas & Arroces de Autor</span><span class="mn-s">Experiencia mediterránea</span><span class="mn-p">Desde 85 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Aperitivo de Bienvenida</p><ul><li><b>Vermut del Chef</b> infusionado con botánicos del Mediterráneo y notas cítricas.</li></ul></div><div class="mn-g"><p class="kick">Tapas Gourmet (Incluidas)</p><ul><li><b>Gildas de Salmón Gravlax</b> salmón curado artesanal con encurtidos selectos.</li><li><b>Crema Suave de Alcachofa y Trufa</b> crema templada de alcachofa de temporada con aceite de trufa negra y crujiente de jamón.</li><li><b>Huevos de Corral con Jamón Ibérico</b> revuelto con virutas de jamón de bellota.</li><li><b>Escalivada a la Llama</b> Verduras asadas con anchoa del Cantábrico.</li></ul></div><div class="mn-g"><p class="kick">Arroces de Autor (A elegir dos opciones para el grupo)</p><ul><li><b>Arroz del Senyoret</b> con gamba roja, vieiras y calamar (todo limpio).</li><li><b>Arroz Cremoso de Huerta & Romesco</b> verduras de temporada con base de romesco de avellanas.</li><li><b>Arroz de Presa Ibérica</b> meloso de cerdo ibérico de bellota y setas silvestres.</li><li><b>Arroz Negro de Sepia y Gambas</b> con sofrito tradicional y all i oli de mortero.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Crema Catalana Contemporánea</b> Cremoso de yema tostada con crujiente de galleta artesana.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Tapas & Arroces de Autor</b><span>Incluye vermut de bienvenida, menú completo de tapas y arroces, elaboración in situ, servicio de mesa y recogida.</span></div><em>85 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje Mediterráneo</b><span>Incluye selección de 3 vinos de D.O. Catalanas y blancos de crianza costera.</span></div><em>145 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales y opciones vegetarianas/celíacas disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Tapas & Arroces de Autor">Reservar este menú</a></aside></div></details></div>
+</section>
+<section class="rs" id="reservar" aria-labelledby="rsT">
+  <div class="rs-grid">
+    <div class="rs-head">
+      <p class="kick">Cuestionario Culinario Exclusivo</p>
+      <h2 class="cap" id="rsT" data-rv><span>Diseñemos</span><span class="scr">tu propuesta</span></h2>
+      <p data-rv style="--d:120ms">Cuéntanos fechas, invitados y objetivos. Te enviaremos nuestro Cuestionario Culinario Exclusivo para analizar tu perfil exacto y confeccionar una propuesta a medida. La fecha queda reservada con una señal del 50% y el número final de invitados se confirma 7 días antes.</p>
+      <div class="pol" id="politica"><div><span>Más de 14 días antes</span><b>100% de la señal</b></div><div><span>Entre 13 y 7 días</span><b>50% de la señal</b></div><div><span>Menos de 7 días</span><b>Sin devolución</b></div></div>
+      <a class="wa" href="https://wa.me/34661100731?text=Hola%20Pablo%2C%20me%20gustar%C3%ADa%20recibir%20el%20Cuestionario%20Culinario." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg><span>¿Prefieres escribir directamente? +34 661 10 07 31</span></a>
+    </div>
+    <div><form class="f" id="res" novalidate>
+  <div class="fld h"><label for="r-nombre">Nombre <i>*</i></label><input id="r-nombre" name="nombre" autocomplete="name" required></div>
+  <div class="fld h"><label for="r-tel">Teléfono <i>*</i></label><input id="r-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required></div>
+  <div class="fld"><label for="r-email">Email <i>*</i></label><input id="r-email" name="email" type="email" autocomplete="email" autocapitalize="none" required></div>
+  <div class="fld"><label for="r-serv">Servicio <i>*</i></label><select id="r-serv" name="servicio" required><option value="">Elige un servicio</option><option>B2B & Chef Concierge</option><option>Private Batch Cooking & Meal Prep</option><option>Private Dining & Experiencias VIP</option><option>Boutique Catering & Live Cooking</option></select></div>
+  <div class="fld h"><label for="r-fecha">Fecha o inicio <i>*</i></label><input id="r-fecha" name="fecha" type="date" required></div>
+  <div class="fld h"><label for="r-pax">Comensales <i>*</i></label><input id="r-pax" name="comensales" type="number" min="1" inputmode="numeric" required></div>
+  <div class="fld"><label for="r-ubi">Ubicación <i>*</i></label><input id="r-ubi" name="ubicacion" autocomplete="street-address" placeholder="Residencia, villa, yate o espacio corporativo" required></div>
+  <div class="fld"><label for="r-alerg">Alergias, intolerancias o dietas especiales <i>*</i></label><textarea id="r-alerg" name="alergias" rows="2" placeholder="Escribe «ninguna» si no hay restricciones" required></textarea></div>
+  <div class="fld"><label for="r-com">Objetivos y preferencias</label><textarea id="r-com" name="comentarios" rows="2"></textarea></div>
+  <label class="chk" for="r-ok"><input type="checkbox" id="r-ok" required><span>He leído y acepto la política de reservas y cancelación.</span></label>
+  <div class="send"><button class="btn c" type="submit">Solicitar cuestionario</button></div>
+</form>
+<div class="done" id="done" hidden tabindex="-1"><h3>Gracias, <span id="doneName"></span></h3><p>Tu solicitud se ha abierto en WhatsApp con todos los datos: solo falta pulsar enviar. Te responderemos con el Cuestionario Culinario Exclusivo.</p><div class="acts"><a class="btn c" id="waSend" href="https://wa.me/34661100731" target="_blank" rel="noopener">Abrir WhatsApp</a><button class="btn" id="editRes" type="button">Modificar</button></div></div></div>
+  </div>
+</section>
+</main>
+<footer class="ft" aria-label="Pie">
+  <div class="ft-top">
+    <div><p class="kick">Dirección culinaria</p><h2 class="cap">Pablo Muñoz<span class="scr">gastronomía de autor</span></h2></div>
+    <div class="r"><img src="img/logo.png" alt="Pablo Muñoz, chef y asesor culinario" loading="lazy" decoding="async"><p>Barcelona · Costa Brava · Península · Baleares<br><a href="tel:+34661100731">+34 661 10 07 31</a></p></div>
+  </div>
+  <div class="ft-cols">
+    <div><p class="kick">El chef</p><h3>Nuestra historia</h3><p>Una interpretación personal de la tradición mediterránea: producto de temporada, técnica, salud y la brasa como centro.</p><a class="lnk" href="el-chef.html">Conocer a Pablo</a></div>
+    <div><p class="kick">Servicios</p><h3>Cuatro pilares</h3><p>B2B & Chef Concierge, Private Batch Cooking, Private Dining y Boutique Catering & Live Cooking.</p><a class="lnk" href="#servicios">Ver servicios</a></div>
+    <div><p class="kick">Temporada</p><h3>Otoño – Invierno</h3><p>Líneas de autor como punto de partida, adaptadas a cualquier alergia, intolerancia u objetivo nutricional.</p><a class="lnk" href="#carta">Ver referencias</a></div>
+    <div><p class="kick">Reservas</p><h3>Planifica tu fecha</h3><p>Señal del 50% para confirmar. Número final de invitados 7 días antes del servicio.</p><a class="lnk" href="#reservar">Solicitar cuestionario</a></div>
+  </div>
+  <div class="ft-bot"><span>© 2026 Pablo Muñoz, chef y asesor culinario</span><div class="soc"><a href="https://wa.me/34661100731" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg></a><a href="tel:+34661100731" aria-label="Llamar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a></div></div>
+</footer><a class="fab" id="pmFab" href="#reservar" aria-label="Reservar fecha"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Reservar fecha</a>
+</div>
+<script>
+(function(){
+  var root=document.getElementById('pm-home')||document;
+  var $=function(s){return root.querySelector(s)},$$=function(s){return [].slice.call(root.querySelectorAll(s))};
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var mobQ=window.matchMedia('(max-width: 767px)');
+  var clamp=function(v,a,b){return Math.min(b,Math.max(a,v))};
+  var eOut=function(v){return 1-Math.pow(1-v,3)};
+  var eIn=function(v){return v*v*v};
+  var eIO=function(v){return -(Math.cos(Math.PI*v)-1)/2};
+  var eInSine=function(v){return 1-Math.cos(v*Math.PI/2)};
+  var TOUCH=window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+  var VH=window.innerHeight||document.documentElement.clientHeight,VW=window.innerWidth;
+  addEventListener('resize',function(){if(!TOUCH||Math.abs(innerWidth-VW)>2){VH=innerHeight;VW=innerWidth}});
+  addEventListener('orientationchange',function(){setTimeout(function(){VH=innerHeight;VW=innerWidth;req()},300)});
+  var vh=function(){return VH};
+  var updaters=[];
+
+  /* Desplazamiento suave (Lenis) en Chrome de escritorio, como la plantilla */
+  function initLenis(){
+    var touch=matchMedia('(hover: none) and (pointer: coarse)').matches;
+    var ua=navigator.userAgent||'';
+    if(reduce||touch||!window.Lenis||window.pmLenis||!/Chrome|Chromium/.test(ua)||/Edg|OPR|SamsungBrowser|CriOS/.test(ua))return;
+    try{window.pmLenis=new Lenis({autoRaf:true,anchors:{offset:-70},duration:1.15,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t))},smoothWheel:true,
+      prevent:function(n){return n instanceof Element&&!!n.closest('input,textarea,select,[data-lenis-prevent],#pmMenu')}})}catch(e){}
+  }
+  if(document.readyState==='complete')initLenis();else window.addEventListener('load',initLenis);
+
+  /* Un solo bucle por fotograma para todos los efectos ligados al scroll */
+  var tick=false;
+  function frame(){tick=false;for(var i=0;i<updaters.length;i++)updaters[i]()}
+  function req(){if(!tick){tick=true;requestAnimationFrame(frame)}}
+  addEventListener('scroll',req,{passive:true});addEventListener('resize',req);
+
+  /* Cabecera: cristal al bajar y menú a pantalla completa */
+  var hdr=$('#pmHdr'),glass=false,lock=0;
+  function abar(){var b=document.getElementById('wpadminbar'),t=0;if(b){var cs=getComputedStyle(b);if(cs.position==='fixed'&&cs.display!=='none')t=b.offsetHeight}hdr.style.setProperty('--abar',t+'px')}
+  abar();addEventListener('resize',abar);addEventListener('load',abar);
+  updaters.push(function(){var y=scrollY,now=performance.now();if(now<lock)return;
+    if(!glass&&y>36){glass=true;hdr.classList.add('glass');lock=now+260}else if(glass&&y<=2){glass=false;hdr.classList.remove('glass');lock=now+260}});
+  var mb=$('#menuBtn'),ov=$('#pmMenu');
+  function setMenu(o){ov.classList.toggle('open',o);hdr.classList.toggle('open',o);mb.setAttribute('aria-expanded',o);ov.setAttribute('aria-hidden',!o);
+    mb.querySelector('span').textContent=o?'Cerrar':'Menú';document.documentElement.style.overflow=o?'hidden':'';
+    if(window.pmLenis){o?pmLenis.stop():pmLenis.start()}}
+  mb.addEventListener('click',function(){setMenu(!ov.classList.contains('open'))});
+  ov.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('open')){setMenu(false);mb.focus()}});
+
+  /* Botón fijo de reservas: aparece al dejar la portada y se esconde en la sección de reservas */
+  var fab=$('#pmFab'),rsv=$('#reservar');
+  updaters.push(function(){var H=vh(),r=rsv.getBoundingClientRect(),inRes=r.top<H*.85&&r.bottom>H*.15;fab.classList.toggle('on',scrollY>H*.6&&!inRes&&!ov.classList.contains('open'))});
+
+  /* Vídeo de portada: se fuerza la reproducción automática (silenciado e integrado, como exige iOS) */
+  var hv=$('#heroVid');
+  if(hv){hv.muted=true;hv.defaultMuted=true;hv.setAttribute('muted','');hv.playsInline=true;
+    var hp=function(){var q=hv.play();if(q&&q.catch)q.catch(function(){})};hp();
+    ['loadeddata','canplay'].forEach(function(e){hv.addEventListener(e,hp)});
+    ['touchstart','scroll','click'].forEach(function(e){addEventListener(e,function f(){hp();removeEventListener(e,f)},{passive:true,once:true})});
+    document.addEventListener('visibilitychange',function(){if(!document.hidden)hp()})}
+
+  /* Vídeos: solo se reproducen cuando se ven */
+  var vids=$$('video').filter(function(v){return v.id!=='sea'&&v.id!=='heroVid'});
+  if('IntersectionObserver' in window){var vio=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;
+      if(e.isIntersecting&&!reduce&&v.offsetParent){var p=v.play();if(p&&p.catch)p.catch(function(){})}else v.pause()})},{rootMargin:'25% 0px',threshold:.01});
+    vids.forEach(function(v){vio.observe(v)})}
+  if(reduce)vids.forEach(function(v){v.removeAttribute('autoplay');try{v.pause()}catch(e){}});
+
+  /* Revelado editorial */
+  var rv=$$('[data-rv]');
+  if(reduce||!('IntersectionObserver' in window))rv.forEach(function(e){e.classList.add('in')});
+  else{var rio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target)}})},{threshold:.18,rootMargin:'0px 0px -8%'});
+    rv.forEach(function(e){rio.observe(e)});setTimeout(function(){rv.forEach(function(e){var r=e.getBoundingClientRect();if(r.top<vh()&&r.bottom>0)e.classList.add('in')})},2500)}
+
+  /* 1 · Portada: paralaje suave del vídeo */
+  var hero=$('#hero');
+  if(!reduce&&!TOUCH)updaters.push(function(){var r=hero.getBoundingClientRect();if(r.bottom<0)return;hero.style.setProperty('--bgy',((r.top+r.height/2-vh()/2)/vh()*46).toFixed(1)+'px')});
+
+  /* 2 + 3 · Manifiesto que se desvanece y plato que sube, gira y cambia de texto */
+  var SL=[["B2B & Chef Concierge", "gestión integral", "Pensión completa y dirección culinaria para off-sites, villas de trabajo y estancias ejecutivas."], ["Private Batch Cooking", "meal prep de autor", "Abastecimiento semanal desde obrador sanitario registrado, envasado al vacío técnico y nutrición avanzada."], ["Private Dining", "experiencias VIP", "Cenas y residencias privadas co-creadas a partir de nuestro cuestionario culinario."], ["Boutique Catering", "& live cooking", "De 15 a 80 invitados, estaciones en directo y bodas de autor."], ["Cuestionario culinario", "el punto de partida", "Cada propuesta nace de tus objetivos, tus preferencias y cualquier intolerancia. Nada se repite."]];
+  var jr=$('#jr'),about=$('#about'),plate=$('#plate'),spin=$('#plateSpin'),jc=$('#jrc'),cts=$$('#jrc .ct'),frames=$$('.df');
+  var jT=$('#jrT'),jS=$('#jrS'),jP=$('#jrP'),jN=$('#jrN'),jB=$('#jrB'),act=-1;
+  function slide(i,anim){if(i===act)return;act=i;jT.textContent=SL[i][0];jS.textContent=SL[i][1];jP.textContent=SL[i][2];jN.textContent=('0'+(i+1)).slice(-2);
+    if(anim){cts.forEach(function(c){c.classList.add('sw')});requestAnimationFrame(function(){requestAnimationFrame(function(){cts.forEach(function(c,k){c.style.transitionDelay=(k*40)+'ms';c.classList.remove('sw')})})})}}
+  slide(0,false);
+  if(reduce){jc.style.opacity=1;about.style.display='none'}
+  else if(TOUCH){
+    jc.style.opacity=1;var si=0,st=null;
+    function cyc(){si=(si+1)%SL.length;slide(si,true);jB.style.transform='scaleX('+((si+1)/SL.length)+')'}
+    jB.style.transform='scaleX('+(1/SL.length)+')';
+    if('IntersectionObserver' in window)new IntersectionObserver(function(es){if(es[0].isIntersecting){if(!st)st=setInterval(cyc,3800)}else{clearInterval(st);st=null}},{threshold:.3}).observe(root.querySelector('.jr-stage'));
+  }
+  else (function(){
+    var target=0,cur=-1,loop=0,ph=0;
+    function render(raw){var H=vh(),p=clamp(raw,0,1);
+      var text=eOut(clamp((p-.03)/.12,0,1));
+      about.style.opacity=(1-text).toFixed(3);about.style.transform='translate3d(0,'+(-46*text).toFixed(1)+'px,0) scale('+(1-.025*text).toFixed(4)+')';
+      var ent=eOut(clamp((p-.05)/.14,0,1)),jp=clamp((p-.19)/.81,0,1),sp=clamp((p-.2)/.66,0,1);
+      var exitP=eIO(clamp((raw-.9)/.36,0,1))*.52,plateExit=eIO(clamp((raw-.9)/.42,0,1))*.64;
+      if(!ph)ph=plate.offsetHeight;var s0=.72,startY=H/2+ph*s0/2,exitY=-(H/2+ph/2+16)*plateExit;
+      plate.style.transform='translate3d(-50%,-50%,0) translate3d(0,'+((1-ent)*startY+exitY).toFixed(1)+'px,0) scale('+(s0+(1-s0)*ent-.03*plateExit).toFixed(4)+')';
+      spin.style.transform='rotate('+(ent*220+jp*360+plateExit*14).toFixed(2)+'deg) translateZ(0)';
+      var cr=eOut(clamp((p-.2)/.1,0,1)),cx=eOut(clamp((p-.88)/.04,0,1));
+      jc.style.opacity=(cr*(1-cx)).toFixed(3);jc.style.transform='translate3d(0,'+(cx*-18).toFixed(1)+'px,0)';
+      jB.style.transform='scaleX('+(1/SL.length+sp*(1-1/SL.length)).toFixed(4)+')';
+      slide(p>=.88?SL.length-1:Math.min(SL.length-1,Math.floor(sp*SL.length)),true);
+      var gp=clamp(p/.96,0,1);
+      frames.forEach(function(f){var s=+f.dataset.s,e=+f.dataset.e,l=+f.dataset.l,w=+f.dataset.w,ro=+f.dataset.r;
+        var fp=clamp((gp-s)/Math.max(.01,e-s),0,1),ep=eOut(fp),en=H*.7,ex=H*1.08+l,sh=(H+l)*exitP,vis=fp>0&&fp<1;
+        f.style.opacity=vis?(1-exitP).toFixed(3):0;f.style.visibility=vis?'visible':'hidden';
+        if(vis)f.style.transform='translate3d('+(Math.sin(ep*Math.PI)*w).toFixed(1)+'px,'+(en-(en+ex)*fp-sh).toFixed(1)+'px,0) rotate('+(ro*ep).toFixed(2)+'deg) scale('+(.92+ep*.08).toFixed(4)+')'});
+    }
+    /* En el móvil el scroll llega a saltos: el plato sigue al dedo con un amortiguado suave en vez de saltar */
+    var K=TOUCH?.16:(window.pmLenis?1:.3);
+    function step(){loop=0;if(cur<0)cur=target;var d=target-cur;cur=Math.abs(d)<.00005?target:cur+d*K;render(cur);if(cur!==target)loop=requestAnimationFrame(step)}
+    addEventListener('resize',function(){ph=0});
+    updaters.push(function(){var r=jr.getBoundingClientRect(),H=vh();
+      target=Math.max(0,-r.top/Math.max(1,jr.offsetHeight-H));
+      if(r.bottom<-H*.15||r.top>H*1.15){cur=target;return}
+      K=TOUCH?.16:(window.pmLenis?1:.3);if(!loop)loop=requestAnimationFrame(step)});
+  })();
+
+  /* 4 · Ambiente: la foto se mueve más despacio que la página */
+  var atm=$('#atm'),atmBg=atm.querySelector('.atm-bg');
+  if(!reduce&&!TOUCH)updaters.push(function(){var r=atm.getBoundingClientRect(),H=vh();if(r.bottom<0||r.top>H)return;
+    var c=(r.top+r.height/2-H/2)/H;atmBg.style.setProperty('--py',(c*-70).toFixed(1)+'px');atmBg.style.setProperty('--ps',(1.06+Math.abs(c)*.04).toFixed(4))});
+
+  /* 5 · Experiencias: carrusel que avanza solo (escritorio) / deslizar (móvil) */
+  (function(){
+    var shell=$('#fxShell'),track=$('#fxTrack'),all=[].slice.call(track.children),n=all.length/2,idx=0,timer=null,busy=false;
+    var cnt=$('#fxN'),bar=$('#fxBar');
+    function ui(i){cnt.textContent=('0'+(i%n+1)).slice(-2);bar.style.width=((i%n+1)/n*100)+'%'}
+    function classes(){all.forEach(function(c,k){c.classList.toggle('is-active',k===idx);c.classList.toggle('is-prev',k===idx-1);c.classList.toggle('is-next',k===idx+1)})}
+    function render(anim){if(mobQ.matches)return;var c=all[idx];track.style.transition=anim?'':'none';all.forEach(function(x){x.style.transition=anim?'':'none'});
+      track.style.transform='translate3d('+(-c.offsetLeft)+'px,0,0)';classes();ui(idx);if(!anim){track.offsetHeight;track.style.transition='';all.forEach(function(x){x.style.transition=''})}}
+    function next(){if(busy||mobQ.matches){if(mobQ.matches)mnext();return}idx++;render(true);if(idx>=n){busy=true;setTimeout(function(){idx-=n;render(false);busy=false},820)}}
+    function start(){stop();if(mobQ.matches||reduce)return;timer=setInterval(next,3200)}
+    function stop(){if(timer)clearInterval(timer);timer=null}
+    $('#fxNext').addEventListener('click',function(){next();start()});
+    $('#fxCount').addEventListener('click',function(){next();start()});
+    shell.addEventListener('mouseenter',stop);shell.addEventListener('mouseleave',start);
+    shell.addEventListener('focusin',stop);shell.addEventListener('focusout',start);
+    function mstep(){var c=all[0];return c.offsetWidth+14}
+    function mnext(){var i=Math.round(shell.scrollLeft/mstep());shell.scrollTo({left:((i+1)%n)*mstep(),behavior:'smooth'})}
+    shell.addEventListener('scroll',function(){if(mobQ.matches)ui(Math.round(shell.scrollLeft/mstep()))},{passive:true});
+    if('IntersectionObserver' in window){new IntersectionObserver(function(es){es[0].isIntersecting?start():stop()},{threshold:.2}).observe(shell)}
+    addEventListener('resize',function(){render(false)});render(false);
+  })();
+
+  /* 6 · Aperitivo: copa y hojas con un leve paralaje */
+  var ap=$('#aperitivo'),drink=$('#apDrink'),lt=$('#leafT'),lb=$('#leafB');
+  if(!reduce&&!TOUCH)updaters.push(function(){var r=ap.getBoundingClientRect(),H=vh();if(r.bottom<0||r.top>H)return;var c=(r.top+r.height/2-H/2)/H;
+    drink.style.setProperty('--dy',(c*-40).toFixed(1)+'px');lt.style.setProperty('--ly',(c*60).toFixed(1)+'px');lb.style.setProperty('--ly2',(c*-50).toFixed(1)+'px')});
+
+  /* 7 · Galería con bucle infinito y flechas */
+  (function(){
+    var sec=$('#galeria'),vp=$('#glVp'),track=$('#glTrack'),orig=[].slice.call(track.children),n=orig.length,cc=Math.min(4,n),vi=cc,resetting=false;
+    var cnt=$('#glCount'),bar=$('#glBar');
+    orig.slice(0,cc).forEach(function(o){var c=o.cloneNode(true);c.setAttribute('data-clone','');c.setAttribute('aria-hidden','true');track.appendChild(c)});
+    orig.slice(-cc).reverse().forEach(function(o){var c=o.cloneNode(true);c.setAttribute('data-clone','');c.setAttribute('aria-hidden','true');track.insertBefore(c,track.firstChild)});
+    var cards=[].slice.call(track.children);
+    function ui(i){cnt.textContent=('0'+(i+1)).slice(-2)+' / '+('0'+n).slice(-2);bar.style.width=((i+1)/n*100)+'%'}
+    function render(anim){if(mobQ.matches)return;var c=cards[vi],pl=parseFloat(getComputedStyle(track).paddingLeft)||0;if(!anim)track.style.transition='none';
+      track.style.transform='translate3d('+(-Math.max(0,c.offsetLeft-pl))+'px,0,0)';cards.forEach(function(x,k){x.classList.toggle('is-active',k===vi)});ui((vi-cc+n)%n);
+      if(!anim){track.offsetHeight;track.style.transition=''}}
+    function go(d){if(resetting)return;vi+=d;render(true)}
+    $('#glPrev').addEventListener('click',function(){go(-1)});$('#glNext').addEventListener('click',function(){go(1)});
+    track.addEventListener('transitionend',function(e){if(e.target!==track||e.propertyName!=='transform')return;
+      if(vi<cc||vi>=cc+n){resetting=true;sec.classList.add('reset');vi+=vi<cc?n:-n;render(false);requestAnimationFrame(function(){requestAnimationFrame(function(){sec.classList.remove('reset');resetting=false})})}});
+    var sx=0,sy=0;vp.addEventListener('touchstart',function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY},{passive:true});
+    vp.addEventListener('touchend',function(e){if(mobQ.matches)return;var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;if(Math.abs(dx)>44&&Math.abs(dx)>Math.abs(dy)*1.15)go(dx>0?-1:1)},{passive:true});
+    vp.addEventListener('scroll',function(){if(mobQ.matches){var w=orig[0].offsetWidth+14;ui(clamp(Math.round(vp.scrollLeft/w),0,n-1))}},{passive:true});
+    addEventListener('resize',function(){render(false)});
+    if(document.readyState==='complete')render(false);else{render(false);addEventListener('load',function(){render(false)})}
+  })();
+
+  /* 8 · Del día a la noche */
+  var dn=$('#dn');
+  if(!reduce&&!TOUCH)updaters.push(function(){var r=dn.getBoundingClientRect(),H=vh();if(r.bottom<0||r.top>H)return;
+    var p=clamp(-r.top/Math.max(1,dn.offsetHeight-H),0,1),ns=1.1-p*.04,rev=clamp(.5+(p-.5)/ns,0,1),S=function(k,v){dn.style.setProperty(k,v)};
+    S('--ds',(1.06-p*.03).toFixed(4));S('--ns',ns.toFixed(4));S('--dy',(1.5-p*3).toFixed(3)+'%');S('--ny',(3-p*4.5).toFixed(3)+'%');
+    S('--nc',((1-rev)*100).toFixed(2)+'%');S('--sh',(.22+p*.38).toFixed(3));S('--dtc',(p*100).toFixed(2)+'%');S('--ntc',((1-p)*100).toFixed(2)+'%');S('--pw',(p*100).toFixed(2)+'%');S('--do',(1-clamp((p-.3)/.18,0,1)).toFixed(3));S('--no',clamp((p-.46)/.18,0,1).toFixed(3))});
+  else dn.style.cssText='--nc:0%;--dtc:100%;--ntc:0%;--pw:100%;--sh:.6';
+
+  /* 9 · Carta: nombres verticales, la foto aparece detrás del plato activo */
+  (function(){
+    var wrap=$('#drNames'),names=$$('.dr-name'),vis=$$('.dr-v'),box=$('#drVis'),stage=root.querySelector('.dr-stage'),ci=0,t=null,hold=false;
+    var desc=$('#drDesc');function move(i){if(desc&&names[i])desc.textContent=names[i].dataset.d}
+    function on(i,fade){wrap.classList.toggle('has-active',fade);names.forEach(function(n,k){n.classList.toggle('is-active',fade&&k===i)});vis.forEach(function(v,k){v.classList.toggle('is-active',k===i)});move(i)}
+    function stop(){if(t)clearInterval(t);t=null}
+    function start(){stop();if(hold||document.hidden||innerWidth<=900||reduce)return;on(ci,true);t=setInterval(function(){ci=(ci+1)%vis.length;on(ci,true)},3200)}
+    names.forEach(function(n){var i=+n.dataset.i;n.addEventListener('mouseenter',function(){ci=i;on(i,true);start()});n.addEventListener('focus',function(){ci=i;on(i,true)});n.addEventListener('click',function(){ci=i;on(i,true)})});
+    wrap.addEventListener('focusin',function(){hold=true;stop()});wrap.addEventListener('focusout',function(e){if(!wrap.contains(e.relatedTarget)){hold=false;start()}});
+    addEventListener('resize',function(){move(ci)});
+    on(0,false);
+    if('IntersectionObserver' in window)new IntersectionObserver(function(es){es[0].isIntersecting?start():stop()},{threshold:.25}).observe(root.querySelector('#carta'));
+    var sh=$('#drSh'),dc=$('#drCount'),db=$('#drBar'),N=vis.length;
+    sh.addEventListener('scroll',function(){var a=sh.querySelector('article');var i=clamp(Math.round(sh.scrollLeft/(a.offsetWidth+14)),0,N-1);dc.textContent=('0'+(i+1)).slice(-2)+' / '+N;db.style.width=((i+1)/N*100)+'%'},{passive:true});
+  })();
+
+  /* 11 · Formulario de reserva → WhatsApp */
+  (function(){
+    var form=$('#res'),done=$('#done'),fecha=$('#r-fecha'),d=new Date();d.setDate(d.getDate()+1);
+    fecha.min=d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);
+    function chk(el){var f=el.closest('.fld')||el.closest('.chk'),o=f.querySelector('.err');if(o)o.remove();f.classList.remove('bad');if(el.validity.valid)return true;
+      var m=el.type==='checkbox'?'Acepta la política para continuar.':el.validity.valueMissing?'Este campo es obligatorio.':el.validity.typeMismatch?'Revisa el formato.':el.validity.rangeUnderflow?(el.type==='date'?'Elige una fecha a partir de mañana.':'Indica al menos '+el.min+'.'):'Revisa este dato.';
+      var s=document.createElement('span');s.className='err';s.textContent=m;f.appendChild(s);f.classList.add('bad');return false}
+    var flds=[].slice.call(form.querySelectorAll('input,select,textarea'));
+    flds.forEach(function(el){el.addEventListener('blur',function(){if(el.value)chk(el)});el.addEventListener('input',function(){if(el.closest('.bad'))chk(el)})});
+    form.addEventListener('submit',function(e){e.preventDefault();var ok=true,first=null;flds.forEach(function(el){if(!chk(el)){ok=false;if(!first)first=el}});if(!ok){first.focus();return}
+      var g=function(id){return(form.querySelector('#'+id).value||'').trim()};
+      var dt=new Date(g('r-fecha')+'T12:00:00').toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+      var rows=[['Servicio',g('r-serv')],['Nombre',g('r-nombre')],['Teléfono',g('r-tel')],['Email',g('r-email')],['Fecha o inicio',dt],['Comensales',g('r-pax')],['Ubicación',g('r-ubi')],['Alergias',g('r-alerg')],['Comentarios',g('r-com')||'—']];
+      var url='https://wa.me/34661100731?text='+encodeURIComponent('Hola Pablo, me gustaría recibir el Cuestionario Culinario:\n\n'+rows.map(function(r){return '• '+r[0]+': '+r[1]}).join('\n')+'\n\nHe leído y acepto la política de reservas y cancelación.');
+      $('#waSend').href=url;$('#doneName').textContent=g('r-nombre').split(' ')[0];form.hidden=true;done.hidden=false;done.focus({preventScroll:true});try{window.open(url,'_blank','noopener')}catch(err){}});
+    $('#editRes').addEventListener('click',function(){done.hidden=true;form.hidden=false;$('#r-nombre').focus()});
+  })();
+
+  req();addEventListener('load',req);
+})();
+
+/* v3 · Los botones de cada servicio dejan elegido ese servicio en el formulario */
+(function(){
+  var root=document.getElementById('pm-home')||document,sel=root.querySelector('#r-serv');
+  if(!sel)return;
+  [].slice.call(root.querySelectorAll('[data-serv]')).forEach(function(a){a.addEventListener('click',function(){var v=a.getAttribute('data-serv');
+    for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===v){sel.selectedIndex=i;var f=sel.closest('.fld');if(f){f.classList.remove('bad');var e=f.querySelector('.err');if(e)e.remove()}}}})});
+})();
+/* v3 · Tira de fotos: avanza con el scroll solo con ratón (en táctil va sola, sin temblores) */
+(function(){
+  var root=document.getElementById('pm-home')||document,gs=root.querySelector('.gs'),t=root.querySelector('#gsT');
+  if(!gs||!t)return;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,touch=matchMedia('(hover: none) and (pointer: coarse)').matches;
+  if(reduce||touch)return;
+  var tk=false;
+  function up(){tk=false;if(innerWidth<=767)return;var r=gs.getBoundingClientRect(),H=innerHeight;if(r.bottom<0||r.top>H)return;
+    var p=Math.min(1,Math.max(0,(H-r.top)/(H+r.height))),max=Math.max(0,t.scrollWidth/2-innerWidth*.4);t.style.setProperty('--gx',(-p*max).toFixed(1)+'px')}
+  addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up)}},{passive:true});addEventListener('resize',up);up();
+})();
+/* v3 · «Reservar este menú»: deja el menú y el servicio escritos en el formulario */
+(function(){
+  var root=document.getElementById('pm-home')||document,sel=root.querySelector('#r-serv'),com=root.querySelector('#r-com');
+  [].slice.call(root.querySelectorAll('[data-menu]')).forEach(function(a){a.addEventListener('click',function(){var m=a.getAttribute('data-menu');
+    if(com){com.value='Menú: '+m+(com.value&&com.value.indexOf('Menú: ')!==0?'\n'+com.value:'')}
+    if(sel){var want=/Executive/.test(m)?'B2B & Chef Concierge':'Private Dining & Experiencias VIP';for(var i=0;i<sel.options.length;i++)if(sel.options[i].text===want)sel.selectedIndex=i}})});
+  /* Abrir un menú cierra el anterior, para no perder el hilo */
+  var ds=[].slice.call(root.querySelectorAll('.mn-i'));
+  ds.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)ds.forEach(function(o){if(o!==d)o.open=false})})});
+})();
+</script>
+</body>
+</html>
