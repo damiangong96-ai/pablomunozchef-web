@@ -1174,6 +1174,17 @@ header.site.glass .lg .full.d{opacity:0}
 .ps .pp-s{background:transparent}
 @media (max-width:900px){.ps-h{grid-template-columns:1fr;gap:22px}}
 @media (max-width:767px){.ps-h h2{font-size:40px}.ps-h .btn{width:100%}}
+/* Portada con fotos a resolución completa (el vídeo disponible no tiene calidad suficiente) */
+.hero-sl{position:absolute;inset:0;z-index:-1;overflow:hidden;background:#1d2226}
+.hero-sl picture{position:absolute;inset:0;opacity:0;animation:hsl 21s linear infinite;animation-delay:calc(var(--k)*7s - .01s)}
+.hero-sl picture:first-child{opacity:1}
+.hero-sl img{width:100%;height:100%;object-fit:cover;object-position:var(--pd);animation:hkb 21s linear infinite;animation-delay:calc(var(--k)*7s)}
+@keyframes hsl{0%{opacity:0}5%{opacity:1}33%{opacity:1}39%{opacity:0}100%{opacity:0}}
+@keyframes hkb{0%{transform:scale(1.08)}39%{transform:scale(1)}100%{transform:scale(1)}}
+.hero-c{right:clamp(22px,4vw,60px)!important}
+.hero::after{background:linear-gradient(90deg,rgba(18,22,26,.62),rgba(18,22,26,.25) 55%,rgba(18,22,26,.05))}
+@media (max-width:767px){.hero-sl img{object-position:var(--pm)}.hero::after{background:linear-gradient(180deg,rgba(18,22,26,.35) 0%,rgba(18,22,26,0) 22%,rgba(18,22,26,.25) 45%,rgba(18,22,26,.82) 75%)}}
+@media (prefers-reduced-motion:reduce){.hero-sl picture,.hero-sl img{animation:none}.hero-sl picture:not(:first-child){display:none}}
 </style>
 </head>
 <body>
@@ -1192,8 +1203,7 @@ header.site.glass .lg .full.d{opacity:0}
 <script>(function(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;var p=document.getElementById('pmPage');p.classList.add('pmjs');if(matchMedia('(hover: none) and (pointer: coarse)').matches)p.classList.add('pmt')})()</script>
 <main>
 <section class="hero" id="hero" aria-labelledby="h1">
-  <video class="hero-mob" id="heroBg" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-hidden="true" tabindex="-1" poster="img/pm-brasa-1080.jpg"><source src="img/pm-brasa-1080.mp4" type="video/mp4"></video>
-  <figure class="hero-fr"><video id="heroVid" autoplay muted loop playsinline webkit-playsinline preload="auto" disablepictureinpicture aria-label="Pablo Muñoz cocinando en la brasa al aire libre" poster="img/pm-brasa-1080.jpg"><source src="img/pm-brasa-1080.mp4" type="video/mp4"></video></figure>
+  <div class="hero-sl" aria-hidden="false"><picture style="--k:0"><source media="(max-width:767px)" srcset="img/pm-drift-chef-m.webp 1600w, img/pm-drift-chef.webp 2560w" sizes="100vw"><img src="img/pm-chef-hero.webp" srcset="img/pm-chef-hero-m.webp 1600w, img/pm-chef-hero.webp 2560w" sizes="100vw" alt="Pablo Muñoz con los brazos abiertos sobre Barcelona" decoding="async" style="--pd:50% 35%;--pm:50% 30%"></picture><picture style="--k:1"><source media="(max-width:767px)" srcset="img/pm-chef-retrato-m.webp 1600w, img/pm-chef-retrato.webp 2560w" sizes="100vw"><img src="img/pm-bunker-brazos.webp" srcset="img/pm-bunker-brazos-m.webp 1600w, img/pm-bunker-brazos.webp 2560w" sizes="100vw" alt="" loading="lazy" decoding="async" style="--pd:50% 40%;--pm:50% 30%"></picture><picture style="--k:2"><source media="(max-width:767px)" srcset="img/pm-gal-16-m.webp 1600w, img/pm-gal-16.webp 2560w" sizes="100vw"><img src="img/pm-gal-15.webp" srcset="img/pm-gal-15-m.webp 1600w, img/pm-gal-15.webp 2560w" sizes="100vw" alt="" loading="lazy" decoding="async" style="--pd:50% 45%;--pm:50% 30%"></picture></div>
   <div class="hero-c">
     <p class="kick">Pablo Muñoz · Dirección culinaria</p>
     <h1 id="h1"><span class="ln">Curaduría gastronómica y cocina de temporada</span> <span class="ln it">a la medida exacta de cada estancia, equipo o celebración.</span></h1>
