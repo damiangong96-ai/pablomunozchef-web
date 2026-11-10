@@ -1233,6 +1233,21 @@ header.site .hd-r{justify-self:end;display:flex;align-items:center;gap:clamp(26p
 .mn-g{break-inside:avoid;page-break-inside:avoid;margin:0 0 30px!important;display:block}
 @media (max-width:767px){.mn-c{columns:1}}
 @media (min-width:768px){.fx-prev,.fx-next{top:120px!important}}
+
+/* ===== 10 nov (3): cabecera siempre opaca y flechas de la galería siempre visibles ===== */
+header.site,header.site.glass,header.site.solid{background:#fff!important;color:var(--ink)!important;border-bottom:1px solid rgba(42,47,52,.08)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+header.site::before{display:none!important}
+header.site .lg .full{opacity:0!important;visibility:hidden}
+header.site .lg .icon{opacity:1!important;transform:none!important}
+header.site .menu-btn,header.site .hl a{color:var(--ink)!important}
+.ar{opacity:1!important;transform:translateY(-50%)!important;background:rgba(255,255,255,.92)!important;color:var(--ink)!important;border:1px solid var(--line)!important}
+.ar:hover{background:var(--ink)!important;color:#fff!important}
+.gl-ar{display:none}
+@media (max-width:767px){
+.gl-ar{display:flex;gap:10px;justify-content:flex-end;padding:16px 26px 0}
+.ar2{display:grid;place-items:center;width:46px;height:46px;padding:0;border:1px solid var(--line)!important;border-radius:0!important;background:#fff!important;color:var(--ink)!important;cursor:pointer}
+.ar2 svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+}
 </style>
 </head>
 <body>
@@ -1380,7 +1395,7 @@ header.site .hd-r{justify-self:end;display:flex;align-items:center;gap:clamp(26p
   </header>
   <div class="gl-vp" id="glVp"><div class="gl-track" id="glTrack"><figure class="gl-card"><img src="img/pm-gal-01.webp" srcset="img/pm-gal-01-m.webp 1200w, img/pm-gal-01.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Guiso de carne en paellera" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-02.webp" srcset="img/pm-gal-02-m.webp 1354w, img/pm-gal-02.webp 2166w" sizes="(max-width:767px) 80vw, 34vw" alt="Bogavantes y vieiras sobre arroz" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-03.webp" srcset="img/pm-gal-03-m.webp 1600w, img/pm-gal-03.webp 2560w" sizes="(max-width:767px) 80vw, 34vw" alt="Bocado de sepia negra con salsas" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-04.webp" srcset="img/pm-gal-04-m.webp 1200w, img/pm-gal-04.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Arroz meloso con setas y flores" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-05.webp" srcset="img/pm-gal-05-m.webp 1200w, img/pm-gal-05.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Acelgas y frambuesas en cuenco de cerámica" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-06.webp" srcset="img/pm-gal-06-m.webp 1200w, img/pm-gal-06.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Cazuela de pescado y marisco" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-07.webp" srcset="img/pm-gal-07-m.webp 1200w, img/pm-gal-07.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Postre de vino tinto sobre fondo blanco" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-08.webp" srcset="img/pm-gal-08-m.webp 1200w, img/pm-gal-08.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Pasta de tinta en el mercado" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-09.webp" srcset="img/pm-gal-09-m.webp 1600w, img/pm-gal-09.webp 2560w" sizes="(max-width:767px) 80vw, 34vw" alt="Bogavante, cigalas y ostras sobre tabla con hielo" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-10.webp" srcset="img/pm-gal-10-m.webp 1600w, img/pm-gal-10.webp 2560w" sizes="(max-width:767px) 80vw, 34vw" alt="Cigalas y gambas sobre hielo" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-11.webp" srcset="img/pm-gal-11-m.webp 1200w, img/pm-gal-11.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Carne en cazuela sobre el fuego" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-12.webp" srcset="img/pm-gal-12-m.webp 1600w, img/pm-gal-12.webp 2560w" sizes="(max-width:767px) 80vw, 34vw" alt="Ostra abierta entre marisco" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-13.webp" srcset="img/pm-gal-13-m.webp 1600w, img/pm-gal-13.webp 2560w" sizes="(max-width:767px) 80vw, 34vw" alt="Acelgas frescas junto a la piscina" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-14.webp" srcset="img/pm-gal-14-m.webp 1200w, img/pm-gal-14.webp 1920w" sizes="(max-width:767px) 80vw, 34vw" alt="Ensalada de acelgas y frutos rojos" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-15.webp" srcset="img/pm-gal-15-m.webp 1600w, img/pm-gal-15.webp 2560w" sizes="(max-width:767px) 80vw, 34vw" alt="Pablo Muñoz de espaldas con los brazos abiertos frente a Barcelona" decoding="async"></figure><figure class="gl-card"><img src="img/pm-gal-16.webp" srcset="img/pm-gal-16-m.webp 1067w, img/pm-gal-16.webp 1707w" sizes="(max-width:767px) 80vw, 34vw" alt="Pablo Muñoz con chaquetilla blanca sobre Barcelona" decoding="async"></figure></div>
     <button class="ar p" id="glPrev" type="button" aria-label="Foto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button class="ar n" id="glNext" type="button" aria-label="Foto siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div>
-  <div class="ctl"><span class="c" id="glCount" style="font-size:9px;letter-spacing:.16em;min-width:52px">01 / 16</span><div class="pr"><i id="glBar" style="width:6.25%"></i></div></div>
+  <div class="gl-ar" aria-label="Fotos"><button class="ar2" id="glPrev2" type="button" aria-label="Foto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button class="ar2" id="glNext2" type="button" aria-label="Foto siguiente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div><div class="ctl"><span class="c" id="glCount" style="font-size:9px;letter-spacing:.16em;min-width:52px">01 / 16</span><div class="pr"><i id="glBar" style="width:6.25%"></i></div></div>
 </section>
 <div class="dn" id="dn" aria-label="Del mediodía a la noche">
   <section class="dn-pin">
@@ -1748,5 +1763,5 @@ header.site .hd-r{justify-self:end;display:flex;align-items:center;gap:clamp(26p
   var p=root.querySelector('#rvPrev'),n=root.querySelector('#rvNext');if(p)p.addEventListener('click',function(){step(-1)});if(n)n.addEventListener('click',function(){step(1)});
 })();
 </script>
-</body>
+<script>(function(){var r=document.getElementById('pm-home')||document,vp=r.querySelector('#glVp');if(!vp)return;function st(){var c=vp.querySelector('.gl-card');return c?c.getBoundingClientRect().width+14:300}function go(d){vp.scrollBy({left:d*st(),behavior:'smooth'})}var a=r.querySelector('#glPrev2'),b=r.querySelector('#glNext2');if(a)a.addEventListener('click',function(){go(-1)});if(b)b.addEventListener('click',function(){go(1)})})();</script></body>
 </html>

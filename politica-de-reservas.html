@@ -1232,6 +1232,21 @@ header.site .hd-r{justify-self:end;display:flex;align-items:center;gap:clamp(26p
 .mn-c{display:block!important;columns:2;column-gap:clamp(28px,4vw,56px)}
 .mn-g{break-inside:avoid;page-break-inside:avoid;margin:0 0 30px!important;display:block}
 @media (max-width:767px){.mn-c{columns:1}}
+
+/* ===== 10 nov (3): cabecera siempre opaca y flechas de la galería siempre visibles ===== */
+header.site,header.site.glass,header.site.solid{background:#fff!important;color:var(--ink)!important;border-bottom:1px solid rgba(42,47,52,.08)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+header.site::before{display:none!important}
+header.site .lg .full{opacity:0!important;visibility:hidden}
+header.site .lg .icon{opacity:1!important;transform:none!important}
+header.site .menu-btn,header.site .hl a{color:var(--ink)!important}
+.ar{opacity:1!important;transform:translateY(-50%)!important;background:rgba(255,255,255,.92)!important;color:var(--ink)!important;border:1px solid var(--line)!important}
+.ar:hover{background:var(--ink)!important;color:#fff!important}
+.gl-ar{display:none}
+@media (max-width:767px){
+.gl-ar{display:flex;gap:10px;justify-content:flex-end;padding:16px 26px 0}
+.ar2{display:grid;place-items:center;width:46px;height:46px;padding:0;border:1px solid var(--line)!important;border-radius:0!important;background:#fff!important;color:var(--ink)!important;cursor:pointer}
+.ar2 svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+}
 </style>
 </head>
 <body>
