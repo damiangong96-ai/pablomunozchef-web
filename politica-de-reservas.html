@@ -1266,6 +1266,22 @@ font[style]{background:none!important;box-shadow:none!important}
 header.site .hd-l{justify-self:start;display:flex;align-items:center;gap:clamp(22px,2.6vw,42px)}
 .lang-l{right:auto!important;left:0}
 @media (max-width:767px){header.site .hd-l .hl{display:none!important}}
+
+/* ===== 10 nov (6): tira de fotos quieta, se mueve solo con las flechas ===== */
+.gs{position:relative}
+.gs-vp{position:relative;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 clamp(22px,4vw,60px)}
+.gs-vp::-webkit-scrollbar{display:none}
+.gs-t{animation:none!important;transform:none!important}
+.gs figure{scroll-snap-align:start}
+.gs-ar{display:flex;gap:10px;justify-content:flex-end;padding:22px clamp(22px,4vw,60px) 0}
+.gs-ar .ar2:disabled{opacity:.35;cursor:default}
+.gs-side{position:absolute;top:calc(50% - 30px);z-index:5;transform:translateY(-50%)}
+.gs-side.p{left:clamp(12px,2vw,28px)}
+.gs-side.n{right:clamp(12px,2vw,28px)}
+.gs-side:disabled{opacity:0;pointer-events:none}
+@media (max-width:767px){.gs-side{display:none}}
+.ft-lk a{display:inline-flex;align-items:center;gap:8px}
+.ig{width:16px;height:16px;flex:none}
 </style>
 </head>
 <body>
@@ -1311,7 +1327,7 @@ header.site .hd-l{justify-self:start;display:flex;align-items:center;gap:clamp(2
 <footer class="ft" aria-label="Pie">
   <div class="ft-top">
     <div><p class="kick">Dirección culinaria</p><h2 class="cap">Pablo Muñoz<span class="scr">gastronomía de autor</span></h2></div>
-    <div class="r"><img src="img/logo.png" alt="Pablo Muñoz, chef privado" loading="lazy" decoding="async"><p>Barcelona · Costa Brava · Península · Baleares<br><a href="tel:+34661100731">+34 661 10 07 31</a></p><p class="ft-lk"><a href="https://www.instagram.com/pablo_munoz_chef/" target="_blank" rel="noopener">Instagram @pablo_munoz_chef</a></p></div>
+    <div class="r"><img src="img/logo.png" alt="Pablo Muñoz, chef privado" loading="lazy" decoding="async"><p>Barcelona · Costa Brava · Península · Baleares<br><a href="tel:+34661100731">+34 661 10 07 31</a></p><p class="ft-lk"><a href="https://www.instagram.com/pablo_munoz_chef/" target="_blank" rel="noopener"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>Instagram @pablo_munoz_chef</a></p></div>
   </div>
   <div class="ft-cols">
     <div><p class="kick">Servicios</p><h3>Cinco pilares</h3><p>B2B & Chef Concierge, Private Batch Cooking, Private Dining, Boutique Catering & Live Cooking y Alimentación para Deportistas.</p><a class="lnk" href="servicios.html">Ver servicios</a></div>
