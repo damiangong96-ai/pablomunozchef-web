@@ -1281,6 +1281,13 @@ font[style]{background:none!important;box-shadow:none!important}
 header.site .hd-l{justify-self:start;display:flex;align-items:center;gap:clamp(22px,2.6vw,42px)}
 .lang-l{right:auto!important;left:0}
 @media (max-width:767px){header.site .hd-l .hl{display:none!important}}
+
+/* ===== Portada debajo de la cabecera opaca (nada queda tapado) ===== */
+.hero{--fh:min(calc(100svh - 116px - 90px),700px);margin-top:116px!important;height:calc(100svh - 116px)!important;min-height:480px!important}
+.hero-fr{height:var(--fh)!important;top:50%!important;transform:translateY(-50%)!important}
+.hero-c{right:calc(var(--fh)*.558 + clamp(22px,5vw,80px) + 60px)!important;bottom:clamp(32px,6vh,70px)!important}
+.hero-c h1{font-size:clamp(34px,min(5.2vw,8.2vh),82px)!important}
+@media (max-width:767px){.hero{margin-top:84px!important;height:calc(100svh - 84px)!important;min-height:520px!important}.hero-c{right:22px!important}.hero-c h1{font-size:clamp(30px,min(9.2vw,5.4vh),42px)!important}}
 </style>
 </head>
 <body>
