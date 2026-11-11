@@ -1328,6 +1328,14 @@ header.site .hd-l{justify-self:start;display:flex;align-items:center;gap:clamp(2
 @media (max-width:1100px){.svn{grid-template-columns:repeat(3,minmax(0,1fr))!important}.svn a:nth-child(3){border-right:0}.svn a:nth-child(-n+3){border-bottom:1px solid var(--line)}}
 @media (max-width:640px){.svn{grid-template-columns:repeat(2,minmax(0,1fr))!important}.svn a{border-bottom:1px solid var(--line)}}
 .sv-i > .sv-pr{order:5}
+
+/* Batch Cooking sin foto: texto centrado y tabla debajo */
+#sv-batch.sv-solo{grid-template-columns:minmax(0,1fr)!important;justify-items:center}
+#sv-batch.sv-solo .sv-t{max-width:860px;width:100%;margin:0 auto;text-align:center}
+#sv-batch.sv-solo .sv-sub,#sv-batch.sv-solo .sv-lead{margin-left:auto;margin-right:auto}
+#sv-batch.sv-solo .sv-pts{text-align:left}
+#sv-batch.sv-solo .sv-q{text-align:left}
+#sv-batch.sv-solo > .sv-pr{width:100%}
 </style>
 </head>
 <body>
@@ -1358,8 +1366,7 @@ header.site .hd-l{justify-self:start;display:flex;align-items:center;gap:clamp(2
       <ul class="sv-pts"><li><h4>Dirección & aprovisionamiento</h4><p>Gestión 100% integral. Realizamos la compra de producto local de origen, la logística de cocina y el aprovisionamiento continuo de la residencia (pantry stock).</p></li><li><h4>Menús a medida para equipos</h4><p>Propuestas diarias equilibradas: desde desayunos energéticos (energy boost) y lunches ágiles que no interrumpen el ritmo de trabajo, hasta coffee breaks continuos y cenas ejecutivas de cierre.</p></li><li><h4>Filtro nutricional & dietas especiales</h4><p>Adaptación absoluta a cualquier necesidad. Cubrimos de forma precisa menús keto, low FODMAP, halal, vegetarianos o intolerancias complejas sin perder la excelencia ni el sabor.</p></li><li><h4>Flexibilidad & ritmo corporativo</h4><p>La cocina se ajusta al ritmo de tus reuniones y agenda, no al revés.</p></li></ul>
       <div class="sv-q" data-rv><p class="q">¿Diseñamos la propuesta para tu próxima estancia o evento corporativo?</p><p>Te enviaremos nuestro Cuestionario Culinario Exclusivo para analizar el perfil exacto de tu equipo y confeccionar una propuesta a medida.</p><a class="btn c" href="#reservar" data-serv="B2B & Chef Concierge">Solicitar cuestionario culinario a medida</a></div>
     </div>
-  </article><article class="sv-i rev" id="sv-batch" aria-labelledby="sv-batch-t">
-    <div class="sv-m" data-rv><img src="img/pm-sv-batch.webp" srcset="img/pm-sv-batch-m.webp 787w, img/pm-sv-batch.webp 1440w" sizes="(max-width:900px) 100vw, 46vw" alt="Platos de carne con salsa emplatados en serie sobre la encimera" class="sv-img" loading="lazy" decoding="async" style="object-position:50% 50%"></div>
+  </article><article class="sv-i sv-solo" id="sv-batch" aria-labelledby="sv-batch-t">
     <div class="sv-t">
       <p class="kick" data-rv>Ejecutivos, deportistas y residencias</p>
       <h2 class="cap" id="sv-batch-t" data-rv>Private Batch Cooking<span class="scr">& meal prep de autor</span></h2>
