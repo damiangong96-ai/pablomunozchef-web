@@ -1370,6 +1370,12 @@ footer.ft{padding-top:clamp(44px,4.6vw,66px)!important}
 /* Portada de Batch Cooking: más pequeña y se desvanece al deslizar */
 #sv-batch .bt-hero{max-width:min(960px,100%)!important;aspect-ratio:16/7!important;transform-origin:50% 100%;will-change:transform,opacity}
 @media (max-width:767px){#sv-batch .bt-hero{aspect-ratio:16/10!important}}
+
+/* ===== 12 nov: fotos de coctelería ===== */
+.ct-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(8px,1vw,14px);margin:clamp(26px,2.6vw,38px) 0 0}
+.ct-g figure{margin:0;overflow:hidden;aspect-ratio:4/5;background:var(--wash,#f3f5f7)}
+.ct-g figure:first-child{grid-column:1/-1;aspect-ratio:16/10}
+.ct-g img{width:100%;height:100%;object-fit:cover;display:block}
 </style>
 </head>
 <body>
@@ -1446,13 +1452,14 @@ footer.ft{padding-top:clamp(44px,4.6vw,66px)!important}
     </div>
   </article>
   <article class="sv-i rev" id="sv-cocteleria" aria-labelledby="sv-coc-t">
-    <div class="sv-m" data-rv><img src="img/pm-coctel-brindis.webp" srcset="img/pm-coctel-brindis-m.webp 1600w, img/pm-coctel-brindis.webp 2560w" sizes="(max-width:900px) 100vw, 46vw" alt="Pablo Muñoz abriendo una botella de champagne con Barcelona al fondo" class="sv-img" style="object-position:50% 40%" loading="lazy" decoding="async"></div>
+    <div class="sv-m" data-rv><img src="img/pm-coctel-portada.webp" srcset="img/pm-coctel-portada-m.webp 900w, img/pm-coctel-portada.webp 1920w" sizes="(max-width:900px) 100vw, 46vw" alt="Copas de spritz alineadas sobre una mesa de piedra, con la mesa del evento montada en el jardín" class="sv-img" style="object-position:50% 40%" loading="lazy" decoding="async"></div>
     <div class="sv-t">
       <p class="kick" data-rv>Barra, brindis y maridaje</p>
       <h2 class="cap" id="sv-coc-t" data-rv>Coctelería de Autor<span class="scr">& maridaje</span></h2>
       <p class="sv-sub" data-rv style="--d:80ms">Una barra de cócteles de autor y una selección de vinos y champagnes para elevar cada brindis.</p>
       <p class="sv-lead" data-rv style="--d:140ms">La coctelería forma parte de la experiencia gastronómica: acompaña el aperitivo, da ritmo a la celebración y cierra la noche. Diseñamos la carta de bebidas junto al menú, para que cada cóctel y cada copa encajen con lo que llega a la mesa.</p>
       <ul class="sv-pts"><li><h4>Barra de coctelería in situ</h4><p>Elaboración en directo durante tu evento, con servicio de barra para que cada invitado tenga su copa en el momento justo.</p></li><li><h4>Carta de cócteles de autor</h4><p>London Mule, Curaçao Mojito, Old Fashioned o Amaretto / Espresso Sour: clásicos reinterpretados con producto fresco y técnica de barra.</p></li><li><h4>Mimosa Bar y cócteles de bienvenida</h4><p>Para recibir a tus invitados con un primer brindis y marcar el tono de la celebración desde el aperitivo.</p></li><li><h4>Maridaje de vinos y champagnes</h4><p>Selección con maridaje regional pensada para cada menú, del aperitivo al postre.</p></li></ul>
+      <div class="ct-g" data-rv><figure><img src="img/pm-coctel-mesa.webp" srcset="img/pm-coctel-mesa-m.webp 1200w, img/pm-coctel-mesa.webp 2560w" sizes="(max-width:900px) 92vw, 30vw" alt="Pablo Muñoz preparando la mesa junto a una fila de spritz" style="object-position:30% 50%" loading="lazy" decoding="async"></figure><figure><img src="img/pm-coctel-negroni.webp" srcset="img/pm-coctel-negroni-m.webp 900w, img/pm-coctel-negroni.webp 1200w" sizes="(max-width:900px) 92vw, 30vw" alt="Cócteles rojos con hielo y piel de naranja" style="object-position:50% 50%" loading="lazy" decoding="async"></figure><figure><img src="img/pm-coctel-shaker.webp" srcset="img/pm-coctel-shaker-m.webp 900w, img/pm-coctel-shaker.webp 1920w" sizes="(max-width:900px) 92vw, 30vw" alt="Coctelera junto a un cóctel con borde de sal, lima y pimiento" style="object-position:50% 60%" loading="lazy" decoding="async"></figure></div>
       <div class="sv-cond" data-rv><p class="kick">Precios y condiciones</p><h3>Experiencia Open Bar</h3>
         <p>Disponible como <b>Experiencia Open Bar de 2 horas</b> junto al menú Tapas Canallas &amp; Contemporáneas: servicio continuado de la carta de cócteles de autor durante todo el evento, <b>115 € / persona (IVA incl.)</b>. El menú Urban Cocktails &amp; Tapas incluye 2 cócteles de autor a elegir por comensal (90 € / persona, IVA incl.).</p>
         <p class="sv-note"><b>Para otros formatos</b> (bodas, eventos corporativos o celebraciones privadas), preparamos un presupuesto a medida según invitados, duración y carta.</p></div>
