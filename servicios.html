@@ -1359,6 +1359,13 @@ footer.ft{padding-top:clamp(44px,4.6vw,66px)!important}
 #sv-batch .bt-g figure{margin:0;aspect-ratio:4/5;overflow:hidden;background:var(--wash,#f3f5f7)}
 #sv-batch .bt-g img{width:100%;height:100%;object-fit:cover;display:block}
 @media (max-width:767px){#sv-batch .bt-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Batch Cooking: foto de portada encima del texto (no fija, no tapa nada) */
+#sv-batch .bt-hero{width:100%;max-width:1320px;margin:0 auto clamp(28px,3vw,44px);aspect-ratio:21/9;overflow:hidden;position:static}
+#sv-batch .bt-hero img{width:100%;height:100%;object-fit:cover;object-position:50% 62%;display:block}
+@media (max-width:767px){#sv-batch .bt-hero{aspect-ratio:4/3}}
+#sv-batch.sv-solo{row-gap:clamp(20px,2.4vw,34px)!important}
+#sv-batch .bt-hero{margin-bottom:0!important}
 </style>
 </head>
 <body>
@@ -1390,7 +1397,7 @@ footer.ft{padding-top:clamp(44px,4.6vw,66px)!important}
       <div class="sv-q" data-rv><p class="q">¿Diseñamos la propuesta para tu próxima estancia o evento corporativo?</p><p>Te enviaremos nuestro Cuestionario Culinario Exclusivo para analizar el perfil exacto de tu equipo y confeccionar una propuesta a medida.</p><a class="btn c" href="#reservar" data-serv="B2B & Chef Concierge">Solicitar cuestionario culinario a medida</a></div>
     </div>
   </article><article class="sv-i sv-solo" id="sv-batch" aria-labelledby="sv-batch-t">
-    <div class="sv-t">
+    <figure class="bt-hero" data-rv><img src="img/pm-batch-portada.webp" srcset="img/pm-batch-portada-m.webp 1000w, img/pm-batch-portada.webp 2560w" sizes="(max-width:1400px) 92vw, 1320px" alt="Salmón con crema de remolacha servido frente a Barcelona" loading="lazy" decoding="async"></figure><div class="sv-t">
       <p class="kick" data-rv>Ejecutivos, deportistas y residencias</p>
       <h2 class="cap" id="sv-batch-t" data-rv>Private Batch Cooking<span class="scr">& meal prep de autor</span></h2>
       <p class="sv-sub" data-rv style="--d:80ms">Nutrición técnica, salud y tiempo de calidad para ejecutivos, deportistas de élite y residencias privadas.</p>
