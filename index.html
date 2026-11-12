@@ -1398,6 +1398,14 @@ footer.ft{padding-top:clamp(44px,4.6vw,66px)!important}
 .df.n-h{left:clamp(120px,24vw,420px);bottom:58%;width:clamp(130px,15vw,220px);aspect-ratio:1}
 .df.n-i{right:clamp(120px,24vw,420px);bottom:6%;width:clamp(130px,15vw,230px);aspect-ratio:.75}
 .df.n-j{right:clamp(10px,3vw,60px);bottom:62%;width:clamp(140px,17vw,250px);aspect-ratio:.9}
+
+/* ===== 12 nov: el tema de WordPress no debe pisar las citas ===== */
+blockquote{border:0!important;background:none!important;padding:0!important;box-shadow:none!important;quotes:none}
+blockquote::before,blockquote::after,blockquote p::before,blockquote p::after{content:none!important;display:none!important}
+.qb blockquote,.qb blockquote p{color:#fff!important;font-family:var(--display)!important;font-style:italic!important}
+.qb figcaption{border:0!important;color:var(--sky)!important}
+.qb figcaption::before,.qb figcaption::after{content:none!important;display:none!important}
+.qb::after{background:rgba(14,17,20,.68)!important}
 </style>
 </head>
 <body>

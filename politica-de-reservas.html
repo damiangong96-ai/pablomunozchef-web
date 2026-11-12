@@ -1345,6 +1345,14 @@ footer.ft{padding-top:clamp(44px,4.6vw,66px)!important}
 .ft-cols{padding-top:clamp(30px,3.2vw,44px)!important;padding-bottom:clamp(30px,3.2vw,44px)!important}
 @media (max-width:767px){.sv{gap:64px!important}}
 @media (min-width:768px){.ov aside{margin:calc(116px + clamp(18px,2vw,28px)) clamp(24px,3vw,48px) clamp(24px,3vw,48px) 0}}
+
+/* ===== 12 nov: el tema de WordPress no debe pisar las citas ===== */
+blockquote{border:0!important;background:none!important;padding:0!important;box-shadow:none!important;quotes:none}
+blockquote::before,blockquote::after,blockquote p::before,blockquote p::after{content:none!important;display:none!important}
+.qb blockquote,.qb blockquote p{color:#fff!important;font-family:var(--display)!important;font-style:italic!important}
+.qb figcaption{border:0!important;color:var(--sky)!important}
+.qb figcaption::before,.qb figcaption::after{content:none!important;display:none!important}
+.qb::after{background:rgba(14,17,20,.68)!important}
 </style>
 </head>
 <body>
