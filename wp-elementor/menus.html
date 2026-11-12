@@ -1,0 +1,1448 @@
+<!-- Pablo Muñoz Chef · página «menus» · pegar entero en un widget HTML de Elementor (plantilla Elementor Canvas) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap">
+<style>
+#pm-home{position:relative;isolation:isolate;text-align:left}
+#pm-home h1,#pm-home h2,#pm-home h3,#pm-home h4,#pm-home h5{text-transform:none;letter-spacing:normal;color:inherit;font-family:inherit;font-style:inherit;font-weight:inherit;line-height:inherit;margin:0}
+#pm-home a{text-decoration:none}
+#pm-home ul,#pm-home ol{margin-left:0}
+#pm-home button{box-shadow:none;text-shadow:none;border-radius:0}
+#pm-home [hidden]{display:none!important}
+#pm-home img{height:auto}
+#pm-home{--ink:#000;--soft:rgba(0,0,0,.68);--muted:rgba(0,0,0,.52);--line:rgba(0,0,0,.12);
+--cyan:#009EE2;--cyan-deep:#007db4;--paper:#fff;--wash:#f3f8fb;
+--display:"Tan Mon Cheri","Italiana","Didot",serif;
+--script:"Golden Hopes","Birthstone","Brush Script MT",cursive;
+--sans:"Figtree","Helvetica Neue",Arial,sans-serif;
+--ease:cubic-bezier(.22,1,.36,1);
+--wave-front:clamp(28px,4.2vw,64px);}
+#pm-home,#pm-home *,#pm-home *::before,#pm-home *::after{box-sizing:border-box}
+#pm-home{-webkit-text-size-adjust:100%}
+#pm-home html.lenis,#pm-home html.lenis body{height:auto}
+#pm-home .lenis.lenis-smooth{scroll-behavior:auto!important}
+#pm-home html.lenis{overscroll-behavior:none}
+#pm-home .lenis.lenis-stopped{overflow:hidden}
+#pm-home{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+#pm-home img,#pm-home video,#pm-home canvas{display:block;max-width:100%}
+#pm-home a{color:inherit}
+#pm-home p{margin:0}
+#pm-home h1,#pm-home h2,#pm-home h3{margin:0;font-weight:400}
+#pm-home button{font:inherit}
+#pm-home :focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+#pm-home [hidden]{display:none!important}
+#pm-home .sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#pm-home main{overflow-x:clip}
+#pm-home .kick{font:400 10px/1.35 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+#pm-home .cap{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:0;color:var(--cyan)}
+#pm-home .scr{display:block;font-family:var(--script);text-transform:none;color:var(--ink);transform:rotate(-3deg);line-height:.9}
+#pm-home .pmjs [data-rv]{opacity:0;filter:blur(5px);transform:translate3d(0,24px,0);transition:opacity 1.05s var(--ease),filter 1.05s var(--ease),transform 1.05s var(--ease);transition-delay:var(--d,0ms)}
+#pm-home .pmjs [data-rv].in{opacity:1;filter:blur(0);transform:none}
+#pm-home .wash{position:absolute;inset:-18% 0;z-index:1;pointer-events:none;background:linear-gradient(112deg,transparent 28%,rgba(255,244,205,.1) 44%,rgba(255,255,255,.035) 51%,transparent 66%);background-size:140% 100%;mix-blend-mode:screen;opacity:.58;animation:wash 18s ease-in-out infinite alternate}
+@keyframes wash{to{background-position:100% 50%}}
+#pm-home header.site{position:fixed!important;top:var(--abar,0px)!important;left:0!important;right:0!important;z-index:9990!important;display:grid!important;grid-template-columns:1fr auto 1fr!important;align-items:center!important;
+height:var(--hh,116px);margin:0!important;padding:0 clamp(22px,4vw,60px)!important;color:#fff;background:transparent;border-bottom:1px solid transparent;box-shadow:none!important;
+transition:height .5s var(--ease),background-color .45s ease,color .45s ease,border-color .45s ease}
+#pm-home header.site::before{content:"";position:absolute;inset:0 0 -40px;z-index:-1;background:linear-gradient(180deg,rgba(0,12,20,.38),rgba(0,12,20,0));transition:opacity .45s ease;pointer-events:none}
+#pm-home header.site.glass{--hh:70px;color:var(--ink);background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(18px) saturate(160%);backdrop-filter:blur(18px) saturate(160%);border-bottom-color:rgba(0,0,0,.07)}
+#pm-home header.site.glass::before,#pm-home header.site.open::before{opacity:0}
+#pm-home .hl{display:flex!important;align-items:center;gap:clamp(22px,2.6vw,42px);margin:0;padding:0}
+#pm-home .hl a{font:400 11px/1 var(--sans)!important;letter-spacing:.22em!important;text-transform:uppercase!important;text-decoration:none!important;color:inherit!important;padding:8px 0!important;margin:0!important;background:none!important;border:0!important;position:relative}
+#pm-home .hl a::after{content:"";position:absolute;left:0;right:.22em;bottom:2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+@media (hover:hover) and (pointer:fine){#pm-home .hl a:hover::after{transform:scaleX(1)}
+}
+#pm-home .lg{position:relative;display:grid!important;place-items:center;height:100%;width:170px;margin:0!important;padding:0!important;text-decoration:none!important;border:0!important;background:none!important}
+#pm-home .lg img{grid-area:1/1;display:block!important;width:auto!important;max-width:none!important;margin:0!important;transition:opacity .25s ease,transform .45s var(--ease)}
+#pm-home .lg .full{height:68px!important}
+#pm-home .lg .icon{height:38px!important;opacity:0;transform:scale(.9)}
+#pm-home header.glass .lg .full{opacity:0;transform:scale(.94)}
+#pm-home header.glass .lg .icon{opacity:1;transform:none;transition-delay:.06s}
+#pm-home header.site.open{color:var(--ink);background:transparent;border-bottom-color:transparent}
+#pm-home header.site.open .lg .full{opacity:0}
+#pm-home header.site.open .lg .icon{opacity:1;transform:none}
+#pm-home .menu-btn{justify-self:end;display:flex!important;align-items:center;gap:14px;background:none!important;border:0!important;padding:8px 0!important;margin:0!important;box-shadow:none!important;color:inherit!important;cursor:pointer;font:400 12px/1 var(--sans)!important;letter-spacing:.2em!important;text-transform:uppercase!important;border-radius:0!important}
+#pm-home .menu-btn i{position:relative;display:block;width:34px;height:12px}
+#pm-home .menu-btn i::before,#pm-home .menu-btn i::after{content:"";position:absolute;left:0;right:0;height:1px;background:currentColor;transition:transform .5s var(--ease),top .5s var(--ease)}
+#pm-home .menu-btn i::before{top:2px}
+#pm-home .menu-btn i::after{top:10px;left:10px}
+#pm-home .menu-btn[aria-expanded="true"] i::before{top:6px;transform:rotate(25deg)}
+#pm-home .menu-btn[aria-expanded="true"] i::after{top:6px;left:0;transform:rotate(-25deg)}
+#pm-home .ov{position:fixed;inset:0;z-index:85;background:#fff;display:grid;grid-template-columns:1.1fr .9fr;opacity:0;visibility:hidden;clip-path:inset(0 0 100% 0);transition:clip-path .9s var(--ease),opacity .4s ease,visibility 0s linear .9s}
+#pm-home .ov.open{opacity:1;visibility:visible;clip-path:inset(0 0 0 0);transition:clip-path .9s var(--ease),opacity .2s ease}
+#pm-home .ov nav{display:flex;flex-direction:column;justify-content:center;gap:2px;padding:140px clamp(22px,6vw,90px) 60px}
+#pm-home .ov nav a{font:400 clamp(30px,3.6vw,54px)/1.12 var(--display);text-transform:uppercase;color:var(--ink);text-decoration:none;opacity:0;transform:translateY(18px);transition:color .3s ease,opacity .6s var(--ease),transform .8s var(--ease)}
+#pm-home .ov.open nav a{opacity:1;transform:none;transition-delay:calc(.25s + var(--i)*.05s)}
+#pm-home .ov nav a:hover{color:var(--cyan)}
+#pm-home .ov nav a small{font:400 10px/1 var(--sans);letter-spacing:.18em;color:var(--muted);margin-left:12px;vertical-align:middle}
+#pm-home .ov aside{position:relative;overflow:hidden}
+#pm-home .ov aside img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.4s var(--ease)}
+#pm-home .ov.open aside img{transform:none}
+#pm-home .ov aside p{position:absolute;left:30px;bottom:28px;right:30px;color:#fff;z-index:2}
+#pm-home .ov aside p a{color:#fff}
+#pm-home .ov aside::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.45))}
+#pm-home .hero{position:relative;isolation:isolate;height:100vh;height:100svh;min-height:560px;overflow:hidden;background:#0b2230}
+#pm-home .hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,10,18,.42),rgba(0,10,18,.12) 38%,rgba(0,10,18,.18) 62%,rgba(0,10,18,.5));pointer-events:none}
+#pm-home .hero-mob{position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;object-position:50% 38%}
+#pm-home .hero-win{display:none}
+#pm-home .hero-arc{position:absolute;left:50%;top:var(--arc-top,max(44vh,300px));z-index:3;width:min(98vw,1280px);height:auto;transform:translate(-50%,-50%);color:#fff;overflow:visible;filter:drop-shadow(0 6px 22px rgba(0,0,0,.35));animation:presence 1.15s var(--ease) .4s both}
+#pm-home .hero-arc text{fill:currentColor;font-family:var(--display);font-size:96px;text-transform:uppercase;letter-spacing:.01em}
+#pm-home .hero-sub{position:absolute;left:clamp(22px,4vw,60px);bottom:clamp(150px,22vh,240px);z-index:4;max-width:300px;color:rgba(255,255,255,.9);font-size:14px;line-height:1.6;text-shadow:0 2px 14px rgba(0,0,0,.45);animation:presence 1.15s var(--ease) .9s both}
+#pm-home .hero-sub b{display:block;font:400 10px/1.35 var(--sans);letter-spacing:.18em;text-transform:uppercase;margin-bottom:8px;color:#fff}
+#pm-home .hero .hero-cta{position:absolute;right:clamp(22px,4vw,60px);bottom:clamp(150px,22vh,240px);z-index:4;background:#fff;border-color:#fff;color:var(--ink);animation:presence 1.15s var(--ease) 1s both}
+#pm-home .hero .hero-cta::before{background:var(--cyan)}
+#pm-home .hero .hero-cta:hover{border-color:var(--cyan);color:#fff}
+#pm-home .hero .wave{fill:#fff}
+#pm-home .lg .full.d{display:none}
+#pm-home .hero-mh{display:none}
+#pm-home .wave{position:absolute;left:0;right:0;bottom:-1px;z-index:1;display:block;width:100%;height:clamp(110px,15vw,220px);fill:#fff;pointer-events:none}
+#pm-home .wave--front{z-index:5;height:var(--wave-front)}
+@keyframes presence{from{opacity:0}to{opacity:1}}
+#pm-home .btn{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;min-width:168px;min-height:46px;padding:0 28px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:400 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none!important;cursor:pointer;border-radius:0;transition:color .55s ease,border-color .55s ease,transform .55s var(--ease)}
+#pm-home .btn::before{content:"";position:absolute;inset:100% 0 auto;z-index:-1;height:120%;background:var(--cyan);border-radius:50% 50% 0 0/18% 18% 0 0;transition:transform .7s var(--ease)}
+#pm-home .btn:hover,#pm-home .btn:focus-visible{color:#fff;border-color:var(--cyan);transform:translateY(-3px)}
+#pm-home .btn:hover::before,#pm-home .btn:focus-visible::before{transform:translateY(-96%)}
+#pm-home .btn.w{background:#fff;border-color:rgba(255,255,255,.78);color:var(--ink)}
+#pm-home .btn.w:hover{border-color:#fff}
+#pm-home .btn.c{background:var(--cyan);border-color:var(--cyan);color:#fff}
+#pm-home .btn.c::before{background:var(--ink)}
+#pm-home .btn.c:hover{border-color:var(--ink)}
+#pm-home .lnk{font:400 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--ink);padding-bottom:6px;border-bottom:1px solid var(--cyan);transition:color .3s ease}
+#pm-home .lnk:hover{color:var(--cyan)}
+#pm-home .jr{position:relative;isolation:isolate;height:760vh;min-height:5200px;background:#fff;--side:clamp(22px,4vw,58px)}
+#pm-home .jr-pin{position:sticky;top:0;height:100vh;height:100svh;min-height:560px;display:grid;place-items:center;overflow:hidden}
+#pm-home .jr-corner{position:absolute;z-index:6;margin:0;pointer-events:none}
+#pm-home .jr-corner.k{top:calc(var(--side) + 60px);left:var(--side)}
+#pm-home .jr-corner.f{left:var(--side);bottom:clamp(14px,1.8vw,24px);max-width:min(315px,74vw);font-size:10px;line-height:1.45;color:var(--muted)}
+#pm-home .jr-corner.f::before{content:"";display:block;width:clamp(62px,8vw,116px);height:1px;margin-bottom:12px;background:currentColor}
+#pm-home .about{position:absolute;inset:0;z-index:7;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;pointer-events:none;will-change:transform,opacity}
+#pm-home .about .kick{margin-bottom:26px}
+#pm-home .about h2{font-size:clamp(34px,4.85vw,64px);line-height:1.18;max-width:min(100%,900px)}
+#pm-home .about h2 > span{display:block;white-space:nowrap}
+#pm-home .about h2 .w{display:inline-block;margin:0 -.04em;font-family:var(--script);font-size:1.18em;line-height:1;text-transform:none;color:var(--ink);transform:translateY(-.01em) rotate(-3deg)}
+#pm-home .about .sig{margin-top:-4px;font:400 clamp(30px,3.2vw,46px)/1 var(--script);color:var(--ink)}
+#pm-home .about .mono{width:30px;height:64px;margin-top:18px;animation:float 9s ease-in-out infinite}
+@keyframes float{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -7px;rotate:1.2deg}}
+#pm-home .jr-stage{position:absolute;inset:0;display:grid;place-items:center}
+#pm-home .drift{position:absolute;inset:0;z-index:1;pointer-events:none}
+#pm-home .df{position:absolute;margin:0;opacity:0;visibility:hidden;will-change:transform,opacity;backface-visibility:hidden}
+#pm-home .df.img{overflow:hidden;background:var(--wash);border:6px solid rgba(255,255,255,.92);border-radius:4px;box-shadow:0 18px 42px rgba(0,40,70,.16)}
+#pm-home .df.img img{width:100%;height:100%;object-fit:cover}
+#pm-home .df.left{left:clamp(-18px,5vw,86px);bottom:12%;width:clamp(150px,23vw,330px);aspect-ratio:.82}
+#pm-home .df.top{left:clamp(48px,11vw,180px);bottom:28%;width:clamp(140px,20vw,278px);aspect-ratio:1.08/.78}
+#pm-home .df.right{right:clamp(-18px,5vw,86px);bottom:10%;width:clamp(160px,25vw,360px);aspect-ratio:1.18/.88}
+#pm-home .df.right-high{right:clamp(52px,12vw,188px);bottom:31%;width:clamp(140px,20vw,280px);aspect-ratio:.86}
+#pm-home .df.center-low{left:clamp(170px,27vw,420px);bottom:7%;width:clamp(140px,20vw,282px);aspect-ratio:1/1.18}
+#pm-home .df.ico{width:clamp(56px,6vw,104px)}
+#pm-home .df.ico.wide{width:clamp(110px,11vw,190px)}
+#pm-home .df.ico img{width:100%;height:auto}
+#pm-home .ico-1{left:clamp(8px,3vw,56px);top:10%}
+#pm-home .ico-2{left:clamp(2px,1.5vw,28px);top:78%}
+#pm-home .ico-3{right:clamp(10px,3.4vw,62px);top:11%}
+#pm-home .ico-4{right:clamp(4px,2.4vw,44px);top:48%}
+#pm-home .ico-5{left:clamp(18px,4vw,74px);top:34%}
+#pm-home .ico-6{right:clamp(10px,3vw,58px);top:70%}
+#pm-home .plate{position:absolute;left:50%;top:50%;z-index:2;width:min(88vh,820px);backface-visibility:hidden;aspect-ratio:1;transform:translate(-50%,-50%);will-change:transform;pointer-events:none}
+#pm-home .plate-spin{position:absolute;inset:0;will-change:transform;backface-visibility:hidden}
+#pm-home .plate-disc{position:absolute;inset:0;border-radius:50%;background:
+radial-gradient(circle at 50% 50%,#fff 0 30%,#fbfdfe 31%,#f4f8fa 33.5%,#fff 35.5%,#fff 60%,#eef4f7 62%,#fff 64%,#fbfdfe 92%,#e9f0f3 96%,#dfe8ec 100%);
+box-shadow:0 40px 80px -30px rgba(0,50,80,.32),0 12px 30px rgba(0,40,60,.1),inset 0 -8px 20px rgba(0,40,60,.06),inset 0 6px 16px rgba(255,255,255,.9)}
+#pm-home .plate-rim{position:absolute;inset:0;width:100%;height:100%;color:var(--cyan);overflow:visible}
+#pm-home .plate-rim text{font:400 15px var(--sans);letter-spacing:.42em;text-transform:uppercase;fill:var(--cyan)}
+#pm-home .jr-content{position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(360px,62vw);min-height:330px;text-align:center;opacity:0;pointer-events:none;will-change:transform,opacity}
+#pm-home .jr-content h2{font-size:clamp(26px,3vw,40px);line-height:1.02}
+#pm-home .jr-content .scr{margin-top:.02em;font-size:clamp(34px,3.4vw,46px);line-height:.6}
+#pm-home .jr-content p{max-width:300px;margin:22px auto 0;font-size:13px;line-height:1.5;color:var(--soft)}
+#pm-home .jr-content .ct{transition:opacity .46s var(--ease),transform .46s var(--ease),filter .46s var(--ease)}
+#pm-home .jr-content .ct.sw{opacity:0;transform:translateY(10px);filter:blur(2px);transition:none}
+#pm-home .pag{display:grid;gap:10px;width:min(210px,54vw);margin-top:20px}
+#pm-home .pag .n{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.2em;color:var(--muted)}
+#pm-home .pag .bar{height:1px;background:var(--line);overflow:hidden}
+#pm-home .pag .bar i{display:block;height:100%;background:var(--cyan);transform-origin:left;transform:scaleX(.2)}
+#pm-home .atm{position:relative;isolation:isolate;display:grid;place-items:center;min-height:140vh;overflow:hidden;color:#fff;background:#0b2230}
+#pm-home .atm-bg{position:absolute;inset:-6% 0;z-index:0;width:100%;height:112%;object-fit:cover;object-position:50% 40%;transform:translate3d(0,var(--py,0px),0) scale(var(--ps,1.06));will-change:transform}
+#pm-home .atm::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(3,8,12,.22),rgba(3,8,12,.06) 24%,rgba(3,8,12,0) 50%)}
+#pm-home .atm::after{content:"";position:absolute;left:0;right:0;bottom:-1px;z-index:2;height:clamp(160px,24vh,320px);background:linear-gradient(180deg,rgba(255,255,255,0),#fff)}
+#pm-home .wave-top{position:absolute;left:0;right:0;top:-1px;z-index:3;width:100%;height:clamp(52px,7vw,104px);fill:#fff;pointer-events:none}
+#pm-home .wave-top--front{z-index:4;height:clamp(18px,2.8vw,36px)}
+#pm-home .atm-c{position:relative;z-index:3;text-align:center;padding:clamp(72px,10vw,120px) 24px;transform:translateY(-145px);text-shadow:0 4px 24px rgba(0,0,0,.46)}
+#pm-home .atm-c h2{color:#fff;font-size:52px;line-height:1;white-space:nowrap}
+#pm-home .atm-c .scr{margin-top:.04em;color:#fff;font-size:62px;line-height:.5}
+#pm-home .fx{position:relative;z-index:3;margin-top:calc(clamp(-130px,-12vh,-90px) + 42px);padding:60px 0 60px clamp(28px,4.2vw,60px);background:#fff;min-height:100vh}
+#pm-home .fx-grid{display:grid;grid-template-columns:minmax(240px,30%) minmax(0,1fr);gap:clamp(34px,4vw,48px);min-height:calc(100vh - 120px)}
+#pm-home .fx-head{position:relative;display:flex;flex-direction:column;justify-content:center;max-width:360px;min-height:500px;padding:clamp(52px,6vw,76px) 0 clamp(92px,8vw,120px)}
+#pm-home .fx-head .kick{position:absolute;top:calc(clamp(90px,12vh,130px) - 86px);left:0}
+#pm-home .fx-head h2{font-size:32px;line-height:1.18;white-space:nowrap}
+#pm-home .fx-head h2 span{display:block}
+#pm-home .fx-head .scr{margin:-.2em 0 0 1.1em;font-size:34px}
+#pm-home .fx-head p.intro{width:min(100%,320px);margin-top:10px;font-size:13px;line-height:1.66;color:var(--soft)}
+#pm-home .fx-head .foot{position:absolute;left:0;bottom:0;max-width:315px;font-size:10px;line-height:1.45;color:var(--muted)}
+#pm-home .fx-head .foot::before{content:"";display:block;width:clamp(62px,8vw,116px);height:1px;margin-bottom:12px;background:currentColor}
+#pm-home .fx-panel{position:relative;display:flex;flex-direction:column;justify-content:center;min-width:0}
+#pm-home .fx-shell{position:relative;overflow:hidden;padding:10px 0 8px;--peek:clamp(44px,5vw,72px);--gap:20px}
+#pm-home .fx-track{display:flex;align-items:center;gap:var(--gap);transition:transform .8s var(--ease);will-change:transform}
+#pm-home .fx-card{flex:0 0 calc((100% - var(--peek) - var(--gap)*2)/2);display:grid;grid-template-rows:240px minmax(0,1fr);height:clamp(470px,38vw,530px);overflow:hidden;border:1px solid var(--line);background:#fff;opacity:.5;filter:saturate(.94);transform:scale(.98);text-decoration:none;color:inherit;transition:transform .8s var(--ease),opacity .8s var(--ease),filter .8s var(--ease),border-color .4s ease}
+#pm-home .fx-card.is-active{opacity:1;filter:none;transform:none;border-color:rgba(0,0,0,.18)}
+#pm-home .fx-card.is-prev{opacity:0}
+#pm-home .fx-card.is-next{opacity:.64}
+#pm-home .fx-media{overflow:hidden;position:relative}
+#pm-home .fx-media img{width:100%;height:100%;object-fit:cover;object-position:50% 26%;filter:grayscale(35%) brightness(.92);transform:scale(1.02);transition:filter .8s var(--ease),transform .8s var(--ease)}
+#pm-home .fx-card.is-active .fx-media img{filter:none;transform:none}
+#pm-home .fx-body{display:flex;flex-direction:column;padding:clamp(24px,2.8vw,34px) clamp(24px,3.2vw,44px) 28px}
+#pm-home .fx-body h3{font-size:22px;line-height:1.2;color:var(--cyan)}
+#pm-home .fx-body p{margin-top:8px;font-size:12.5px;line-height:1.6;color:var(--soft)}
+#pm-home .fx-body .meta{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+#pm-home .fx-next{position:absolute;top:50%;right:clamp(14px,2vw,28px);z-index:5;display:grid;place-items:center;width:50px;height:50px;padding:0;border:1px solid rgba(255,255,255,.6)!important;border-radius:0!important;background:rgba(6,13,20,.26)!important;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:#fff!important;opacity:0;transform:translate3d(10px,-50%,0);transition:opacity .25s ease,transform .25s ease;cursor:pointer}
+#pm-home .fx-shell:hover .fx-next,#pm-home .fx-next:focus-visible{opacity:1;transform:translate3d(0,-50%,0)}
+#pm-home .fx-next svg,#pm-home .ar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+#pm-home .ctl{display:flex;align-items:center;gap:18px;margin-top:22px;padding-right:clamp(28px,4.2vw,60px)}
+#pm-home .ctl .c{display:flex;align-items:center;gap:14px;cursor:pointer;user-select:none;background:none;border:0;padding:0;color:inherit}
+#pm-home .ctl .c b{font:400 24px/1 var(--display);color:var(--ink)}
+#pm-home .ctl .c small{font-size:9px;letter-spacing:.22em;color:var(--muted)}
+#pm-home .ctl .pr{flex:1;height:1px;background:var(--line);position:relative;overflow:hidden}
+#pm-home .ctl .pr i{position:absolute;inset:0 auto 0 0;background:var(--cyan);transition:width .6s var(--ease)}
+#pm-home .ap{position:relative;isolation:isolate;height:115vh;min-height:max(115svh,680px);background:#fff;overflow:clip}
+#pm-home .ap-scene{position:absolute;left:0;right:0;top:50%;height:0}
+#pm-home .ap-lemon{position:absolute;left:50%;top:0;z-index:0;width:clamp(340px,43vw,820px);height:auto;max-width:none;transform:translate(-50%,-46%);pointer-events:none}
+#pm-home .ap-tw{position:absolute;left:20.5vw;top:-3.6vw;z-index:1}
+#pm-home .ap-tw .kick{font-size:13px;margin:0 0 2.6vw .2vw;white-space:nowrap}
+#pm-home .ap-tw h2{font-size:8.66vw;line-height:.78;white-space:nowrap}
+#pm-home .ap-note{position:absolute;z-index:4;left:58.1vw;top:11.4vw;width:min(23vw,440px);font-size:clamp(12px,.95vw,15px);line-height:1.6;color:var(--soft)}
+#pm-home .ap-note .lnk{display:inline-block;margin-top:14px}
+#pm-home .ap-drink{position:absolute;z-index:2;left:32.3vw;top:-17vw;width:28.4vw;height:auto;max-width:none;transform:translate3d(0,var(--dy,0px),0);filter:drop-shadow(0 26px 38px rgba(0,60,90,.18));pointer-events:none;user-select:none}
+#pm-home .ap-leaves{position:absolute;inset:0;z-index:3;pointer-events:none}
+#pm-home .leaf{position:absolute;display:block;height:auto;max-width:none;pointer-events:none;user-select:none}
+#pm-home .leaf.t{right:0;top:calc(50% - 23vw);width:12.1vw;transform:translate3d(0,var(--ly,0px),0)}
+#pm-home .leaf.b{left:0;top:calc(50% + 3.1vw);width:11.4vw;transform:translate3d(0,var(--ly2,0px),0)}
+#pm-home .gl{position:relative;z-index:3;display:flex;flex-direction:column;height:100vh;min-height:720px;padding:60px 0 clamp(28px,4.2vw,60px);overflow:hidden;background:#fff;--g:clamp(28px,4.2vw,60px)}
+#pm-home .gl-head{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;padding:0 var(--g)}
+#pm-home .gl-head h2{font-size:32px;line-height:1.18}
+#pm-home .gl-head h2 span{display:block}
+#pm-home .gl-head .scr{margin:-.2em 0 0 1.1em;font-size:34px;width:max-content}
+#pm-home .gl-head .side{max-width:320px;text-align:right}
+#pm-home .gl-head .side p{margin-top:10px;font-size:13px;line-height:1.6;color:var(--soft)}
+#pm-home .gl-vp{position:relative;flex:1 1 auto;min-height:0;margin-top:clamp(42px,6vh,68px);overflow:hidden;touch-action:pan-y;user-select:none}
+#pm-home .gl-track{display:flex;height:100%;gap:clamp(10px,1vw,16px);width:max-content;padding:0 var(--g);transition:transform .9s var(--ease);will-change:transform}
+#pm-home .gl.reset .gl-track,#pm-home .gl.reset .gl-card,#pm-home .gl.reset .gl-card img{transition:none!important}
+#pm-home .gl-card{position:relative;flex:0 0 auto;height:100%;aspect-ratio:3/4;margin:0;overflow:hidden;background:var(--wash);opacity:.68;transform:scale(.97);transition:opacity .65s ease,transform .85s var(--ease)}
+#pm-home .gl-card.is-active{opacity:1;transform:none}
+#pm-home .gl-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(0,10,14,.5));pointer-events:none}
+#pm-home .gl-card img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 1.1s var(--ease)}
+#pm-home .gl-card.is-active img{transform:none}
+#pm-home .gl-card figcaption{position:absolute;left:18px;right:18px;bottom:17px;z-index:2;color:#fff;font-size:9px;letter-spacing:.18em;line-height:1.4;text-transform:uppercase}
+#pm-home .ar{position:absolute;top:50%;z-index:6;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid rgba(255,255,255,.68)!important;border-radius:0!important;background:rgba(6,19,24,.38)!important;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff!important;cursor:pointer;opacity:0;transform:translateY(-50%) scale(.86);transition:opacity .3s ease,transform .45s var(--ease),background .3s ease}
+#pm-home .ar.p{left:clamp(18px,2vw,30px)}
+#pm-home .ar.n{right:clamp(18px,2vw,30px)}
+#pm-home .gl-vp:hover .ar,#pm-home .gl-vp:focus-within .ar{opacity:1;transform:translateY(-50%) scale(1)}
+#pm-home .gl .ctl{padding:24px var(--g) 0;margin:0}
+#pm-home .dn{position:relative;height:240vh;min-height:1700px;background:#061318;--p:0;--ds:1.06;--ns:1.1;--dy:1.5%;--ny:3%;--nc:100%;--sh:.22;--dtc:0%;--ntc:100%;--pw:0%}
+#pm-home .dn-pin{position:sticky;top:0;height:100vh;min-height:620px;overflow:hidden;background:#061318}
+#pm-home .dn-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform,clip-path}
+#pm-home .dn-img.d{transform:translate3d(0,var(--dy),0) scale(var(--ds));filter:saturate(.95) brightness(1.04)}
+#pm-home .dn-img.n{clip-path:inset(0 var(--nc) 0 0);transform:translate3d(0,var(--ny),0) scale(var(--ns));filter:saturate(.85) brightness(.7) contrast(1.08)}
+#pm-home .dn-sh{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(2,12,16,.5),transparent 48%,rgba(2,12,16,.16)),linear-gradient(180deg,rgba(2,12,16,.05),rgba(2,12,16,var(--sh)));pointer-events:none}
+#pm-home .dn-cp{position:absolute;left:0;top:50%;z-index:3;width:100%;padding:48px 6vw 24px;color:#fff;text-align:center;transform:translateY(-50%)}
+#pm-home .dn-cp .kick{color:#fff;margin-bottom:18px}
+#pm-home .dn-cp h2{color:#fff;font-size:clamp(40px,4.8vw,72px);line-height:1}
+#pm-home .dn-cp .scr{width:max-content;margin:.1em auto 0;color:#fff;font-size:clamp(40px,4vw,62px);line-height:.72}
+#pm-home .dn-cp.d{clip-path:inset(0 0 0 var(--dtc))}
+#pm-home .dn-cp.n{clip-path:inset(0 var(--ntc) 0 0)}
+#pm-home .dn-cp.n .scr{color:#8fd8f7}
+#pm-home .dn-pr{position:absolute;left:50%;bottom:clamp(28px,4vw,56px);z-index:4;width:120px;height:1px;background:rgba(255,255,255,.28);transform:translateX(-50%);overflow:hidden}
+#pm-home .dn-pr i{display:block;height:100%;width:var(--pw);background:#fff}
+#pm-home .dr{position:relative;isolation:isolate;min-height:100vh;overflow:hidden;padding:60px clamp(28px,4.2vw,60px);background:#fff}
+#pm-home .dr .kick.k{position:absolute;top:60px;left:clamp(28px,4.2vw,60px);z-index:9}
+#pm-home .dr .foot{position:absolute;left:clamp(28px,4.2vw,60px);bottom:60px;z-index:9;max-width:min(315px,27vw);font-size:10px;line-height:1.35;color:var(--muted)}
+#pm-home .dr .foot::before{content:"";display:block;width:clamp(62px,8vw,116px);height:1px;margin-bottom:12px;background:currentColor}
+#pm-home .dr-ed{position:absolute;top:50%;left:clamp(28px,4.2vw,60px);z-index:8;width:min(32vw,460px);transform:translateY(-50%)}
+#pm-home .dr-ed h2{display:flex;flex-direction:column;font-size:32px;line-height:1.18;white-space:nowrap}
+#pm-home .dr-ed .scr{align-self:flex-start;margin:-.2em 0 0 1.1em;font-size:30px;width:max-content}
+#pm-home .dr-ed p{width:min(100%,420px);margin-top:8px;font-size:13px;line-height:1.7;color:var(--soft)}
+#pm-home .dr-ed .dr-desc{min-height:3.4em;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);color:var(--ink);transition:opacity .35s ease}
+#pm-home .dr-ed .lnk{display:inline-block;margin-top:16px}
+#pm-home .dr-stage{position:relative;z-index:1;width:100%;min-height:calc(100vh - 120px)}
+#pm-home .dr-names{position:absolute;top:50%;right:calc(min(34vw,500px) + clamp(26px,3vw,46px));z-index:10;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:7px;width:min(16vw,220px);margin:0;padding:0;list-style:none;transform:translateY(-50%)}
+#pm-home .dr-names li{display:block}
+#pm-home .dr-name{display:block;padding:5px 0!important;margin:0!important;background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;color:var(--ink)!important;opacity:.42;font:400 12px/1.2 var(--sans)!important;letter-spacing:.13em!important;text-transform:uppercase!important;text-align:right;white-space:nowrap;cursor:pointer;transition:opacity .35s ease,transform .45s var(--ease),color .35s ease}
+#pm-home .dr-names.has-active .dr-name:not(.is-active){opacity:.28}
+#pm-home .dr-name.is-active{opacity:1;color:var(--cyan)!important;transform:translateX(-8px)}
+@media (hover:hover) and (pointer:fine){#pm-home .dr-name:hover{opacity:1}
+}
+#pm-home .dr-vis{position:absolute;right:0;top:52%;z-index:3;width:min(34vw,500px);height:min(72vh,680px);transform:translateY(-50%);pointer-events:none}
+#pm-home .dr-v{position:absolute;inset:0;margin:0;background:linear-gradient(135deg,#f6f6f3,#ececE8);opacity:0;visibility:hidden;transform-origin:50% 90%;transition:opacity .5s ease,visibility .5s ease,transform .7s var(--ease),box-shadow .85s var(--ease)}
+#pm-home .dr-v:nth-child(2n){transform:translate(20px,14px) rotate(2.4deg) scale(.965)}
+#pm-home .dr-v:nth-child(3n){transform:translate(-20px,20px) rotate(-2.6deg) scale(.95)}
+#pm-home .dr-v.is-active{opacity:1;visibility:visible;transform:translate(0,-8px) rotate(-.45deg) scale(1);box-shadow:0 10px 24px rgba(20,30,40,.08),0 32px 80px rgba(0,50,80,.12)}
+#pm-home .dr-v img{position:absolute;top:9px;left:9px;width:calc(100% - 18px);height:calc(100% - 75px)!important;object-fit:cover}
+#pm-home .dr-v figcaption{position:absolute;left:20px;right:20px;bottom:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;opacity:0;transform:translateY(8px);transition:opacity .55s ease .18s,transform .7s var(--ease) .18s}
+#pm-home .dr-v.is-active figcaption{opacity:1;transform:none}
+#pm-home .dr-v figcaption b{font:400 8px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+#pm-home .dr-v figcaption em{font:400 clamp(20px,1.9vw,28px)/.72 var(--script);font-style:normal;color:var(--cyan);white-space:nowrap;transform:rotate(-3deg)}
+#pm-home .dr-mob{display:none}
+#pm-home .cta{position:relative;isolation:isolate;height:330vh;min-height:2400px;margin:-2px 0;background:#0a6e86;color:#fff}
+#pm-home .cta::before{content:"";position:absolute;top:0;left:0;right:0;z-index:4;height:clamp(100px,16vh,190px);background:linear-gradient(180deg,#fff,rgba(255,255,255,.72) 28%,rgba(255,255,255,0));pointer-events:none}
+#pm-home .cta::after{content:"";position:absolute;left:0;right:0;bottom:-2px;z-index:3;height:calc(clamp(96px,14vh,180px) + 3px);background:linear-gradient(180deg,rgba(255,255,255,0),#fff);pointer-events:none}
+#pm-home .cta-pin{position:sticky;top:0;height:100vh;min-height:620px;overflow:hidden}
+#pm-home .cta-pin::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,30,45,.5),rgba(0,30,45,.85) 58%,rgba(0,30,45,.7));opacity:var(--ov,0);pointer-events:none}
+#pm-home .sea{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;transform:translate3d(0,var(--ey,0px),0) scale(1.1);will-change:transform}
+#pm-home .cta-c{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:min(92vw,1180px);height:100%;margin:0 auto;padding:clamp(64px,9vw,112px) 24px;text-align:center;opacity:0;will-change:transform,opacity,clip-path}
+#pm-home .cta-c h2{color:#fff;font-size:clamp(44px,5vw,78px);line-height:1;text-shadow:0 2px 22px rgba(0,30,40,.45)}
+#pm-home .cta-c .scr{text-shadow:0 2px 16px rgba(0,30,40,.4)}
+#pm-home .cta-c .scr{margin-top:.06em;color:#fff;font-size:clamp(46px,5vw,76px);line-height:.5}
+#pm-home .cta-c .btn{margin-top:46px;opacity:0}
+#pm-home .rs{position:relative;padding:clamp(70px,9vw,130px) clamp(22px,5vw,76px);background:#fff}
+#pm-home .rs-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,6vw,110px);max-width:1280px;margin:0 auto}
+#pm-home .rs-head .kick,#pm-home .ft-top .kick{margin-bottom:14px}
+#pm-home .rs-head h2{font-size:clamp(36px,3.6vw,54px);line-height:1.05}
+#pm-home .rs-head h2 span{display:block}
+#pm-home .rs-head .scr{margin:-.12em 0 0 1em;font-size:clamp(40px,3.6vw,56px);width:max-content}
+#pm-home .rs-head p{max-width:420px;margin-top:20px;font-size:14px;line-height:1.7;color:var(--soft)}
+#pm-home .pol{margin-top:34px;max-width:420px;border-top:1px solid var(--line)}
+#pm-home .pol div{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid var(--line);font-size:13px}
+#pm-home .pol div b{font-weight:400;color:var(--cyan);white-space:nowrap}
+#pm-home .rs-head .wa{display:inline-flex;align-items:center;gap:10px;margin-top:28px;text-decoration:none;font-size:13px}
+#pm-home .rs-head .wa svg{width:20px;height:20px;fill:var(--cyan)}
+#pm-home form.f{display:grid;grid-template-columns:1fr 1fr;column-gap:22px;row-gap:24px}
+#pm-home .fld{display:flex;flex-direction:column;gap:6px;grid-column:span 2}
+#pm-home .fld.h{grid-column:span 1}
+#pm-home .fld label{font:400 10px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+#pm-home .fld label i{font-style:normal;color:var(--cyan)}
+#pm-home .fld input,#pm-home .fld select,#pm-home .fld textarea{font:300 16px/1.4 var(--sans);color:var(--ink);background:transparent;border:0;border-bottom:1px solid rgba(0,0,0,.24);border-radius:0;padding:10px 0;width:100%;outline:0;box-shadow:none;-webkit-appearance:none;appearance:none;transition:border-color .25s ease}
+#pm-home .fld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23000' stroke-width='1.2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 2px center;padding-right:24px}
+#pm-home .fld textarea{min-height:64px;resize:vertical}
+#pm-home .fld input:focus,#pm-home .fld select:focus,#pm-home .fld textarea:focus{border-bottom-color:var(--cyan)}
+#pm-home .fld.bad input,#pm-home .fld.bad select,#pm-home .fld.bad textarea{border-bottom-color:#C0362C}
+#pm-home .err{font-size:12px;color:#C0362C}
+#pm-home .chk{grid-column:span 2;display:flex;gap:10px;align-items:flex-start;font-size:12px;line-height:1.6;color:var(--soft);cursor:pointer}
+#pm-home .chk input{width:16px;height:16px;margin:3px 0 0;accent-color:var(--cyan);flex:none}
+#pm-home .chk.bad span{color:#C0362C}
+#pm-home .send{grid-column:span 2}
+#pm-home .done{padding:34px;background:var(--wash)}
+#pm-home .done h3{font:400 34px/1.1 var(--display);text-transform:uppercase;color:var(--cyan)}
+#pm-home .done p{margin-top:10px;color:var(--soft)}
+#pm-home .done .acts{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}
+#pm-home .fab{white-space:nowrap;position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:9980;display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px 0 20px;border-radius:999px;background:var(--cyan);color:#fff!important;font:500 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;text-decoration:none!important;box-shadow:0 14px 34px -10px rgba(0,90,140,.55);opacity:0;visibility:hidden;transform:translate(-50%,20px);transition:opacity .45s var(--ease),transform .55s var(--ease),visibility 0s linear .55s,background-color .3s ease}
+#pm-home .fab.on{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .45s var(--ease),transform .55s var(--ease),background-color .3s ease}
+#pm-home .fab svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@media (hover:hover) and (pointer:fine){#pm-home .fab:hover{background:var(--ink)}
+}
+#pm-home .ft{position:relative;padding:clamp(60px,7vw,100px) clamp(22px,5vw,76px) 26px;background:#fff;border-top:1px solid var(--line)}
+#pm-home .ft-top{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding-bottom:clamp(40px,5vw,70px);border-bottom:1px solid var(--line)}
+#pm-home .ft-top h2{font-size:clamp(40px,5vw,78px);line-height:.95}
+#pm-home .ft-top .scr{margin:-.1em 0 0 1.2em;font-size:clamp(38px,4vw,60px);width:max-content}
+#pm-home .ft-top .r{text-align:right;font-size:13px;color:var(--soft)}
+#pm-home .ft-top .r img{height:110px;width:auto;margin:0 0 16px auto}
+#pm-home .ft-top .r a{color:var(--ink)}
+#pm-home .ft-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(22px,3vw,48px);padding:clamp(40px,5vw,64px) 0}
+#pm-home .ft-cols h3{margin:10px 0 0;font:400 22px/1.1 var(--display);text-transform:uppercase;color:var(--cyan)}
+#pm-home .ft-cols p{margin-top:10px;font-size:12.5px;line-height:1.6;color:var(--soft)}
+#pm-home .ft-cols .lnk{display:inline-block;margin-top:16px}
+#pm-home .ft-bot{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:22px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+#pm-home .soc{display:flex;gap:10px}
+#pm-home .soc a{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:background .3s ease,border-color .3s ease}
+#pm-home .soc a svg{width:17px;height:17px;fill:var(--ink);transition:fill .3s ease}
+#pm-home .soc a:hover{background:var(--cyan);border-color:var(--cyan)}
+#pm-home .soc a:hover svg{fill:#fff}
+@media (min-width:768px) and (max-width:1280px){#pm-home .hero{--arc-top:max(44vh,280px)}
+}
+@media (max-width:1100px){#pm-home .fx-grid{grid-template-columns:minmax(220px,34%) minmax(0,1fr)}
+#pm-home .ft-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:767px){#pm-home header.site{--hh:84px;padding:0 20px!important}
+#pm-home header.site.glass{--hh:60px}
+#pm-home .hl{visibility:hidden}
+#pm-home .hl a{display:none!important}
+#pm-home .atm-c h2,#pm-home .dn-cp h2,#pm-home .cta-c h2,#pm-home .fx-head h2,#pm-home .fx-body h3,#pm-home .gl-head h2,#pm-home .dr-ed h2,#pm-home .rs-head h2,#pm-home .ft-top h2,#pm-home .jr-content h2{line-height:1.12!important}
+#pm-home .lg{width:110px}
+#pm-home .lg .full{height:52px!important}
+#pm-home .lg .icon{height:32px!important}
+#pm-home .menu-btn span{display:none}
+#pm-home .ov{grid-template-columns:1fr}
+#pm-home .ov aside{display:none}
+#pm-home .ov nav{padding:110px 26px 40px}
+#pm-home .ov nav a{font-size:30px}
+#pm-home .hero{height:100svh;min-height:560px}
+#pm-home .hero-arc,#pm-home .hero-sub{display:none}
+#pm-home .hero{background:#0b2230}
+#pm-home .hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,10,18,.35),rgba(0,10,18,.08) 40%,rgba(0,10,18,.45))}
+#pm-home .hero-mob{display:block;position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;transform:translate3d(0,var(--bgy,0px),0) scale(1.06)}
+#pm-home .hero-mh{position:absolute;left:50%;top:38%;z-index:3;display:flex;flex-direction:column;align-items:center;width:min(96vw,460px);transform:translate(-50%,-50%);color:#fff;text-align:center;filter:drop-shadow(0 7px 18px rgba(0,0,0,.34));animation:presence 1.15s var(--ease) .5s both}
+#pm-home .hero-mh .l{font:400 clamp(40px,12.6vw,62px)/1 var(--display);text-transform:uppercase;white-space:nowrap}
+#pm-home .hero-mh .s{font:400 clamp(54px,17vw,84px)/.7 var(--script);transform:rotate(-3deg);margin:.02em 0 .08em}
+#pm-home .hero .hero-cta{left:50%;right:auto;bottom:150px;transform:translateX(-50%);background:#fff;border-color:#fff;color:var(--ink)}
+#pm-home .jr{height:620vh;min-height:4000px}
+#pm-home .jr-corner.k{top:86px}
+#pm-home .about{padding:28px}
+#pm-home .about h2{font-size:clamp(24px,8.4vw,40px);line-height:1.16}
+#pm-home .about h2 > span{white-space:normal}
+#pm-home .plate{width:128vw;max-width:none}
+#pm-home .plate-rim text{font-size:18px}
+#pm-home .jr-content{width:min(300px,72vw)}
+#pm-home .df.ico{width:clamp(44px,12vw,70px)}
+#pm-home .df.ico.wide{width:clamp(90px,24vw,130px)}
+#pm-home .atm{min-height:116svh}
+#pm-home .atm-c{transform:translateY(-90px)}
+#pm-home .atm-c h2{font-size:clamp(24px,7.4vw,32px);white-space:normal}
+#pm-home .atm-c .scr{font-size:clamp(36px,11vw,48px);margin-top:.15em}
+#pm-home .fx{margin-top:-60px;padding:50px 0 40px;min-height:0}
+#pm-home .fx-grid{grid-template-columns:1fr;gap:26px;min-height:0}
+#pm-home .fx-head{min-height:0;padding:0 26px;max-width:none}
+#pm-home .fx-head .kick{position:static;margin-bottom:22px}
+#pm-home .fx-head .foot{display:none}
+#pm-home .fx-shell{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0;scroll-padding-left:26px}
+#pm-home .fx-shell::-webkit-scrollbar{display:none}
+#pm-home .fx-track{transform:none!important;width:max-content;padding:0 26px;gap:14px}
+#pm-home .fx-card{flex:0 0 calc(100vw - 92px);width:calc(100vw - 92px);height:470px;grid-template-rows:230px minmax(0,1fr);opacity:1!important;transform:none!important;filter:none!important;scroll-snap-align:start}
+#pm-home .fx-card .fx-media img{filter:none;transform:none}
+#pm-home .fx-card[data-clone]{display:none}
+#pm-home .fx-next{display:none}
+#pm-home .ctl{padding:0 26px}
+#pm-home .ap{height:auto;min-height:max(100svh,680px)}
+#pm-home .ap-scene{top:0;height:100%}
+#pm-home .ap-tw{left:0;right:0;top:15%;text-align:center}
+#pm-home .ap-tw .kick{margin:0 0 22px;font-size:10px}
+#pm-home .ap-tw h2{font-size:13vw}
+#pm-home .ap-lemon{top:50%;width:min(96vw,420px)}
+#pm-home .ap-drink{left:50%;top:22%;width:min(64vw,300px);transform:translate3d(-50%,var(--dy,0px),0)}
+#pm-home .ap-note{left:26px;right:26px;top:auto;bottom:5%;width:auto;text-align:center;font-size:13px}
+#pm-home .leaf.t{top:auto;bottom:36%;width:24vw}
+#pm-home .leaf.b{top:auto;bottom:21%;width:22vw}
+#pm-home .ap-note{bottom:3%}
+#pm-home .gl{height:auto;min-height:0;padding:60px 0 50px}
+#pm-home .gl-head{flex-direction:column;gap:14px;padding:0 26px}
+#pm-home .gl-head .side{text-align:left}
+#pm-home .gl-vp{margin-top:30px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;flex:none;height:auto;touch-action:auto}
+#pm-home .gl-vp::-webkit-scrollbar{display:none}
+#pm-home .gl-track{transform:none!important;padding:0 26px;gap:14px;height:auto}
+#pm-home .gl-card{height:auto;width:calc(100vw - 92px);opacity:1;transform:none;scroll-snap-align:start}
+#pm-home .gl-card[data-clone]{display:none}
+#pm-home .ar{display:none}
+#pm-home .gl .ctl{padding:22px 26px 0}
+#pm-home .dn{height:220vh;min-height:1300px}
+#pm-home .dn-pin,#pm-home .cta-pin{height:100svh}
+#pm-home .df.img{box-shadow:0 10px 24px rgba(0,40,70,.14)}
+#pm-home .plate-disc{box-shadow:0 26px 50px -24px rgba(0,50,80,.3),inset 0 -6px 14px rgba(0,40,60,.05)}
+#pm-home .dn-cp h2{font-size:clamp(30px,9vw,42px)}
+#pm-home .dn-cp .scr{font-size:clamp(34px,10vw,46px)}
+#pm-home .cta{height:300vh;min-height:2000px}
+#pm-home .cta::before{height:clamp(180px,28vh,260px);background:linear-gradient(180deg,#fff,#fff 12%,rgba(255,255,255,.9) 34%,rgba(255,255,255,.5) 62%,rgba(255,255,255,0))}
+#pm-home .cta-c h2{font-size:clamp(30px,9vw,42px)}
+#pm-home .cta-c .scr{font-size:clamp(36px,11vw,50px)}
+#pm-home .rs{padding:70px 26px}
+#pm-home .rs-grid{grid-template-columns:1fr;gap:40px}
+#pm-home form.f{grid-template-columns:1fr}
+#pm-home .fld,#pm-home .fld.h,#pm-home .chk,#pm-home .send{grid-column:1/-1}
+#pm-home .send .btn{width:100%}
+#pm-home .ft{padding:60px 26px 24px}
+#pm-home .ft-top{flex-direction:column;align-items:flex-start}
+#pm-home .ft-top .r{text-align:left}
+#pm-home .ft-top .r img{margin:0 0 14px}
+#pm-home .ft-cols{grid-template-columns:1fr}
+#pm-home .ft-bot{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:900px){#pm-home .dr{min-height:0;padding:60px 0 50px}
+#pm-home .dr .kick.k,#pm-home .dr .foot{position:static;padding:0 26px}
+#pm-home .dr .foot{display:none}
+#pm-home .dr-ed{position:static;transform:none;width:auto;text-align:left;padding:18px 26px 0;max-width:none}
+#pm-home .dr-ed .dr-desc{display:none}
+#pm-home .dr-ed .scr{margin-left:1em}
+#pm-home .dr-stage{display:none}
+#pm-home .dr-mob{display:block;margin-top:30px}
+#pm-home .dr-mob .sh{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+#pm-home .dr-mob .sh::-webkit-scrollbar{display:none}
+#pm-home .dr-mob .tr{display:flex;gap:14px;width:max-content;padding:0 26px}
+#pm-home .dr-mob article{width:calc(100vw - 92px);scroll-snap-align:start;border:1px solid var(--line)}
+#pm-home .dr-mob .m{aspect-ratio:4/3;overflow:hidden}
+#pm-home .dr-mob .m img{width:100%;height:100%;object-fit:cover}
+#pm-home .dr-mob .b{padding:20px 22px 24px}
+#pm-home .dr-mob .b small{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+#pm-home .dr-mob .b h3{margin-top:8px;font:400 26px/1 var(--display);text-transform:uppercase;color:var(--cyan)}
+#pm-home .dr-mob .b h3 em{font:400 26px var(--script);text-transform:none;color:var(--ink);margin-left:8px}
+#pm-home .dr-mob .b p{margin-top:10px;font-size:13px;line-height:1.6;color:var(--soft)}
+#pm-home .dr-mob .ctl{padding:22px 26px 0}
+}
+@media (max-width:767px){#pm-home .about h2{font-size:clamp(22px,6.6vw,30px)!important}
+#pm-home .about .sig{font-size:28px}
+#pm-home .jr-content h2{font-size:22px!important}
+#pm-home .jr-content .scr{font-size:30px}
+#pm-home .jr-content p{font-size:12.5px}
+#pm-home .atm-c h2{font-size:clamp(20px,6vw,26px)!important}
+#pm-home .atm-c .scr{font-size:clamp(28px,8.5vw,36px)}
+#pm-home .fx-head h2{font-size:26px!important}
+#pm-home .fx-head .scr{font-size:28px}
+#pm-home .fx-body h3{font-size:18px!important}
+#pm-home .gl-head h2{font-size:26px!important}
+#pm-home .gl-head .scr{font-size:28px}
+#pm-home .dn-cp h2{font-size:clamp(22px,6.4vw,28px)!important}
+#pm-home .dn-cp .scr{font-size:clamp(30px,8.6vw,38px)}
+#pm-home .dr-ed h2{font-size:26px!important}
+#pm-home .dr-ed .scr{font-size:28px}
+#pm-home .dr-mob .b h3{font-size:20px;overflow-wrap:anywhere}
+#pm-home .cta-c h2{font-size:clamp(22px,6.6vw,30px)!important}
+#pm-home .cta-c .scr{font-size:clamp(30px,9vw,40px)}
+#pm-home .rs-head h2{font-size:30px!important}
+#pm-home .rs-head .scr{font-size:34px}
+#pm-home .ft-top h2{font-size:34px!important}
+#pm-home .ft-top .scr{font-size:32px}
+#pm-home .ft-cols h3{font-size:19px}
+#pm-home .ap-tw h2{font-size:12vw}
+#pm-home .hero-mh .l{font-size:clamp(34px,10.5vw,48px)}
+#pm-home .hero-mh .s{font-size:clamp(50px,15vw,72px)}
+#pm-home .jr{height:440vh;min-height:3000px}
+#pm-home .dn{height:170vh;min-height:1100px}
+#pm-home .cta{height:200vh;min-height:1400px}
+}
+#pm-home .pmt .wash{display:none}
+#pm-home .pmt [data-rv]{filter:none!important;transition-property:opacity,transform!important}
+#pm-home .pmt header.site.glass{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(255,255,255,.97)}
+#pm-home .pmt .jr{height:auto!important;min-height:0!important}
+#pm-home .pmt .jr-pin{position:relative;height:auto;min-height:0;display:flex;flex-direction:column;padding:96px 0 40px;overflow:hidden}
+#pm-home .pmt .jr-corner.k{order:1}
+#pm-home .pmt .about{order:2}
+#pm-home .pmt .jr-stage{order:3}
+#pm-home .pmt .jr-corner.f{order:4;margin-top:24px!important}
+#pm-home .pmt .jr-corner.k{position:relative;top:auto;left:auto;padding:0 26px}
+#pm-home .pmt .jr-corner.f{position:relative;left:auto;bottom:auto;margin:10px 26px 0}
+#pm-home .pmt .about{position:relative;inset:auto;padding:46px 26px 10px;opacity:1!important;transform:none!important}
+#pm-home .pmt .jr-stage{position:relative;inset:auto;height:min(132vw,640px);margin-top:10px}
+#pm-home .pmt .plate{transform:translate3d(-50%,-50%,0)}
+#pm-home .pmt .plate-spin{animation:spin 90s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#pm-home .pmt .jr-content{opacity:1;transform:none}
+#pm-home .pmt .df{opacity:1!important;visibility:visible!important;transform:none;animation:bob 7s ease-in-out infinite alternate}
+#pm-home .pmt .df:nth-child(2n){animation-duration:9s;animation-delay:-3s}
+#pm-home .pmt .df.center-low,#pm-home .pmt .df.right-high,#pm-home .pmt .df.ico-5,#pm-home .pmt .df.ico-6,#pm-home .pmt .df.top{display:none}
+#pm-home .pmt .df.left{left:-6vw;bottom:auto;top:2%;width:30vw}
+#pm-home .pmt .df.right{right:-6vw;bottom:2%;width:34vw}
+#pm-home .pmt .ico-1{left:4vw;top:auto;bottom:6%}
+#pm-home .pmt .ico-2{display:none}
+#pm-home .pmt .ico-3{right:5vw;top:4%}
+#pm-home .pmt .ico-4{right:auto;left:6vw;top:38%}
+@keyframes bob{from{transform:translate3d(0,-6px,0) rotate(-1.5deg)}to{transform:translate3d(0,8px,0) rotate(1.5deg)}}
+#pm-home .pmt .dn{height:auto!important;min-height:0!important}
+#pm-home .pmt .dn-pin{position:relative;height:100svh;min-height:560px}
+#pm-home .pmt .dn-img.d,#pm-home .pmt .dn-img.n{transform:scale(1.04);clip-path:none}
+#pm-home .pmt .dn-img.n{opacity:0;clip-path:none;animation:night 12s ease-in-out infinite}
+#pm-home .pmt .dn-cp.n{opacity:0;clip-path:none;animation:nightT 12s ease-in-out infinite}
+#pm-home .pmt .dn-cp.d{clip-path:none;animation:dayT 12s ease-in-out infinite}
+#pm-home .pmt .dn-pr{display:none}
+@keyframes night{0%,38%{opacity:0}50%,88%{opacity:1}100%{opacity:0}}
+@keyframes dayT{0%,36%{opacity:1}43%,93%{opacity:0}100%{opacity:1}}
+@keyframes nightT{0%,45%{opacity:0}52%,86%{opacity:1}92%,100%{opacity:0}}
+#pm-home .pmt .cta{height:auto!important;min-height:0!important;margin:0}
+#pm-home .pmt .cta-pin{position:relative;height:100svh;min-height:560px}
+#pm-home .pmt .cta-pin::before{opacity:.32}
+#pm-home .pmt .cta-c{opacity:1!important;transform:none!important;clip-path:none!important}
+#pm-home .pmt .cta-c .btn{opacity:1!important;transform:none!important}
+#pm-home .pmt .sea{transform:none}
+@media (prefers-reduced-motion:reduce){#pm-home .wash,#pm-home .about .mono{animation:none}
+#pm-home .jr{height:auto;min-height:0}
+#pm-home .jr-pin{position:relative;height:auto;min-height:100vh;padding:120px 0}
+#pm-home .dn{height:100vh;min-height:620px}
+#pm-home .cta{height:100vh;min-height:620px}
+}
+#pm-home{--paper:#FFFFFF;--stone:#F4F5F6;--graphite:#2A2F34;
+--ink:#2A2F34;--soft:#545B62;--muted:#7D848B;--line:rgba(42,47,52,.14);
+--cyan:#5BB2DE;--cyan-deep:#2B80AE;--sky:#A9D8EF;--wash:#F1F3F4;
+--display:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+--script:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
+--sans:"Inter","Helvetica Neue",Arial,sans-serif;}
+#pm-home{background:var(--paper);color:var(--ink);font-weight:300;letter-spacing:0}
+#pm-home ::selection{background:var(--sky);color:var(--graphite)}
+#pm-home :focus-visible{outline-color:var(--cyan-deep)}
+#pm-home,#pm-home *{border-radius:0!important}
+#pm-home .cap{font-family:var(--display);font-weight:500;text-transform:none;letter-spacing:-.012em;color:var(--ink)}
+#pm-home .scr{font-family:var(--display);font-style:italic;font-weight:400;color:var(--cyan-deep);transform:none!important;line-height:1.02;letter-spacing:-.01em}
+#pm-home .kick{font:500 10px/1.4 var(--sans);letter-spacing:.2em;color:var(--muted)}
+#pm-home .btn{border-color:var(--graphite);color:var(--graphite);font:500 10px/1 var(--sans);letter-spacing:.2em;min-height:48px;transition:color .4s ease,border-color .4s ease,transform .16s ease-out}
+#pm-home .btn::before{background:var(--cyan-deep);transition:transform .55s var(--ease)}
+#pm-home .btn:hover,#pm-home .btn:focus-visible{transform:none;border-color:var(--cyan-deep)}
+#pm-home .btn:active{transform:scale(.97)}
+#pm-home .btn.c{background:var(--graphite);border-color:var(--graphite);color:#fff}
+#pm-home .btn.c::before{background:var(--cyan-deep)}
+#pm-home .btn.c:hover{border-color:var(--cyan-deep)}
+#pm-home .btn.w{background:#fff;border-color:#fff;color:var(--graphite)}
+#pm-home .btn.lo{background:transparent;border-color:rgba(255,255,255,.7);color:#fff}
+#pm-home .btn.lo::before{background:#fff}
+#pm-home .btn.lo:hover{color:var(--graphite);border-color:#fff}
+#pm-home .lnk{font:500 10px/1 var(--sans);letter-spacing:.2em;color:var(--graphite);border-bottom-color:var(--cyan)}
+#pm-home .lnk:hover{color:var(--cyan-deep)}
+#pm-home header.site.glass{background:rgba(255,255,255,.86);border-bottom-color:rgba(42,47,52,.08)}
+#pm-home .pmt header.site.glass{background:rgba(255,255,255,.97)}
+#pm-home .ov{background:var(--paper)}
+#pm-home .ov nav a{font:500 clamp(30px,3.4vw,50px)/1.12 var(--display);text-transform:none;letter-spacing:-.01em}
+#pm-home .ov nav a:hover{color:var(--cyan-deep)}
+#pm-home .hero{background:#1d2226}
+#pm-home .hero::before{background:linear-gradient(180deg,rgba(18,22,26,.42),rgba(18,22,26,.1) 34%,rgba(18,22,26,.32) 62%,rgba(18,22,26,.72))}
+#pm-home .hero-c{position:absolute;left:clamp(22px,4vw,60px);right:clamp(22px,4vw,60px);bottom:clamp(44px,7vh,76px);z-index:4;color:#fff}
+#pm-home .hero-c .kick{color:rgba(255,255,255,.85);margin-bottom:22px}
+#pm-home .hero-c h1{max-width:1060px;font:500 clamp(40px,5.2vw,82px)/1.02 var(--display);letter-spacing:-.022em;text-wrap:balance}
+#pm-home .hero-c h1 .ln{display:inline}
+#pm-home .hero-c h1 .it{font-style:italic;font-weight:400;color:var(--sky)}
+#pm-home .hero-f{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.28)}
+#pm-home .hero-f p{max-width:440px;font-size:14px;line-height:1.65;color:rgba(255,255,255,.86)}
+#pm-home .hero-f .acts{display:flex;gap:12px;flex:none}
+@media (prefers-reduced-motion:no-preference){#pm-home .hero-c .kick,#pm-home .hero-c h1 .ln,#pm-home .hero-f{opacity:0;animation:rise 1.1s var(--ease) both}
+#pm-home .hero-c .kick{animation-delay:.25s}
+#pm-home .hero-c h1 .ln{display:inline-block;animation-delay:.4s}
+#pm-home .hero-c h1 .it{animation-delay:.55s}
+#pm-home .hero-f{animation-delay:.8s}
+}
+@keyframes rise{from{opacity:0;transform:translate3d(0,22px,0)}to{opacity:1;transform:none}}
+#pm-home .jr{background:var(--paper)}
+#pm-home .about h2{font-size:clamp(44px,6vw,92px);line-height:1}
+#pm-home .about h2 .w{font-family:var(--display);font-style:italic;font-weight:400;font-size:1em;color:var(--cyan-deep);transform:none;margin:0}
+#pm-home .about .sig{max-width:520px;margin-top:26px;font:300 16px/1.65 var(--sans);color:var(--soft)}
+#pm-home .plate-disc{border-radius:50%!important}
+#pm-home .plate-rim text{fill:var(--cyan-deep)}
+#pm-home .plate-rim{color:var(--cyan)}
+#pm-home .df.img{border:6px solid #fff;background:var(--stone);box-shadow:0 18px 42px rgba(30,40,50,.16)}
+#pm-home .jr-content h2{font-size:clamp(30px,3.2vw,46px);line-height:1.04}
+#pm-home .jr-content .scr{font-size:clamp(24px,2.4vw,34px);line-height:1.05;margin-top:.1em}
+#pm-home .jr-content p{font-size:14px;line-height:1.6}
+#pm-home .pag .bar i{background:var(--cyan)}
+#pm-home .atm{background:#1d2226}
+#pm-home .atm::after{background:linear-gradient(180deg,rgba(255,255,255,0),#fff)}
+#pm-home .atm::before{background:linear-gradient(180deg,rgba(18,22,26,.5),rgba(18,22,26,.42) 45%,rgba(18,22,26,.2) 75%)}
+#pm-home .atm-c h2,#pm-home .atm-c p{text-shadow:0 2px 24px rgba(0,0,0,.5)}
+#pm-home .atm-c{max-width:980px}
+#pm-home .atm-c h2{font-size:clamp(46px,5.4vw,84px);line-height:1;white-space:normal;color:#fff}
+#pm-home .atm-c .scr{font-size:clamp(34px,3.8vw,58px);line-height:1.05;margin-top:.12em;color:var(--sky)}
+#pm-home .atm-c p{margin-top:24px;font-size:15px;color:rgba(255,255,255,.9)}
+#pm-home .fx{background:var(--paper)}
+#pm-home .fx-head h2{font-size:clamp(40px,3.6vw,54px);line-height:1.02;white-space:normal}
+#pm-home .fx-head .scr{margin:.06em 0 0;font-size:clamp(30px,2.6vw,40px)}
+#pm-home .fx-card{background:#fff;border-color:var(--line)}
+#pm-home .fx-card.is-active{border-color:rgba(42,47,52,.22)}
+#pm-home .fx-media img{object-position:50% 50%;filter:grayscale(40%) brightness(.95)}
+#pm-home .fx-body h3{font-size:28px;line-height:1.05;color:var(--ink)}
+#pm-home .fx-body p{font-size:13px}
+#pm-home .ctl .c b{font:500 28px/1 var(--display)}
+#pm-home .ctl .pr i{background:var(--cyan)}
+#pm-home .sv{background:#fff;border-top:1px solid var(--line);padding:clamp(70px,9vw,140px) clamp(22px,5vw,76px);display:grid;gap:clamp(90px,11vw,170px)}
+#pm-home .sv-i{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(40px,6vw,110px);align-items:start;max-width:1320px;width:100%;margin:0 auto;scroll-margin-top:80px}
+#pm-home .sv-i.rev .sv-m{order:2}
+#pm-home .sv-m{position:sticky;top:110px;aspect-ratio:4/5;overflow:visible}
+#pm-home .sv-img{width:100%;height:100%;object-fit:cover;background:var(--wash)}
+#pm-home .sv-vid{position:absolute;left:-1px;bottom:-1px;width:min(44%,232px);aspect-ratio:464/832;margin:0;background:#1d2226;border:8px solid var(--stone);border-left:0;border-bottom:0}
+#pm-home .sv-i.rev .sv-vid{left:auto;right:-1px;border-left:8px solid var(--stone);border-right:0}
+#pm-home .sv-vid video{width:100%;height:100%;object-fit:cover}
+#pm-home .sv-vid figcaption{position:absolute;left:12px;bottom:10px;font:500 9px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+#pm-home .sv-t{padding-top:8px}
+#pm-home .sv-t .kick{margin-bottom:18px;color:var(--cyan-deep)}
+#pm-home .sv-t h2{font-size:clamp(40px,4.4vw,68px);line-height:1}
+#pm-home .sv-t h2 .scr{display:block;font-size:.66em;margin-top:.12em}
+#pm-home .sv-sub{margin-top:24px;font:400 italic clamp(20px,1.6vw,24px)/1.35 var(--display);color:var(--ink)}
+#pm-home .sv-lead{margin-top:18px;max-width:600px;font-size:15px;line-height:1.75;color:var(--soft)}
+#pm-home .sv-pts{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr}
+#pm-home .sv-pts li{padding:22px 24px 24px 0;border-bottom:1px solid var(--line)}
+#pm-home .sv-pts li:nth-child(2n){padding:22px 0 24px 24px;border-left:1px solid var(--line)}
+#pm-home .sv-pts h4{margin:0;font:500 13px/1.35 var(--sans);letter-spacing:.01em;color:var(--ink)}
+#pm-home .sv-pts h4::before{content:"";display:block;width:22px;height:2px;margin-bottom:14px;background:var(--cyan)}
+#pm-home .sv-pts p{margin-top:8px;font-size:13.5px;line-height:1.65;color:var(--soft)}
+#pm-home .sv-q{margin-top:36px;padding:28px 30px 30px;background:var(--stone);border-left:2px solid var(--cyan)}
+#pm-home .sv-q .q{font:500 clamp(22px,1.9vw,28px)/1.2 var(--display);color:var(--ink)}
+#pm-home .sv-q p+p{margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--soft)}
+#pm-home .sv-q .btn{margin-top:22px}
+#pm-home .ap,#pm-home .gl,#pm-home .dr,#pm-home .rs{background:var(--paper)}
+#pm-home .ap-tw h2{line-height:.9;letter-spacing:-.03em}
+#pm-home .gl-head h2,#pm-home .dr-ed h2{font-size:clamp(40px,3.6vw,54px);line-height:1.02;white-space:normal}
+#pm-home .gl-head .scr,#pm-home .dr-ed .scr{margin:.06em 0 0;font-size:clamp(28px,2.4vw,38px)}
+#pm-home .gl-card{background:var(--stone)}
+#pm-home .gl-card::after{display:none}
+#pm-home .dn{background:#1d2226}
+#pm-home .dn-pin{background:#1d2226}
+#pm-home .dn-cp h2{font-size:clamp(46px,5.4vw,84px);line-height:1}
+#pm-home .dn-cp .scr{font-size:clamp(30px,3.2vw,48px);margin-top:.16em;color:#fff}
+#pm-home .dn-cp.n .scr{color:var(--sky)}
+#pm-home .dr-name{font:500 12px/1.2 var(--sans)!important;letter-spacing:.14em!important}
+#pm-home .dr-name.is-active{color:var(--cyan-deep)!important}
+#pm-home .dr-v{background:#fff;transform:none!important;opacity:0}
+#pm-home .dr-v.is-active{opacity:1;transform:none!important;box-shadow:0 30px 70px -30px rgba(30,36,42,.35)}
+#pm-home .dr-v figcaption em{font:italic 400 clamp(20px,1.8vw,26px)/1 var(--display);color:var(--cyan-deep);transform:none}
+#pm-home .cta{background:#24313a}
+#pm-home .cta::before{background:linear-gradient(180deg,var(--paper),rgba(238,239,240,.72) 28%,rgba(238,239,240,0))}
+#pm-home .cta::after{background:linear-gradient(180deg,rgba(238,239,240,0),var(--paper))}
+#pm-home .cta-c h2{font-size:clamp(50px,5.6vw,88px);line-height:1}
+#pm-home .cta-c .scr{font-size:clamp(36px,3.8vw,58px);line-height:1.05;margin-top:.1em;color:#fff}
+#pm-home .rs-head h2{font-size:clamp(44px,4.2vw,64px);line-height:1}
+#pm-home .rs-head .scr{margin:.08em 0 0;font-size:clamp(32px,3vw,46px)}
+#pm-home .pol div b{color:var(--cyan-deep)}
+#pm-home .rs-head .wa svg{fill:var(--cyan-deep)}
+#pm-home .fld label{font-weight:500;color:var(--muted)}
+#pm-home .fld label i{color:var(--cyan-deep)}
+#pm-home .fld input,#pm-home .fld select,#pm-home .fld textarea{border-bottom-color:rgba(42,47,52,.28)}
+#pm-home .fld input:focus,#pm-home .fld select:focus,#pm-home .fld textarea:focus{border-bottom-color:var(--cyan-deep)}
+#pm-home .chk input{accent-color:var(--cyan-deep)}
+#pm-home .done{background:var(--stone)}
+#pm-home .done h3{font:500 36px/1.1 var(--display);text-transform:none;color:var(--ink)}
+#pm-home .fab{background:var(--graphite);box-shadow:0 14px 30px -12px rgba(20,24,28,.55);border-bottom:2px solid var(--cyan)}
+#pm-home .fab svg{stroke:var(--sky)}
+@media (hover:hover) and (pointer:fine){#pm-home .fab:hover{background:var(--cyan-deep)}
+}
+#pm-home .ft{background:#fff;border-top:1px solid var(--line)}
+#pm-home .ft-top h2{font-size:clamp(48px,5.4vw,84px);line-height:1}
+#pm-home .ft-top .scr{margin:.08em 0 0;font-size:clamp(30px,3vw,46px)}
+#pm-home .ft-cols h3{font:500 26px/1.1 var(--display);text-transform:none;color:var(--ink)}
+#pm-home .soc a:hover{background:var(--cyan-deep);border-color:var(--cyan-deep)}
+@media (max-width:1100px){#pm-home .sv-pts{grid-template-columns:1fr}
+#pm-home .sv-pts li,#pm-home .sv-pts li:nth-child(2n){padding:20px 0 22px;border-left:0}
+}
+@media (max-width:900px){#pm-home .sv-i{grid-template-columns:1fr;gap:34px}
+#pm-home .sv-i.rev .sv-m{order:0}
+#pm-home .sv-m{position:relative;top:auto;aspect-ratio:4/4.4}
+#pm-home .hero-f{flex-direction:column;align-items:flex-start;gap:22px}
+}
+@media (max-width:767px){#pm-home .hero-c{left:22px;right:22px;bottom:calc(36px + env(safe-area-inset-bottom,0px))}
+#pm-home .hero-c .kick{margin-bottom:16px}
+#pm-home .hero-c h1{font-size:clamp(32px,9.2vw,42px)!important;line-height:1.04;letter-spacing:-.02em}
+#pm-home .hero-f{margin-top:22px;padding-top:18px}
+#pm-home .hero-f p{font-size:13px}
+#pm-home .hero-f .acts{flex-direction:column;width:100%}
+#pm-home .hero-f .acts .btn{width:100%}
+#pm-home .about h2{font-size:clamp(38px,11vw,52px)!important;line-height:1.02}
+#pm-home .about .sig{font-size:14.5px}
+#pm-home .jr-content h2{font-size:26px!important}
+#pm-home .jr-content .scr{font-size:22px}
+#pm-home .atm-c h2{font-size:clamp(34px,9.6vw,44px)!important;line-height:1.02}
+#pm-home .atm-c .scr{font-size:clamp(26px,7.4vw,34px)}
+#pm-home .fx-head h2,#pm-home .gl-head h2,#pm-home .dr-ed h2{font-size:36px!important;line-height:1.02}
+#pm-home .fx-head .scr,#pm-home .gl-head .scr,#pm-home .dr-ed .scr{font-size:27px;margin-left:0}
+#pm-home .fx-body h3{font-size:24px!important}
+#pm-home .sv{padding:70px 22px;gap:90px}
+#pm-home .sv-t h2{font-size:38px}
+#pm-home .sv-sub{font-size:20px}
+#pm-home .sv-lead{font-size:14.5px}
+#pm-home .sv-vid{width:38%}
+#pm-home .sv-q{padding:22px 20px 24px}
+#pm-home .sv-q .btn{width:100%;padding:0 16px;letter-spacing:.14em}
+#pm-home .dn-cp h2{font-size:clamp(34px,9.6vw,44px)!important;line-height:1.04}
+#pm-home .dn-cp .scr{font-size:clamp(24px,7vw,32px)}
+#pm-home .dr-mob .b h3{font:500 26px/1.05 var(--display);text-transform:none;color:var(--ink)}
+#pm-home .cta-c h2{font-size:clamp(36px,10vw,46px)!important}
+#pm-home .cta-c .scr{font-size:clamp(26px,7.6vw,34px)}
+#pm-home .rs-head h2{font-size:42px!important}
+#pm-home .rs-head .scr{font-size:32px}
+#pm-home .ft-top h2{font-size:44px!important}
+#pm-home .ft-top .scr{font-size:30px}
+#pm-home .ap-tw h2{font-size:15vw}
+}
+@media (prefers-reduced-motion:reduce){#pm-home .hero-c .kick,#pm-home .hero-c h1 .ln,#pm-home .hero-f{animation:none;opacity:1}
+}
+@media (prefers-reduced-transparency:reduce){#pm-home header.site.glass{background:var(--paper);-webkit-backdrop-filter:none;backdrop-filter:none}
+}
+#pm-home .hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(18,22,26,.62),rgba(18,22,26,.28) 46%,rgba(18,22,26,0) 72%)}
+#pm-home .hero-c h1,#pm-home .hero-c .kick,#pm-home .hero-f p{text-shadow:0 2px 22px rgba(0,0,0,.45)}
+#pm-home .hero-mob{object-position:58% 40%}
+@media (max-width:767px){#pm-home .hero::after{background:linear-gradient(180deg,rgba(18,22,26,0) 30%,rgba(18,22,26,.55) 62%,rgba(18,22,26,.72))}
+}
+#pm-home .gs{overflow:hidden;background:#fff;padding:clamp(20px,3vw,40px) 0 clamp(80px,9vw,130px)}
+#pm-home .gs-t{display:flex;gap:clamp(12px,1.4vw,20px);width:max-content;transform:translate3d(var(--gx,0px),0,0);will-change:transform}
+#pm-home .gs figure{margin:0;flex:none;width:clamp(220px,26vw,380px);aspect-ratio:3/4;border-radius:16px!important;overflow:hidden;background:var(--stone)}
+#pm-home .gs figure:nth-child(2n){aspect-ratio:4/5;margin-top:clamp(30px,4vw,60px)}
+#pm-home .gs img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+@media (hover:hover){#pm-home .gs figure:hover img{transform:scale(1.05)}
+}
+#pm-home .pmt .gs-t{animation:gsmq 50s linear infinite;transform:none!important}
+@keyframes gsmq{to{transform:translate3d(-50%,0,0)}}
+@media (max-width:767px){#pm-home .gs-t{animation:gsmq 50s linear infinite;transform:none!important}
+#pm-home .gs figure{width:62vw}
+}
+@media (prefers-reduced-motion:reduce){#pm-home .gs-t{animation:none!important}
+}
+#pm-home .fab{gap:10px;min-height:52px;padding:0 24px 0 20px;border:0;border-bottom:0;border-radius:999px!important;background:#009EE2;color:#fff!important;font:500 15px/1 var(--sans);letter-spacing:0;text-transform:none;box-shadow:0 14px 34px -12px rgba(0,90,140,.6)}
+#pm-home .fab svg{stroke:#fff;width:18px;height:18px}
+@media (hover:hover) and (pointer:fine){#pm-home .fab:hover{background:#0077ab}
+}
+#pm-home .fab:active{transform:translate(-50%,0) scale(.97)}
+#pm-home .mn{background:#fff;padding:clamp(70px,9vw,130px) clamp(22px,5vw,76px);border-top:1px solid var(--line)}
+#pm-home .mn-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,90px);align-items:end;max-width:1320px;margin:0 auto}
+#pm-home .mn-h h2{font-size:clamp(44px,4.4vw,68px);line-height:1}
+#pm-home .mn-h .scr{display:block;font-size:.66em;margin-top:.1em}
+#pm-home .mn-h p:not(.kick){max-width:520px;font-size:14.5px;line-height:1.7;color:var(--soft)}
+#pm-home .mn-h .kick{margin-bottom:16px}
+#pm-home .mn-l{max-width:1320px;margin:clamp(44px,5vw,70px) auto 0;border-top:1px solid var(--ink)}
+#pm-home .mn-i{border-bottom:1px solid var(--line);interpolate-size:allow-keywords}
+#pm-home .mn-i summary{list-style:none;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto 28px;align-items:baseline;gap:24px;padding:26px 0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+#pm-home .mn-i summary::-webkit-details-marker{display:none}
+#pm-home .mn-n{font:500 clamp(28px,2.6vw,40px)/1.05 var(--display);letter-spacing:-.01em;color:var(--ink);transition:color .3s ease}
+#pm-home .mn-s{font:italic 400 clamp(18px,1.5vw,22px)/1.2 var(--display);color:var(--cyan-deep)}
+#pm-home .mn-p{font:500 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+#pm-home .mn-i .pl{align-self:center;width:20px;height:20px;fill:none;stroke:var(--ink);stroke-width:1.4;transition:transform .45s var(--ease)}
+#pm-home .mn-i[open] .pl{transform:rotate(45deg)}
+@media (hover:hover) and (pointer:fine){#pm-home .mn-i summary:hover .mn-n{color:var(--cyan-deep)}
+}
+#pm-home .mn-i::details-content{block-size:0;overflow:hidden;transition:block-size .55s var(--ease),content-visibility .55s allow-discrete}
+#pm-home .mn-i[open]::details-content{block-size:auto}
+#pm-home .mn-b{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(280px,1fr);gap:clamp(30px,4vw,70px);padding:4px 0 44px}
+#pm-home .mn-c{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px;align-content:start}
+#pm-home .mn-g .kick{color:var(--cyan-deep);margin-bottom:10px}
+#pm-home .mn-g ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+#pm-home .mn-g li{font-size:13.5px;line-height:1.6;color:var(--soft)}
+#pm-home .mn-g li b{display:block;font-weight:500;color:var(--ink)}
+#pm-home .mn-a{align-self:start;padding:26px 28px 28px;background:var(--stone);border-top:2px solid var(--cyan)}
+#pm-home .mn-pr{list-style:none;margin:14px 0 0;padding:0}
+#pm-home .mn-pr li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+#pm-home .mn-pr li b{display:block;font-weight:500;font-size:13.5px;color:var(--ink)}
+#pm-home .mn-pr li span{display:block;margin-top:4px;font-size:12.5px;line-height:1.55;color:var(--soft)}
+#pm-home .mn-pr li em{font:500 clamp(20px,1.6vw,24px)/1.1 var(--display);font-style:normal;color:var(--ink);white-space:nowrap;text-align:right}
+#pm-home .mn-note{margin-top:16px;font-size:12px;line-height:1.6;color:var(--muted)}
+#pm-home .mn-a .btn{margin-top:20px;width:100%}
+@media (max-width:900px){#pm-home .mn-h{grid-template-columns:1fr;gap:18px}
+#pm-home .mn-i summary{grid-template-columns:minmax(0,1fr) 24px;grid-template-areas:"n pl" "s pl" "p pl";gap:6px 16px;padding:22px 0}
+#pm-home .mn-n{grid-area:n}
+#pm-home .mn-s{grid-area:s}
+#pm-home .mn-p{grid-area:p;margin-top:6px}
+#pm-home .mn-i .pl{grid-area:pl}
+#pm-home .mn-b{grid-template-columns:1fr}
+}
+@media (max-width:767px){#pm-home .mn{padding:70px 22px}
+#pm-home .mn-h h2{font-size:42px}
+#pm-home .mn-c{grid-template-columns:1fr;gap:24px}
+#pm-home .mn-a{padding:22px 20px 24px}
+}
+#pm-home .mn-pr li em small{display:block;margin-top:4px;font:400 11px/1.3 var(--sans);color:var(--muted)}
+#pm-home .hero-mob{filter:blur(26px) saturate(1.05) brightness(.78);transform:scale(1.18)!important;object-position:50% 45%}
+#pm-home .hero-fr{position:absolute;z-index:3;right:clamp(22px,5vw,80px);top:50%;margin:0;height:min(74vh,700px);aspect-ratio:464/832;transform:translateY(-46%);background:#1d2226;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);outline:1px solid rgba(255,255,255,.35);outline-offset:10px}
+#pm-home .hero-fr video{width:100%;height:100%;object-fit:cover}
+#pm-home .hero-c{right:calc(min(74vh,700px)*.558 + clamp(22px,5vw,80px) + 60px)}
+#pm-home .hero::after{background:linear-gradient(90deg,rgba(18,22,26,.55),rgba(18,22,26,.15) 60%,rgba(18,22,26,0))}
+#pm-home .hero-f{flex-direction:column;align-items:flex-start;gap:24px}
+@media (prefers-reduced-motion:no-preference){#pm-home .hero-fr{animation:rise 1.2s var(--ease) .3s both}
+}
+@keyframes heroFr{from{opacity:0;transform:translateY(-42%)}to{opacity:1;transform:translateY(-46%)}}
+#pm-home .hero-fr{animation-name:heroFr}
+@media (max-width:767px){#pm-home .hero-fr{left:50%;right:auto;top:calc(86px + var(--abar,0px));height:auto;width:min(46vw,210px);transform:translateX(-50%);outline-offset:6px}
+@keyframes heroFr{from{opacity:0;transform:translate(-50%,14px)}to{opacity:1;transform:translateX(-50%)}}
+#pm-home .hero-c{right:22px}
+#pm-home .hero-c h1{font-size:clamp(28px,8vw,36px)!important}
+#pm-home .hero-f p{display:none}
+#pm-home .hero-f{margin-top:18px;padding-top:16px}
+}
+@media (max-width:767px) and (max-height:700px){#pm-home .hero-fr{width:min(34vw,160px)}
+}
+#pm-home .pol .kick{margin-bottom:6px}
+#pm-home .pol .pol-open{display:inline-block;margin-top:18px;background:none;border:0;border-bottom:1px solid var(--cyan);padding:0 0 6px;cursor:pointer;font:500 10px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--graphite)}
+#pm-home .pol .pol-open:hover{color:var(--cyan-deep)}
+#pm-home .pold{width:min(720px,calc(100vw - 32px));max-height:min(86dvh,900px);padding:0;border:0;background:#fff;color:var(--ink);box-shadow:0 40px 100px -30px rgba(20,24,28,.45);opacity:0;transform:translateY(14px);transition:opacity .35s var(--ease),transform .5s var(--ease),overlay .5s allow-discrete,display .5s allow-discrete}
+#pm-home .pold[open]{opacity:1;transform:none}
+@starting-style{.pold[open]{opacity:0;transform:translateY(14px)}}
+#pm-home .pold::backdrop{background:rgba(20,24,28,.5);opacity:0;transition:opacity .35s ease,overlay .5s allow-discrete,display .5s allow-discrete}
+#pm-home .pold[open]::backdrop{opacity:1}
+@starting-style{.pold[open]::backdrop{opacity:0}}
+#pm-home .pold-b{position:relative;padding:clamp(28px,5vw,54px);overflow:auto;max-height:inherit;border-top:2px solid var(--cyan)}
+#pm-home .pold-x{position:absolute;top:14px;right:14px;width:40px;height:40px;display:grid;place-items:center;padding:0;border:1px solid var(--line);background:#fff;cursor:pointer}
+#pm-home .pold-x svg{width:13px;height:13px;stroke:var(--ink);stroke-width:1.6}
+#pm-home .pold h2{margin-top:14px;font:500 clamp(32px,3.4vw,46px)/1.05 var(--display);letter-spacing:-.01em;color:var(--ink)}
+#pm-home .pold ol{list-style:none;counter-reset:p;margin:30px 0 0;padding:0;border-top:1px solid var(--line)}
+#pm-home .pold li{counter-increment:p;display:grid;grid-template-columns:44px minmax(0,1fr);padding:20px 0;border-bottom:1px solid var(--line)}
+#pm-home .pold li::before{content:counter(p,decimal-leading-zero);font:500 11px/1.9 var(--sans);letter-spacing:.14em;color:var(--cyan-deep)}
+#pm-home .pold li h3,#pm-home .pold li p{grid-column:2}
+#pm-home .pold h3{font:500 14px/1.4 var(--sans);color:var(--ink)}
+#pm-home .pold li p{margin-top:6px;font-size:14px;line-height:1.7;color:var(--soft)}
+#pm-home .pold-n{margin-top:22px;font-size:13px;color:var(--soft)}
+@media (prefers-reduced-motion:reduce){#pm-home .pold,#pm-home .pold::backdrop{transition:none}
+}
+#pm-home .rvw{background:#fff;padding:clamp(70px,9vw,130px) 0;border-top:1px solid var(--line);--g:clamp(22px,5vw,76px)}
+#pm-home .rvw-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;padding:0 var(--g);max-width:calc(1320px + var(--g)*2);margin:0 auto}
+#pm-home .rvw-h .kick{margin-bottom:16px}
+#pm-home .rvw-h h2{font-size:clamp(44px,4.4vw,68px);line-height:1}
+#pm-home .rvw-h .scr{display:block;font-size:.66em;margin-top:.1em}
+#pm-home .rvw-s{justify-self:end;max-width:360px}
+#pm-home .rvw-s .big{font:500 clamp(64px,6vw,96px)/.9 var(--display);color:var(--ink);letter-spacing:-.02em}
+#pm-home .rvw-s .big small{font:400 .34em var(--sans);color:var(--muted);margin-left:8px;letter-spacing:0}
+#pm-home .rvw-s p{margin-top:12px;font-size:14px;color:var(--soft)}
+#pm-home .rvw-s .lnk{display:inline-block;margin-top:18px}
+#pm-home .rvw-vp{margin-top:clamp(40px,5vw,64px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-padding:0 var(--g);overscroll-behavior-x:contain}
+#pm-home .rvw-vp::-webkit-scrollbar{display:none}
+#pm-home .rvw-vp:focus-visible{outline-offset:-2px}
+#pm-home .rvw-t{display:flex;gap:16px;width:max-content;padding:0 var(--g)}
+#pm-home .rv-c{scroll-snap-align:start;flex:none;width:clamp(280px,28vw,380px);display:flex;flex-direction:column;padding:28px 28px 26px;background:var(--stone);border-top:2px solid var(--cyan)}
+#pm-home .rv-r{display:flex;align-items:center;gap:3px}
+#pm-home .rv-r svg{width:14px;height:14px;fill:var(--cyan-deep)}
+#pm-home .rv-r b{margin-left:8px;font:500 12px/1 var(--sans);color:var(--soft)}
+#pm-home .rv-t{margin-top:18px;flex:1;font:italic 400 clamp(20px,1.6vw,23px)/1.35 var(--display);color:var(--ink)}
+#pm-home .rv-a{margin-top:24px;padding-top:16px;border-top:1px solid var(--line)}
+#pm-home .rv-a b{display:block;font:500 13px/1.3 var(--sans);color:var(--ink)}
+#pm-home .rv-a span{display:block;margin-top:4px;font-size:12px;color:var(--muted)}
+#pm-home .rvw-f{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:26px auto 0;padding:0 var(--g);max-width:calc(1320px + var(--g)*2)}
+#pm-home .rvw-f p{font-size:11.5px;color:var(--muted)}
+#pm-home .rvw-ar{display:flex;gap:8px}
+#pm-home .ar2{width:46px;height:46px;display:grid;place-items:center;padding:0;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;transition:border-color .25s ease,background-color .25s ease}
+#pm-home .ar2 svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@media (hover:hover) and (pointer:fine){#pm-home .ar2:hover{border-color:var(--ink)}
+}
+#pm-home .ar2:active{transform:scale(.96)}
+@media (max-width:767px){#pm-home .rvw-h{grid-template-columns:1fr;gap:26px}
+#pm-home .rvw-s{justify-self:start}
+#pm-home .rvw-h h2{font-size:42px}
+#pm-home .rv-c{width:calc(100vw - 72px);padding:24px 22px}
+#pm-home .rvw-ar{display:none}
+}
+#pm-home .rs-head p.kick{font-size:10px;line-height:1.4;margin-top:0;max-width:none;color:var(--muted)}
+#pm-home .rs-head .pol .kick{margin:0 0 4px;padding-top:4px}
+#pm-home header.site.solid{color:var(--ink)}
+#pm-home header.site.solid::before{opacity:0}
+#pm-home header.site.solid .lg .full.w{opacity:0}
+#pm-home header.site.solid .lg .full.d{display:block}
+#pm-home header.site.glass .lg .full.d{opacity:0}
+#pm-home .pg-h{position:relative;isolation:isolate;min-height:max(560px,82svh);display:flex;align-items:flex-end;overflow:hidden;background:#1d2226;color:#fff}
+#pm-home .pg-img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+#pm-home .pg-h::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(18,22,26,.45),rgba(18,22,26,.06) 30%,rgba(18,22,26,.5) 62%,rgba(18,22,26,.8))}
+#pm-home .pg-c h1,#pm-home .pg-l{text-shadow:0 2px 20px rgba(0,0,0,.35)}
+#pm-home .pg-h.t .pg-c h1,#pm-home .pg-h.t .pg-l{text-shadow:none}
+#pm-home .pg-c{width:100%;padding:0 clamp(22px,5vw,76px) clamp(48px,8vh,90px);max-width:1180px}
+#pm-home .pg-c .kick{color:rgba(255,255,255,.86);margin-bottom:20px}
+#pm-home .pg-h h1{font:500 clamp(52px,7.4vw,118px)/.96 var(--display);letter-spacing:-.028em;text-wrap:balance}
+#pm-home .pg-h h1 .scr{display:block;margin-top:.1em;font-size:.5em;color:var(--sky);letter-spacing:-.01em}
+#pm-home .pg-l{max-width:560px;margin-top:26px;font-size:15.5px;line-height:1.7;color:rgba(255,255,255,.88)}
+#pm-home .pg-c .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+#pm-home .pg-h.t{min-height:0;background:#fff;color:var(--ink);padding-top:clamp(150px,20vh,210px);border-bottom:1px solid var(--line)}
+#pm-home .pg-h.t::after{display:none}
+#pm-home .pg-h.t .kick{color:var(--cyan-deep)}
+#pm-home .pg-h.t h1 .scr{color:var(--cyan-deep)}
+#pm-home .pg-h.t .pg-l{color:var(--soft)}
+@media (prefers-reduced-motion:no-preference){#pm-home .pg-c > *{animation:rise 1.1s var(--ease) both}
+#pm-home .pg-c > :nth-child(2){animation-delay:.12s}
+#pm-home .pg-c > :nth-child(3){animation-delay:.24s}
+#pm-home .pg-c > :nth-child(4){animation-delay:.36s}
+#pm-home .pg-img{animation:settle 2.2s var(--ease) both}
+}
+@keyframes settle{from{transform:scale(1.06)}to{transform:none}}
+#pm-home .ch{padding:clamp(80px,10vw,150px) clamp(22px,5vw,76px);background:#fff}
+#pm-home .ch.hoy{border-top:1px solid var(--line)}
+#pm-home .ch-i{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,7vw,120px);align-items:center;max-width:1240px;margin:0 auto}
+#pm-home .ch-i.rev .ch-m{order:2}
+#pm-home .ch-m{aspect-ratio:4/5;overflow:hidden;background:var(--stone)}
+#pm-home .ch-img{width:100%;height:100%;object-fit:cover}
+#pm-home .ch-t .kick{margin-bottom:18px;color:var(--cyan-deep)}
+#pm-home .ch-t h2{font-size:clamp(42px,4.6vw,70px);line-height:1}
+#pm-home .ch-t h2 .scr{display:block;font-size:.66em;margin-top:.1em}
+#pm-home .ch-lead{margin-top:28px;font:italic 400 clamp(22px,1.9vw,28px)/1.35 var(--display);color:var(--ink)}
+#pm-home .ch-t p:not(.kick):not(.ch-lead){margin-top:18px;max-width:560px;font-size:15px;line-height:1.75;color:var(--soft)}
+#pm-home .ch-n{list-style:none;margin:34px 0 30px;padding:22px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,auto);gap:28px;justify-content:start}
+#pm-home .ch-n b{display:block;font:500 clamp(34px,3vw,46px)/1 var(--display);color:var(--ink)}
+#pm-home .ch-n span{display:block;margin-top:6px;font-size:12px;color:var(--muted)}
+#pm-home .qb{position:relative;isolation:isolate;display:grid;place-items:center;min-height:max(520px,80svh);padding:90px clamp(22px,6vw,90px);overflow:hidden;background:#1d2226;color:#fff;text-align:center}
+#pm-home .qb-img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+#pm-home .qb::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(18,22,26,.62)}
+#pm-home .qb-c{margin:0;max-width:980px}
+#pm-home .qb blockquote{margin:0;font:italic 400 clamp(30px,3.6vw,54px)/1.18 var(--display);letter-spacing:-.01em}
+#pm-home .qb figcaption{margin-top:28px;font:500 10px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--sky)}
+#pm-home .tr{padding:clamp(80px,10vw,150px) clamp(22px,5vw,76px);background:#fff;max-width:1392px;margin:0 auto}
+#pm-home .tr-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end}
+#pm-home .tr-h .kick{grid-column:1/-1;margin-bottom:-22px}
+#pm-home .tr-h h2{font-size:clamp(42px,4.6vw,70px);line-height:1}
+#pm-home .tr-h h2 .scr{display:block;font-size:.66em;margin-top:.1em}
+#pm-home .tr-h p:not(.kick){max-width:480px;font-size:15px;line-height:1.75;color:var(--soft)}
+#pm-home .tr-l{list-style:none;margin:clamp(50px,6vw,80px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink)}
+#pm-home .tr-l li{padding:26px 24px 0 0;border-right:1px solid var(--line);margin-right:24px}
+#pm-home .tr-l li:last-child{border-right:0;margin-right:0}
+#pm-home .tr-l span{display:block;font:500 clamp(30px,2.8vw,42px)/1.05 var(--display);color:var(--ink)}
+#pm-home .tr-l small{display:block;margin-top:10px;font-size:12.5px;line-height:1.5;color:var(--muted)}
+#pm-home .tr-f{margin-top:44px;max-width:640px;font:italic 400 clamp(20px,1.7vw,24px)/1.4 var(--display);color:var(--cyan-deep)}
+#pm-home .cb{padding:clamp(80px,9vw,130px) clamp(22px,5vw,76px);background:var(--stone)}
+#pm-home .cb-i{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:end;max-width:1240px;margin:0 auto}
+#pm-home .cb h2{font-size:clamp(46px,5vw,80px);line-height:1}
+#pm-home .cb h2 .scr{display:block;font-size:.62em;margin-top:.08em}
+#pm-home .cb p{max-width:420px;font-size:15px;line-height:1.7;color:var(--soft)}
+#pm-home .cb .btn{margin-top:24px}
+#pm-home .svn{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#fff;border-bottom:1px solid var(--line)}
+#pm-home .svn a{display:block;padding:28px clamp(18px,2.4vw,34px) 30px;border-right:1px solid var(--line);text-decoration:none;color:var(--ink);transition:background-color .3s ease}
+#pm-home .svn a:last-child{border-right:0}
+#pm-home .svn b{display:block;font:500 11px/1 var(--sans);letter-spacing:.16em;color:var(--cyan-deep)}
+#pm-home .svn span{display:block;margin-top:14px;font:500 clamp(20px,1.7vw,26px)/1.1 var(--display)}
+#pm-home .svn small{display:block;margin-top:4px;font:italic 400 15px/1.3 var(--display);color:var(--muted)}
+@media (hover:hover) and (pointer:fine){#pm-home .svn a:hover{background:var(--stone)}
+}
+#pm-home .svn a:active{background:var(--wash)}
+#pm-home .sv-i{scroll-margin-top:90px}
+#pm-home .st{padding:clamp(80px,10vw,140px) clamp(22px,5vw,76px);background:var(--stone)}
+#pm-home .st-h,#pm-home .st-l,#pm-home .st > .lnk{max-width:1320px;margin-left:auto;margin-right:auto}
+#pm-home .st-h .kick{margin-bottom:16px}
+#pm-home .st-h h2{font-size:clamp(42px,4.4vw,68px);line-height:1}
+#pm-home .st-h h2 .scr{display:block;font-size:.66em;margin-top:.1em}
+#pm-home .st-l{list-style:none;padding:0;margin-top:clamp(44px,5vw,70px);display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}
+#pm-home .st-l li{padding:24px 22px 0 0}
+#pm-home .st-l li + li{padding-left:22px;border-left:1px solid var(--line)}
+#pm-home .st-l b{font:500 11px/1 var(--sans);letter-spacing:.16em;color:var(--cyan-deep)}
+#pm-home .st-l h3{margin-top:16px;font:500 22px/1.15 var(--display);color:var(--ink)}
+#pm-home .st-l p{margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--soft)}
+#pm-home .st > .lnk{display:table;margin-top:44px}
+#pm-home .ex{padding:clamp(80px,10vw,140px) clamp(22px,5vw,76px);background:#fff}
+#pm-home .ex-h,#pm-home .ex-g{max-width:1320px;margin-left:auto;margin-right:auto}
+#pm-home .ex-h .kick{margin-bottom:16px}
+#pm-home .ex-h h2{font-size:clamp(42px,4.4vw,68px);line-height:1}
+#pm-home .ex-h h2 .scr{display:block;font-size:.66em;margin-top:.1em}
+#pm-home .ex-g{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3vw,40px);margin-top:clamp(40px,5vw,64px)}
+#pm-home .ex-c{display:flex;flex-direction:column;border:1px solid var(--line)}
+#pm-home .ex-m{aspect-ratio:16/10;overflow:hidden;background:var(--stone)}
+#pm-home .ex-m img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+@media (hover:hover) and (pointer:fine){#pm-home .ex-c:hover .ex-m img{transform:scale(1.03)}
+}
+#pm-home .ex-b{display:flex;flex-direction:column;flex:1;padding:30px clamp(22px,2.6vw,36px) 34px}
+#pm-home .ex-b h3{font-size:clamp(30px,2.6vw,40px);line-height:1.02}
+#pm-home .ex-b h3 .scr{display:block;font-size:.62em;margin-top:.1em}
+#pm-home .ex-b p{margin-top:16px;font-size:14px;line-height:1.7;color:var(--soft)}
+#pm-home .ex-b ul{list-style:none;margin:20px 0 26px;padding:0;border-top:1px solid var(--line)}
+#pm-home .ex-b li{padding:12px 0 12px 22px;border-bottom:1px solid var(--line);position:relative;font-size:13.5px;color:var(--ink)}
+#pm-home .ex-b li::before{content:"";position:absolute;left:0;top:21px;width:10px;height:2px;background:var(--cyan)}
+#pm-home .ex-b .btn{margin-top:auto;align-self:flex-start}
+#pm-home .mcs{padding:clamp(70px,9vw,120px) clamp(22px,5vw,76px) 0;background:#fff}
+#pm-home .mc-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2vw,28px);max-width:1320px;margin:0 auto}
+#pm-home .mc{display:block;text-decoration:none;color:var(--ink)}
+#pm-home .mc-m{aspect-ratio:4/3;overflow:hidden;background:var(--stone)}
+#pm-home .mc-m img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+@media (hover:hover) and (pointer:fine){#pm-home .mc:hover .mc-m img{transform:scale(1.04)}
+#pm-home .mc:hover h3{color:var(--cyan-deep)}
+}
+#pm-home .mc:active .mc-m img{transform:scale(.99)}
+#pm-home .mc-b{display:grid;grid-template-columns:1fr auto;column-gap:16px;padding:18px 0 0;border-bottom:1px solid var(--line);padding-bottom:18px}
+#pm-home .mc-b h3{margin:0;font:500 26px/1.1 var(--display);transition:color .3s ease}
+#pm-home .mc-b span{grid-column:1;margin-top:4px;font:italic 400 17px/1.3 var(--display);color:var(--cyan-deep)}
+#pm-home .mc-b b{grid-column:2;grid-row:1/3;align-self:center;font:500 10px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+#pm-home .pp{padding:clamp(60px,8vw,110px) clamp(22px,5vw,76px) clamp(80px,10vw,140px);background:#fff}
+#pm-home .pp-s{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));max-width:1180px;margin:0 auto;border-top:1px solid var(--ink)}
+#pm-home .pp-s div{padding:24px 20px 0 0}
+#pm-home .pp-s div + div{padding-left:20px;border-left:1px solid var(--line)}
+#pm-home .pp-s b{display:block;font:500 clamp(44px,4.4vw,66px)/1 var(--display);color:var(--ink)}
+#pm-home .pp-s span{display:block;margin-top:8px;font-size:13px;color:var(--soft)}
+#pm-home .pp-t{max-width:760px;margin:clamp(60px,7vw,100px) auto 0}
+#pm-home .pp-t section{padding:30px 0;border-top:1px solid var(--line)}
+#pm-home .pp-t h2{font:500 clamp(26px,2.4vw,34px)/1.1 var(--display);color:var(--ink)}
+#pm-home .pp-t p,#pm-home .pp-t li{font-size:15px;line-height:1.75;color:var(--soft)}
+#pm-home .pp-t p{margin-top:12px}
+#pm-home .pp-t ul{list-style:none;margin:14px 0 0;padding:0}
+#pm-home .pp-t li{padding:10px 0 10px 22px;position:relative}
+#pm-home .pp-t li::before{content:"";position:absolute;left:0;top:22px;width:10px;height:2px;background:var(--cyan)}
+#pm-home .pp-t li b{color:var(--ink);font-weight:500}
+#pm-home .ci{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#fff;border-bottom:1px solid var(--line)}
+#pm-home .ci > div{padding:clamp(34px,4vw,54px) clamp(22px,3vw,44px);border-right:1px solid var(--line)}
+#pm-home .ci > div:last-child{border-right:0}
+#pm-home .ci .kick{margin-bottom:14px;color:var(--cyan-deep)}
+#pm-home .ci-v{display:block;font:500 clamp(24px,2.2vw,32px)/1.2 var(--display);color:var(--ink);text-decoration:none;margin-bottom:14px}
+@media (max-width:1100px){#pm-home .st-l{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:34px}
+#pm-home .st-l li + li{border-left:0;padding-left:0}
+#pm-home .st-l li:nth-child(2n){padding-left:22px;border-left:1px solid var(--line)}
+}
+@media (max-width:900px){#pm-home .ch-i,#pm-home .tr-h,#pm-home .cb-i{grid-template-columns:1fr;gap:34px}
+#pm-home .ch-i.rev .ch-m{order:0}
+#pm-home .tr-l{grid-template-columns:1fr 1fr;row-gap:30px}
+#pm-home .tr-l li:nth-child(2){border-right:0;margin-right:0}
+#pm-home .svn{grid-template-columns:1fr 1fr}
+#pm-home .svn a:nth-child(2){border-right:0}
+#pm-home .svn a:nth-child(-n+2){border-bottom:1px solid var(--line)}
+#pm-home .ex-g{grid-template-columns:1fr}
+#pm-home .mc-g{grid-template-columns:1fr 1fr}
+#pm-home .pp-s{grid-template-columns:1fr 1fr;row-gap:28px}
+#pm-home .pp-s div:nth-child(3){border-left:0;padding-left:0}
+#pm-home .ci{grid-template-columns:1fr}
+#pm-home .ci > div{border-right:0;border-bottom:1px solid var(--line)}
+}
+@media (max-width:767px){#pm-home .pg-h{min-height:max(520px,78svh)}
+#pm-home .pg-h h1{font-size:clamp(44px,12vw,58px)!important}
+#pm-home .pg-l{font-size:14.5px}
+#pm-home .pg-c .acts{flex-direction:column}
+#pm-home .pg-c .acts .btn{width:100%}
+#pm-home .ch-t h2,#pm-home .tr-h h2,#pm-home .st-h h2,#pm-home .ex-h h2{font-size:40px}
+#pm-home .ch-n{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+#pm-home .ch-n b{font-size:30px}
+#pm-home .qb blockquote{font-size:27px}
+#pm-home .tr-l span{font-size:28px}
+#pm-home .cb h2{font-size:44px}
+#pm-home .st-l{grid-template-columns:1fr}
+#pm-home .st-l li,#pm-home .st-l li + li,#pm-home .st-l li:nth-child(2n){padding:20px 0 0;border-left:0}
+#pm-home .st-l li + li{border-top:1px solid var(--line);margin-top:20px}
+#pm-home .svn{grid-template-columns:1fr}
+#pm-home .svn a{border-right:0;border-bottom:1px solid var(--line);padding:20px 22px}
+#pm-home .mc-g{grid-template-columns:1fr}
+#pm-home .pp-s b{font-size:44px}
+}
+#pm-home .hero-fr{aspect-ratio:960/1632}
+#pm-home .hero-c{right:calc(min(74vh,700px)*.588 + clamp(22px,5vw,80px) + 60px)}
+@media (max-width:767px){#pm-home .hero-fr{display:none}
+#pm-home .hero-mob{filter:none;transform:none!important;object-position:50% 30%}
+#pm-home .hero::after{background:linear-gradient(180deg,rgba(18,22,26,.35) 0%,rgba(18,22,26,0) 24%,rgba(18,22,26,.2) 48%,rgba(18,22,26,.78) 78%)}
+#pm-home .hero-f p{display:block}
+#pm-home .hero-c{right:22px}
+}
+#pm-home .ps{padding:clamp(80px,9vw,130px) clamp(22px,5vw,76px);background:var(--stone)}
+#pm-home .ps-h{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;max-width:1180px;margin:0 auto clamp(40px,5vw,64px)}
+#pm-home .ps-h .kick{margin-bottom:16px;color:var(--cyan-deep)}
+#pm-home .ps-h h2{font-size:clamp(42px,4.4vw,68px);line-height:1}
+#pm-home .ps-h h2 .scr{display:block;font-size:.66em;margin-top:.1em}
+#pm-home .ps-h p:not(.kick){max-width:460px;font-size:15px;line-height:1.7;color:var(--soft)}
+#pm-home .ps-h .btn{margin-top:24px}
+#pm-home .ps .pp-s{background:transparent}
+@media (max-width:900px){#pm-home .ps-h{grid-template-columns:1fr;gap:22px}
+}
+@media (max-width:767px){#pm-home .ps-h h2{font-size:40px}
+#pm-home .ps-h .btn{width:100%}
+}
+/* Ancho completo dentro de Elementor/tema */
+html,body{overflow-x:clip!important;max-width:100%}
+.admin-bar #pm-home header.site{top:32px}
+#pm-home .jr-pin,#pm-home .dn-pin,#pm-home .cta-pin{top:0}
+@media (max-width:782px){.admin-bar #pm-home header.site{top:46px}}
+@media (max-width:600px){.admin-bar #pm-home header.site{top:0}}
+.elementor-widget-html:has(#pm-home),.elementor-widget-html:has(#pm-home) .elementor-widget-container{padding:0!important;margin:0!important;max-width:none!important}
+.e-con:has(#pm-home),.elementor-section:has(#pm-home) .elementor-container,.elementor-column:has(#pm-home) .elementor-widget-wrap{padding:0!important;max-width:none!important}
+/* ===== 7 nov: vídeo nuevo, sin círculo, reseñas de Google, política nueva ===== */
+#pm-home .hero-fr{aspect-ratio:1070/1918}
+#pm-home .hero-c{right:calc(min(74vh,700px)*.558 + clamp(22px,5vw,80px) + 60px)}
+@media (max-width:767px){#pm-home .hero-c{right:22px}
+#pm-home .hero-mob{object-position:50% 40%}}
+#pm-home .plate{display:none!important}
+#pm-home .jr-content{background:rgba(255,255,255,.94);border:1px solid var(--line);border-top:2px solid var(--cyan);padding:clamp(26px,3vw,40px) clamp(24px,3vw,44px);box-shadow:0 30px 70px -36px rgba(30,40,50,.35);max-width:min(460px,86vw)}
+#pm-home .rvw.g{padding:clamp(80px,9vw,130px) 0}
+#pm-home .rvw.g .rvw-s{max-width:380px}
+#pm-home .rvw-st{display:flex;gap:4px;margin-top:10px}
+#pm-home .rvw-st svg{width:18px;height:18px;fill:var(--cyan-deep)}
+#pm-home .rvw.g .rvw-s .btn{margin-top:22px}
+#pm-home .pold-l section{padding:18px 0;border-top:1px solid var(--line)}
+#pm-home .pold-l h3{font:500 14px/1.4 var(--sans);color:var(--ink)}
+#pm-home .pold-l ul{list-style:none;margin:8px 0 0;padding:0}
+#pm-home .pold-l li{position:relative;padding:6px 0 6px 20px;font-size:14px;line-height:1.65;color:var(--soft)}
+#pm-home .pold-l li::before{content:"";position:absolute;left:0;top:17px;width:10px;height:2px;background:var(--cyan)}
+#pm-home .pold-l li b{font-weight:500;color:var(--ink)}
+#pm-home .pold-legal{margin-top:14px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;line-height:1.6;color:var(--muted)}
+#pm-home .pp-s b{white-space:nowrap}
+#pm-home .pp-t .pold-l section:first-child{border-top:0}
+@media (max-width:767px){#pm-home .pp-s b{font-size:36px}
+#pm-home .rvw.g .rvw-s .btn{width:100%}}#pm-home .pold-l li{display:block!important;grid-template-columns:none!important;border:0!important;margin:0!important}
+#pm-home .pold-l li b{display:inline}
+#pm-home .pold-l section + section{margin-top:0}
+#pm-home .rvw.g{padding:clamp(64px,7vw,100px) 0}
+#pm-home .rvw.g .rvw-h{align-items:center}#pm-home .dr-mob .tr{width:max-content!important;flex-wrap:nowrap}
+#pm-home .dr-mob article{flex:0 0 calc(100vw - 92px)!important;width:calc(100vw - 92px)!important}
+/* ===== 10 nov: logo completo, navegación, Instagram/Google, reseñas arriba ===== */
+#pm-home header.site .hd-r{justify-self:end;display:flex;align-items:center;gap:clamp(26px,3vw,46px)}
+#pm-home .lg .icon{height:50px!important}
+#pm-home .mono{width:132px!important;height:auto!important;margin-top:30px;animation:none!important}
+#pm-home .ft-top .r img{width:200px!important;height:auto!important}
+#pm-home .ft-lk{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:14px}
+#pm-home .ft-lk a{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--cyan);padding-bottom:3px}
+#pm-home .soc a svg path{fill:var(--ink)}
+#pm-home .soc a:hover svg path{fill:#fff}
+#pm-home .df.ico img{filter:grayscale(1) brightness(.92) contrast(.9);opacity:.75}
+#pm-home .df.img.x-pera img,#pm-home .df.img.x-boga img{aspect-ratio:4/5;object-fit:cover}
+#pm-home #resenas{border-bottom:1px solid var(--line)}
+#pm-home #resenas .cap{max-width:12ch}
+@media (max-width:1180px){#pm-home .hr{display:none!important}}
+@media (max-width:767px){#pm-home .lg .icon{height:40px!important}
+#pm-home .mono{width:110px!important}
+#pm-home .ft-top .r img{width:170px!important}}#pm-home .hl a{white-space:nowrap}
+@media (max-width:1400px){#pm-home header.site .hd-r{gap:24px}#pm-home .hl{gap:20px!important}#pm-home .hl a{letter-spacing:.16em!important}}
+/* ===== 10 nov (2): flechas del carrusel de servicios y menús sin huecos ===== */
+#pm-home .fx-prev{position:absolute;top:50%;left:clamp(14px,2vw,28px);z-index:5;display:grid;place-items:center;width:50px;height:50px;padding:0;border:1px solid rgba(255,255,255,.6)!important;border-radius:0!important;background:rgba(6,13,20,.26)!important;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);color:#fff!important;transform:translate3d(0,-50%,0);cursor:pointer}
+#pm-home .fx-prev svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+#pm-home .fx-next{opacity:1!important;transform:translate3d(0,-50%,0)!important}
+@media (max-width:767px){#pm-home .fx-prev{display:none}}
+#pm-home .mn-c{display:block!important;columns:2;column-gap:clamp(28px,4vw,56px)}
+#pm-home .mn-g{break-inside:avoid;page-break-inside:avoid;margin:0 0 30px!important;display:block}
+@media (max-width:767px){#pm-home .mn-c{columns:1}}/* ===== 10 nov (3): cabecera siempre opaca y flechas de la galería siempre visibles ===== */
+#pm-home header.site,#pm-home header.site.glass,#pm-home header.site.solid{background:#fff!important;color:var(--ink)!important;border-bottom:1px solid rgba(42,47,52,.08)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+#pm-home header.site::before{display:none!important}
+#pm-home header.site .lg .full{opacity:0!important;visibility:hidden}
+#pm-home header.site .lg .icon{opacity:1!important;transform:none!important}
+#pm-home header.site .menu-btn,#pm-home header.site .hl a{color:var(--ink)!important}
+
+#pm-home .ar{opacity:1!important;transform:translateY(-50%)!important;background:rgba(255,255,255,.92)!important;color:var(--ink)!important;border:1px solid var(--line)!important}
+#pm-home .ar:hover{background:var(--ink)!important;color:#fff!important}
+#pm-home .gl-ar{display:none}
+@media (max-width:767px){#pm-home .gl-ar{display:flex;gap:10px;justify-content:flex-end;padding:16px 26px 0}
+#pm-home .ar2{display:grid;place-items:center;width:46px;height:46px;padding:0;border:1px solid var(--line)!important;border-radius:0!important;background:#fff!important;color:var(--ink)!important;cursor:pointer}
+#pm-home .ar2 svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}}/* ===== 10 nov (5): idiomas y marca de agua en los menús ===== */
+#pm-home .lang{position:relative}
+#pm-home .lang-b{display:flex!important;align-items:center;gap:8px;padding:8px 0!important;background:none!important;border:0!important;color:inherit!important;font:400 11px/1 var(--sans)!important;letter-spacing:.16em!important;cursor:pointer;border-radius:0!important;box-shadow:none!important}
+#pm-home .lang .fl{display:inline-block;width:20px;height:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.12);flex:none}
+#pm-home .lang .fl svg{display:block;width:100%;height:100%}
+#pm-home .lang .chev{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:2}
+#pm-home .lang-l{position:absolute;top:calc(100% + 12px);right:0;z-index:10000;min-width:170px;margin:0!important;padding:6px 0!important;list-style:none!important;background:#fff;border:1px solid var(--line);box-shadow:0 18px 40px -18px rgba(20,30,40,.35)}
+#pm-home .lang-l[hidden]{display:none}
+#pm-home .lang-l li{margin:0!important;padding:0!important;list-style:none!important}
+#pm-home .lang-l button{display:flex!important;align-items:center;gap:12px;width:100%;padding:11px 18px!important;background:none!important;border:0!important;border-radius:0!important;color:var(--ink)!important;font:400 13px/1 var(--sans)!important;letter-spacing:.02em!important;text-transform:none!important;text-align:left;cursor:pointer;box-shadow:none!important}
+#pm-home .lang-l button:hover{background:var(--wash,#f3f5f7)!important}
+.goog-te-banner-frame,.skiptranslate>iframe,#goog-gt-tt,.goog-te-balloon-frame{display:none!important}
+body{top:0!important}
+font[style]{background:none!important;box-shadow:none!important}
+@media (max-width:767px){#pm-home .lang-b span#langCode{display:none}
+}#pm-home header.site .hd-l{justify-self:start;display:flex;align-items:center;gap:clamp(22px,2.6vw,42px)}
+#pm-home .lang-l{right:auto!important;left:0}
+@media (max-width:767px){#pm-home header.site .hd-l .hl{display:none!important}}
+/* ===== 10 nov (6): tira de fotos quieta, se mueve solo con las flechas ===== */
+#pm-home .gs{position:relative}
+#pm-home .gs-vp{position:relative;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:0 clamp(22px,4vw,60px)}
+#pm-home .gs-vp::-webkit-scrollbar{display:none}
+#pm-home .gs-t{animation:none!important;transform:none!important}
+#pm-home .gs figure{scroll-snap-align:start}
+#pm-home .gs-ar{display:flex;gap:10px;justify-content:flex-end;padding:22px clamp(22px,4vw,60px) 0}
+#pm-home .gs-ar .ar2:disabled{opacity:.35;cursor:default}
+#pm-home .gs-side{position:absolute;top:calc(50% - 30px);z-index:5;transform:translateY(-50%)}
+#pm-home .gs-side.p{left:clamp(12px,2vw,28px)}
+#pm-home .gs-side.n{right:clamp(12px,2vw,28px)}
+#pm-home .gs-side:disabled{opacity:0;pointer-events:none}
+@media (max-width:767px){#pm-home .gs-side{display:none}}
+#pm-home .ft-lk a{display:inline-flex;align-items:center;gap:8px}
+#pm-home .ig{width:16px;height:16px;flex:none}/* ===== 10 nov (7): condiciones del 5º pilar y tablas de precios de Batch Cooking ===== */
+#pm-home .sv-cond{margin-top:34px;padding:26px 28px;border:1px solid var(--line);border-top:2px solid var(--cyan)}
+#pm-home .sv-cond h3{margin:8px 0 12px;font:400 26px/1.15 var(--display)}
+#pm-home .sv-cond p{font-size:14px;line-height:1.7;color:var(--soft)}
+#pm-home .sv-cond ul{list-style:none;margin:14px 0 0!important;padding:0!important}
+#pm-home .sv-cond li{position:relative;padding:6px 0 6px 20px;font-size:14px;line-height:1.65;color:var(--soft)}
+#pm-home .sv-cond li::before{content:"";position:absolute;left:0;top:17px;width:10px;height:2px;background:var(--cyan)}
+#pm-home .sv-cond li b{font-weight:500;color:var(--ink)}
+#pm-home .sv-cond .sv-note{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+#pm-home .sv-i > .sv-pr{grid-column:1/-1}
+#pm-home .sv-pr{margin-top:clamp(20px,3vw,40px);padding-top:clamp(30px,4vw,50px);border-top:1px solid var(--line)}
+#pm-home .sv-pr > h3{margin:8px 0 26px;font-size:clamp(30px,3.4vw,46px)}
+#pm-home .pr-b{margin-top:30px}
+#pm-home .pr-h{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 30px;margin-bottom:14px}
+#pm-home .pr-h h4{font:500 15px/1.3 var(--sans);color:var(--ink)}
+#pm-home .pr-h p{font-size:13.5px;color:var(--soft);max-width:60ch}
+#pm-home .pr-w{overflow-x:auto}
+#pm-home .pr-t{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+#pm-home .pr-t th,#pm-home .pr-t td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:right;vertical-align:middle;white-space:nowrap}
+#pm-home .pr-t thead th{font:500 10.5px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:normal;border-bottom:1px solid var(--ink)}
+#pm-home .pr-t th:first-child{text-align:left}
+#pm-home .pr-t tbody th{font-weight:400}
+#pm-home .pr-t tbody th b{display:block;font-weight:500;color:var(--ink)}
+#pm-home .pr-t tbody th span{font-size:12.5px;color:var(--muted)}
+#pm-home .pr-t tbody tr:hover{background:var(--wash,#f3f8fb)}
+#pm-home .pr-t td:last-child{font-weight:500;color:var(--ink)}
+#pm-home .pr-n{margin-top:14px;font-size:12px;color:var(--muted)}
+@media (max-width:767px){#pm-home .pr-t thead{display:none}
+#pm-home .pr-t,#pm-home .pr-t tbody,#pm-home .pr-t tr{display:block;width:100%}
+#pm-home .pr-t tr{padding:14px 0;border-bottom:1px solid var(--line)}
+#pm-home .pr-t th,#pm-home .pr-t td{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border:0;white-space:normal}
+#pm-home .pr-t tbody th{display:block;margin-bottom:6px}
+#pm-home .pr-t td::before{content:attr(data-l);color:var(--muted);font-size:12.5px}
+#pm-home .sv-cond{padding:22px 20px}}#pm-home .ft-lk a[href*="instagram"]{text-transform:none!important;letter-spacing:.01em!important;font-size:14px!important}
+/* ===== 11 nov: seis pilares ===== */
+#pm-home .svn{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+#pm-home .svn a{padding:26px clamp(14px,1.6vw,26px) 28px!important}
+#pm-home .svn span{font-size:clamp(18px,1.4vw,23px)!important}
+@media (max-width:1100px){#pm-home .svn{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+#pm-home .svn a:nth-child(3){border-right:0}
+#pm-home .svn a:nth-child(-n+3){border-bottom:1px solid var(--line)}}
+@media (max-width:640px){#pm-home .svn{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#pm-home .svn a{border-bottom:1px solid var(--line)}}
+#pm-home .sv-i > .sv-pr{order:5}/* ===== 11 nov: menos espacio en blanco en toda la web (≈35% menos) ===== */
+#pm-home .cb,#pm-home .ch,#pm-home .ch.hoy,#pm-home .tr,#pm-home .st,#pm-home .ps,#pm-home .rs,#pm-home .mn{padding-top:clamp(56px,6.2vw,90px)!important;padding-bottom:clamp(56px,6.2vw,90px)!important}
+#pm-home .sv{padding-top:clamp(56px,6.2vw,90px)!important;padding-bottom:clamp(56px,6.2vw,90px)!important;gap:clamp(64px,7vw,110px)!important}
+#pm-home .rvw.g{padding-top:clamp(52px,5.4vw,76px)!important;padding-bottom:clamp(52px,5.4vw,76px)!important}
+#pm-home .rv-gs{margin-top:clamp(32px,3.4vw,50px)!important}
+#pm-home .pp{padding-top:clamp(48px,5.4vw,76px)!important;padding-bottom:clamp(56px,6.2vw,90px)!important}
+#pm-home .qb{padding-top:clamp(48px,4.6vw,64px)!important;padding-bottom:clamp(48px,4.6vw,64px)!important}
+#pm-home .mcs{padding-top:clamp(48px,5vw,76px)!important}
+#pm-home .gs{padding-bottom:clamp(48px,5vw,76px)!important}
+#pm-home .dr,#pm-home .gl{padding-top:clamp(40px,3.4vw,48px)!important;padding-bottom:clamp(40px,3.4vw,48px)!important}
+#pm-home .sv-pr{margin-top:clamp(12px,2vw,24px)!important;padding-top:clamp(24px,3vw,40px)!important}
+#pm-home footer.ft{padding-top:clamp(44px,4.6vw,66px)!important}
+#pm-home .ft-top{padding-bottom:clamp(30px,3.2vw,46px)!important}
+#pm-home .ft-cols{padding-top:clamp(30px,3.2vw,44px)!important;padding-bottom:clamp(30px,3.2vw,44px)!important}
+@media (max-width:767px){#pm-home .sv{gap:64px!important}}@media (min-width:768px){#pm-home .ov aside{margin:calc(116px + clamp(18px,2vw,28px)) clamp(24px,3vw,48px) clamp(24px,3vw,48px) 0}}
+</style>
+<div id="pm-home">
+<header class="site" id="pmHdr">
+<div class="hd-l"><nav class="hl" aria-label="Accesos"><a href="/">Inicio</a><a href="/servicios/">Servicios</a><a href="/menus/">Menús</a></nav><div class="lang notranslate" translate="no"><button class="lang-b" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Idioma"><span class="fl" id="langFlag"><svg viewBox="0 0 3 2" aria-hidden="true"><path fill="#AA151B" d="M0 0h3v2H0z"/><path fill="#F1BF00" d="M0 .5h3v1H0z"/></svg></span><span id="langCode">ES</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><ul class="lang-l" role="listbox" hidden><li><button type="button" data-lang="en" lang="en"><span class="fl"><svg viewBox="0 0 60 30" aria-hidden="true"><clipPath id="fe"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="ft"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#fe)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#ft)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></span>English</button></li><li><button type="button" data-lang="ru" lang="ru"><span class="fl"><svg viewBox="0 0 9 6" aria-hidden="true"><path fill="#fff" d="M0 0h9v2H0z"/><path fill="#0039A6" d="M0 2h9v2H0z"/><path fill="#D52B1E" d="M0 4h9v2H0z"/></svg></span>Русский</button></li><li><button type="button" data-lang="fr" lang="fr"><span class="fl"><svg viewBox="0 0 3 2" aria-hidden="true"><path fill="#ED2939" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#002395" d="M0 0h1v2H0z"/></svg></span>Français</button></li><li><button type="button" data-lang="es" lang="es"><span class="fl"><svg viewBox="0 0 3 2" aria-hidden="true"><path fill="#AA151B" d="M0 0h3v2H0z"/><path fill="#F1BF00" d="M0 .5h3v1H0z"/></svg></span>Español</button></li></ul></div></div>
+<a class="lg" href="/" aria-label="Pablo Muñoz, chef privado. Inicio"><img class="full w" src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-logo-white.png" alt="Pablo Muñoz, chef privado" width="440" height="347"><img class="full d" src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-logo.png" alt="" width="440" height="347"><img class="icon" src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-logo.png" alt="" width="440" height="347"></a>
+<div class="hd-r"><nav class="hl hr" aria-label="Más accesos"><a href="/politica-de-reservas/">Política de reservas</a><a href="/contacto/">Contacto</a><a href="/el-chef/">El chef</a></nav><button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="pmMenu"><span>Menú</span><i aria-hidden="true"></i></button></div>
+</header>
+<div class="ov" id="pmMenu" aria-hidden="true">
+<nav aria-label="Principal">
+    <a href="/" style="--i:0">Inicio</a><a href="/servicios/" style="--i:1">Servicios<small>6 pilares</small></a><a href="/menus/" style="--i:2">Menús Otoño - Invierno <span style="white-space:nowrap">2026-27</span></a><a href="/politica-de-reservas/" style="--i:3">Política de reservas</a><a href="/contacto/" style="--i:4">Contacto y reservas</a><a href="/el-chef/" style="--i:5">El chef</a>
+  </nav>
+<aside><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-bunker-brazos.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-bunker-brazos-m.webp 1600w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-bunker-brazos.webp 2560w" sizes="45vw" alt="Pablo Muñoz con los brazos abiertos sobre Barcelona" loading="lazy" decoding="async"><p class="kick" style="color:#fff">WhatsApp · <a href="https://wa.me/34661100731" target="_blank" rel="noopener">+34 661 10 07 31</a></p></aside>
+</div>
+<div id="pmPage">
+<script>(function(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;var p=document.getElementById('pmPage');p.classList.add('pmjs');if(matchMedia('(hover: none) and (pointer: coarse)').matches)p.classList.add('pmt')})()</script>
+<main>
+<section class="pg-h" aria-labelledby="h1"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-japo2.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-japo2-m.webp 1200w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-japo2.webp 1600w" sizes="100vw" alt="Gyozas con salsa, nori y palillos del menú Fusión Japó-Ibérica" class="pg-img" decoding="async" style="object-position:50% 55%"><div class="pg-c"><p class="kick">Menús 2026</p><h1 id="h1">Menús de celebración<span class="scr">para cada fecha del año</span></h1><p class="pg-l">Diez propuestas con elaboración in situ, servicio de mesa y recogida. Todas admiten adaptaciones nutricionales previa solicitud.</p></div></section>
+<section class="mcs" aria-label="Los diez menús"><div class="mc-g"><a class="mc" href="#menu-1" data-open="menu-1" data-rv style="--d:0ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-gal-03.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-gal-03-m.webp 1600w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-gal-03.webp 2560w" sizes="(max-width:767px) 90vw, 30vw" alt="Bocado de sepia negra con salsas de autor" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Tapas Canallas</h3><span>Urban cocktails &amp; contemporáneas</span><b>Desde 90 € / persona</b></div></a><a class="mc" href="#menu-2" data-open="menu-2" data-rv style="--d:80ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-thanks.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-thanks-m.webp 750w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-thanks.webp 1200w" sizes="(max-width:767px) 90vw, 30vw" alt="Pablo Muñoz sirviendo el pavo asado de Acción de Gracias en la mesa" loading="lazy" decoding="async" style="object-position:50% 18%"></div><div class="mc-b"><h3>Acción de Gracias</h3><span>Fusión con la cocina española</span><b>Desde 120 € / persona</b></div></a><a class="mc" href="#menu-3" data-open="menu-3" data-rv style="--d:160ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-menu-brunch.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-menu-brunch-m.webp 1400w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-menu-brunch.webp 2560w" sizes="(max-width:767px) 90vw, 30vw" alt="Salmón ahumado y caviar sobre hielo" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Brunch</h3><span>Healthy Morning Experience</span><b>Desde 75 € / persona</b></div></a><a class="mc" href="#menu-4" data-open="menu-4" data-rv style="--d:0ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-dn-dia.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-dn-dia-m.webp 1050w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-dn-dia.webp 1920w" sizes="(max-width:767px) 90vw, 30vw" alt="Mesa larga preparada en el porche de una villa" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Executive Brunch</h3><span>High-Performance Breakfast</span><b>Desde 65 € / persona</b></div></a><a class="mc" href="#menu-5" data-open="menu-5" data-rv style="--d:80ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-cat.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-cat-m.webp 1050w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-cat.webp 1920w" sizes="(max-width:767px) 90vw, 30vw" alt="Guiso de ternera con caña de hueso" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Catalan Experience</h3><span>Menú degustación</span><b>Desde 120 € / persona</b></div></a><a class="mc" href="#menu-6" data-open="menu-6" data-rv style="--d:160ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-sv-dining.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-sv-dining-m.webp 1200w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-sv-dining.webp 1920w" sizes="(max-width:767px) 90vw, 30vw" alt="Mesa con cristalería y carta personalizada" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Cena Romántica</h3><span>Experiencia en pareja</span><b>Desde 385 € / pareja</b></div></a><a class="mc" href="#menu-7" data-open="menu-7" data-rv style="--d:0ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-japo2.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-japo2-m.webp 1200w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-japo2.webp 1600w" sizes="(max-width:767px) 90vw, 30vw" alt="Gyozas con salsa, nori y palillos" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Fusión Japó-Ibérica</h3><span>Experiencia gastronómica 2026</span><b>Desde 125 € / persona</b></div></a><a class="mc" href="#menu-8" data-open="menu-8" data-rv style="--d:80ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-nutri.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-nutri-m.webp 1050w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-nutri.webp 1920w" sizes="(max-width:767px) 90vw, 30vw" alt="Pasta fresca rellena en forma de rosa" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Italian Soul Food</h3><span>Cocina italiana para compartir</span><b>Desde 75 € / persona</b></div></a><a class="mc" href="#menu-9" data-open="menu-9" data-rv style="--d:160ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-live.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-live-m.webp 1050w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-carta-live.webp 1920w" sizes="(max-width:767px) 90vw, 30vw" alt="Pescado entero en la parrilla sobre brasas" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Grill Experience</h3><span>Ritual ibérico &amp; fuego mediterráneo</span><b>Desde 95 € / persona</b></div></a><a class="mc" href="#menu-10" data-open="menu-10" data-rv style="--d:0ms"><div class="mc-m"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-gal-01.webp" srcset="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-gal-01-m.webp 1200w, https://pablomunozchef.com/wp-content/uploads/2026/11/pm-gal-01.webp 1920w" sizes="(max-width:767px) 90vw, 30vw" alt="Guiso servido en paellera" loading="lazy" decoding="async"></div><div class="mc-b"><h3>Tapas &amp; Arroces de Autor</h3><span>Experiencia mediterránea</span><b>Desde 85 € / persona</b></div></a></div></section>
+<section class="mn" id="menus" aria-labelledby="mnT">
+  <div class="mn-h"><div><p class="kick">Menús 2026</p><h2 class="cap" id="mnT" data-rv>Los menús<span class="scr">plato a plato</span></h2></div>
+  <p data-rv style="--d:120ms">Precios por persona con IVA incluido, válidos dentro de la ciudad de Barcelona. Fuera de la ciudad, en villas o a bordo, preparamos un presupuesto a medida. La fecha se bloquea con un depósito del 50% según nuestra <a class="lnk" href="#politica" data-pol>política de reservas y cancelación</a>.</p></div>
+  <div class="mn-l"><details class="mn-i" id="menu-1"><summary><span class="mn-n">Tapas Canallas</span><span class="mn-s">Urban cocktails &amp; contemporáneas</span><span class="mn-p">Desde 90 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Platillos Salados</p><ul><li><b>Hojaldre Filo de Taleggio</b> Relleno crujiente de queso Taleggio y setas de temporada con kimchi de remolacha y toque de miel.</li><li><b>Tostada de Maíz &amp; Gambas al Sésamo</b> Tortilla de maíz crujiente con gambas salteadas en aceite de sésamo tostado, salteado cremoso de huevo y reducción de salsa de ostras.</li><li><b>Tataki de Vaca Madurada</b> Marinado en soja envejecida, láminas de katsuobushi y aceite de Parmigiano Reggiano.</li></ul></div><div class="mn-g"><p class="kick">Plato de cierre salado</p><ul><li><b>Bao Ahumado de Panceta Ibérica</b> Pan bao al vapor con panceta ibérica ahumada y glaseada en hoisin, pepino encurtido y mayonesa de sriracha y mango.</li></ul></div><div class="mn-g"><p class="kick">El Dulce</p><ul><li><b>Canutillo de Trufa y Chocolate Blanco</b> Relleno de cremoso de chocolate blanco, trufa blanca y cítricos confitados.</li></ul></div><div class="mn-g"><p class="kick">Propuesta de coctelería de Autor</p><ul><li><b>London Mule</b> Ginebra botánica, cerveza de jengibre artesanal, jugo de lima fresca y toque de pepino.</li><li><b>Curaçao Mojito</b> Ron blanco premium, liquamen de Curaçao azul, menta fresca majada y cítricos.</li><li><b>Old Fashioned</b> Bourbon seleccionado, amargo de Angostura y aceite esencial de piel de naranja.</li><li><b>Amaretto / Espresso Sour</b> Licor de Amaretto, shot de espresso de especialidad, clara de huevo y gotas de angostura.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Urban Cocktails &amp; Tapas</b><span>Incluye la selección completa de tapas, 2 cócteles de autor a elegir por comensal, elaboración y coctelería in situ, servicio de mesa y recogida.</span></div><em>90 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Experiencia Open Bar (2 horas)</b><span>Servicio continuado de la carta de cócteles de autor durante todo el evento.</span></div><em>115 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Tapas Canallas">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-2"><summary><span class="mn-n">Acción de Gracias</span><span class="mn-s">Fusión con la cocina española</span><span class="mn-p">Desde 120 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Entrantes</p><ul><li><b>Crema aterciopelada de calabaza y castañas</b> crema otoñal de verduras asadas, coronada con crujiente jamón ibérico.</li><li><b>Brocheta de foie gras y membrillo</b> Foie gras marcado a la plancha, acompañado de dulce de membrillo local y una reducción ácida de arándanos.</li></ul></div><div class="mn-g"><p class="kick">Plato principal</p><ul><li><b>Pavo asado relleno de chorizo</b> pavo asado a fuego lento con un sabroso relleno de chorizo, servido con su propio jugo a la naranja, cazuela de batata al horno con costra de nueces pecanas y un puré de patatas de textura sedosa.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Tarta de nueces pecanas y crema catalana</b> base crujiente de tarta de nueces pecanas, cubierta con una suave crema catalana caramelizada.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Thanksgiving</b><span>Menú de 3 pases, elaboración in situ, servicio de mesa y recogida.</span></div><em>120 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje</b><span>Incluye 3 vinos de origen seleccionados.</span></div><em>145 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos para la asadura del pavo entero). Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Acción de Gracias">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-3"><summary><span class="mn-n">Brunch</span><span class="mn-s">Healthy Morning Experience</span><span class="mn-p">Desde 75 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Bebidas Refreshing &amp; Vitality</p><ul><li><b>Smoothie Detox</b> kiwi, pera, espinacas frescas y toque de jengibre.</li><li><b>Infusión de Autor</b> selección exclusiva de tés artesanales.</li></ul></div><div class="mn-g"><p class="kick">Obrador Artesano &amp; Acompañamientos</p><ul><li><b>Cesta del Horno</b> tostadas de pan de masa madre integral, muffins de maíz con queso Taleggio fundido y brioche artesanal.</li><li><b>Quesos y embutidos ibéricos</b> selección de quesos catalanes y embutidos ibéricos</li><li><b>Mantequilla de Autor</b> infusionada con finas hierbas y escamas de sal marina de la costa catalana.</li><li><b>Mermelada Estacional</b> elaboración propia a partir de frutas locales de temporada.</li></ul></div><div class="mn-g"><p class="kick">Platos Estrella</p><ul><li><b>Aguacate Marinado</b> miel de pomelo, láminas de queso azul y avellanas tostadas.</li><li><b>Huevos de Corral al Gusto</b> benedictine sobre brioche, fritos, revueltos o en tortilla, acompañados de salsa holandesa al estragón.</li><li><b>Salmón Gravlax</b> curado en casa con crema de remolacha y kimchi sobre crujiente de pan artesano.</li></ul></div><div class="mn-g"><p class="kick">Fruta &amp; Lácteos</p><ul><li><b>Fruta Fresca</b> selección de frutas locales de temporada.</li><li><b>Yogur Griego Premium</b> granola artesana de frutos secos y miel pura de flores.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Brunch Healthy Morning</b><span>Incluye menú degustación completo servido en mesa, servicio de zumos e infusiones, elaboración in situ, servicio de mesa y recogida.</span></div><em>75 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú Brunch + Mimosa &amp; Cava Bar</b><span>Incluye barra libre durante el brunch de Mimosas recién preparadas y Cava artesanal de finca.</span></div><em>125 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Brunch">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-4"><summary><span class="mn-n">Executive Brunch</span><span class="mn-s">High-Performance Breakfast</span><span class="mn-p">Desde 65 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Bebidas Energizantes</p><ul><li><b>Smoothie Detox</b> kiwi, pera, espinacas frescas y toque de jengibre.</li><li><b>Café &amp; Té de Autor</b> café de especialidad recién tostado, variedad de leches (entera, sin lactosa, avena y soja) e infusiones seleccionadas.</li></ul></div><div class="mn-g"><p class="kick">Obrador y Esenciales</p><ul><li><b>Panadería Artesana</b> tostadas de pan integral de masa madre y brioche de mantequilla.</li><li><b>Acompañamientos</b> mermelada artesanal de frutas locales y mantequilla infusionada con finas hierbas y escamas de sal.</li></ul></div><div class="mn-g"><p class="kick">Platos de Firma (A elegir)</p><ul><li><b>Tabla de Quesos y Embutidos Ibéricos</b> selección de quesos artesanos españoles y embutidos ibéricos de bellota acompañados de frutos secos.</li><li><b>Huevos de Corral</b> benedictine sobre brioche, fritos o revueltos con salsa holandesa al estragón.</li></ul></div><div class="mn-g"><p class="kick">Fruta &amp; Vitalidad</p><ul><li><b>Seasonal Fruit Bowl</b> fruta fresca de temporada.</li><li><b>Yogur Griego Premium</b> granola artesana de frutos secos y miel pura de flores.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Executive Brunch</b><span>Incluye montaje, servicio completo de café de especialidad y cocina in situ, servicio de mesa y recogida.</span></div><em>65 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Executive Brunch Premium (con Cava &amp; Cold Press Juice Bar)</b><span>Incluye estación de zumos prensados en frío y Cava de finca para cierres de jornada o celebraciones corporativas.</span></div><em>85 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 8 comensales (o tarifa equivalente a 8 cubiertos). Adaptaciones nutricionales y opciones sin gluten/veganas disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Executive Brunch">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-5"><summary><span class="mn-n">Catalan Experience</span><span class="mn-s">Menú degustación</span><span class="mn-p">Desde 120 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Aperitivo</p><ul><li><b>El bocado del Chef</b> sorpresa de temporada con producto fresco del mercado.</li></ul></div><div class="mn-g"><p class="kick">Pre-entrantes</p><ul><li><b>Galets rellenos</b> pasta tradicional rellena de ragú de setas y castañas con reducción de manzana y regaliz.</li><li><b>Bombón de Trinxat</b> plato tradicional del Pirineo sobre base crujiente y demi-glace de anís.</li></ul></div><div class="mn-g"><p class="kick">Entrantes (A elegir)</p><ul><li><b>Canelón negro</b> Relleno de gamba roja y gratinado con bechamel de fumet y vieiras.</li><li><b>Canelón de montaña</b> Relleno de carne y Moixernons con bechamel de trufa.</li></ul></div><div class="mn-g"><p class="kick">Plato Principal (A elegir)</p><ul><li><b>Solomillo de Angus</b> corte a la pimienta en su propio jugo con bizcocho de patata.</li><li><b>Rodaballo</b> asado al punto con puré de manzana y coliflor, alcaparras crujientes.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Canutillo crujiente</b> relleno de cremoso de chocolate blanco, mermelada de mandarina y helado de trufa blanca.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Catalán Experience</b><span>Menú degustación completo, elaboración in situ, servicio de mesa y recogida.</span></div><em>120 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje</b><span>Incluye selección de 4 vinos de origen catalán.</span></div><em>155 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales. Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Catalan Experience">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-6"><summary><span class="mn-n">Cena Romántica</span><span class="mn-s">Experiencia en pareja</span><span class="mn-p">Desde 385 € / pareja</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Aperitivo Botánico</p><ul><li><b>Timur &amp; Bubbles</b> Cóctel de ginebra botánica, té negro, esencia de frambuesa y Cava rosado con aroma de baya de Timur.</li></ul></div><div class="mn-g"><p class="kick">Pre-entrante</p><ul><li><b>Tartaleta de Yema Curada</b> Yema curada en remolacha y pimienta rosa sobre base crujiente con Caviar Amur Osetra (10 g / pareja).</li></ul></div><div class="mn-g"><p class="kick">Entrante</p><ul><li><b>Ravioli Nero de Gamba Roja</b> Pasta fresca artesanal rellena de gamba roja del Mediterráneo con mantequilla noisette, vainilla de Madagascar y azafrán D.O.</li></ul></div><div class="mn-g"><p class="kick">Plato Principal</p><ul><li><b>Solomillo Wellington "Grand Cru"</b> Centro de solomillo de ternera en costra de hojaldre de mantequilla, duxelles de setas y chalotas al Oporto, acompañado de jugo de carne de 24 horas y patata confitada.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Canutillo de Almendras</b> Relleno de cremoso de chocolate blanco y jengibre, acompañado de helado artesanal de kumquat confit y sutil toque de trufa blanca.</li></ul></div><div class="mn-g"><p class="kick">Detalles de la Experiencia (Ambientación)</p><ul><li><b>Diseño de mesa exclusivo</b> Velas de cera de abeja natural (sin humo ni olores)</li><li><b>Flor del gusto de la enamorada/o</b> pieza de flor fresca</li><li><b>Atmósfera</b> Selección musical curada para acompañar la progresión de la cena.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Experiencia Cena Romántica</b><span>Incluye cóctel de bienvenida, menú degustación completo, ambientación de mesa, elaboración in situ, servicio y recogida.</span></div><em>385 €<small>/ pareja · IVA incl.</small></em></li></ul><p class="mn-note">Precio válido dentro de la ciudad de Barcelona. Adaptaciones para requerimientos alimentarios o alergias disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Cena Romántica">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-7"><summary><span class="mn-n">Fusión Japó-Ibérica</span><span class="mn-s">Experiencia gastronómica 2026</span><span class="mn-p">Desde 125 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Bienvenida</p><ul><li><b>Cóctel del Chef</b> Elaboración de autor con notas cítricas y botánicas.</li></ul></div><div class="mn-g"><p class="kick">Entrantes</p><ul><li><b>Tempura de Setas de Temporada</b> rebozado shiragiku, servida con un consomé de jamón de bellota infusionado con jengibre joven.</li><li><b>Ensalada Wakame "Royal"</b> algas wakame y tosaka marinadas en sésamo tostado, acompañadas de tartar de manzana verde ácida, pepino encurtido en mirin y perlas de yuzu.</li></ul></div><div class="mn-g"><p class="kick">Selección de Makis &amp; Uramakis Fusión</p><ul><li><b>California Roll de Salmón Ahumado</b> con mango maduro, pepino baby y una emulsión de queso trufado.</li><li><b>Maki de Atún Rojo y Wakame</b> Atún Balfegó marinado en soja envejecida y alga wakame orgánica.</li><li><b>Uramaki Ebi Furai</b> gamba en panko crujiente, gel de frambuesa ácida y crema de wasabi dulce.</li><li><b>Uramaki "Tesoro del Mar"</b> con Caviar Amur Osetra, láminas de katsuobushi y sésamo negro tostado.</li></ul></div><div class="mn-g"><p class="kick">Plato Principal</p><ul><li><b>Tataki de Vaca Madurada</b> con salsa Ponzu-Togarashi, yema de huevo de corral confitada y escamas de sal Maldon.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Cremoso de Lichi y Menta</b> con compota de kiwi gold, crujiente de menta piperita y un toque de sake dulce.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Fusión Japó-Ibérica</b><span>Incluye cóctel de bienvenida, menú degustación completo, elaboración in situ, servicio de mesa y recogida.</span></div><em>125 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje</b><span>Incluye selección de sakes y vinos blancos de finca.</span></div><em>165 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Fusión Japó-Ibérica">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-8"><summary><span class="mn-n">Italian Soul Food</span><span class="mn-s">Cocina italiana para compartir</span><span class="mn-p">Desde 75 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Aperitivo Italiano &amp; Bienvenida</p><ul><li><b>Aperol Spritz</b> Cóctel clásico de Aperol, Cava y soda con naranja (2 por persona).</li><li><b>Bocados para Compartir</b> Aceitunas sicilianas seleccionadas y patatas fritas artesanas.</li></ul></div><div class="mn-g"><p class="kick">Entrantes (Para compartir)</p><ul><li><b>Trofie al Pesto Genovese</b> Pasta fresca de Liguria con pesto de albahaca, piñones tostados y Parmigiano Reggiano curado.</li><li><b>Melanzane alla Parmigiana</b> Berenjena asada en capas con salsa de tomate a fuego lento, mozzarella fundida y albahaca fresca.</li></ul></div><div class="mn-g"><p class="kick">Plato Principal</p><ul><li><b>Pollo alla Cacciatora</b> Pollo de corral estofado en salsa de tomate San Marzano, hierbas mediterráneas y aceitunas negras.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Tiramisú del Chef</b> Bizcocho empapado en espresso y Amaretto con crema de mascarpone y cacao amargo.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Italian Soul Food</b><span>Incluye 2 cócteles Spritz por persona, aperitivos, menú completo, elaboración in situ, servicio de mesa y recogida.</span></div><em>75 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Selezione di Vini (Maridaje)</b><span>Incluye selección de 3 vinos italianos (Chianti y Pinot Grigio) para acompañar la comida.</span></div><em>115 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones vegetarianas y alimentarias disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Italian Soul Food">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-9"><summary><span class="mn-n">Grill Experience</span><span class="mn-s">Ritual ibérico &amp; fuego mediterráneo</span><span class="mn-p">Desde 95 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">El Ritual del Vermut (Aperitivo)</p><ul><li><b>Vermut del Chef</b> infusionado con hierbas silvestres y notas cítricas.</li><li><b>Montadito Ibérico</b> pan crujiente con jamón de bellota y pimiento de Padrón a la llama.</li><li><b>Esenciales</b> Aceitunas maceradas en cítricos y Pan de Pagès a la brasa con tomate de colgar y ajo.</li></ul></div><div class="mn-g"><p class="kick">Entrante</p><ul><li><b>Escalivada al Rescoldo</b> pimientos, berenjenas y cebollas asadas a la leña con queso de cabra gratinado y nueces.</li></ul></div><div class="mn-g"><p class="kick">Degustación de Carnes a la Brasa</p><ul><li><b>Pluma Ibérica</b> corte seleccionado de cerdo ibérico braseado al punto.</li><li><b>Entrecot de Angus Nacional</b> ternera de pasto con maduración óptima.</li><li><b>Butifarra de Pagès</b> embutido artesanal catalán a la brasa.</li></ul></div><div class="mn-g"><p class="kick">Guarnición &amp; Salsas</p><ul><li><b>Patatas al Caliu</b> patatas asadas en ceniza con mojo verde de cilantro.</li><li><b>Salsas de Mesa</b> All i Oli hecho a mano, Romesco de avellanas, Chimichurri artesanal y AOVE.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Tarta de Queso "Signature"</b> tarta cremosa de queso infusionada con lavanda y ralladura de lima verde.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Grill Experience</b><span>Incluye vermut de bienvenida, servicio completo de brasas y cocina in situ, servicio de mesa y recogida.</span></div><em>95 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje de Vinos</b><span>Incluye selección de 3 vinos tintos y blancos de alta gama de la D.O. Montsant y Priorat.</span></div><em>165 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales y opciones vegetarianas/pescetarianas disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Grill Experience">Reservar este menú</a></aside></div></details><details class="mn-i" id="menu-10"><summary><span class="mn-n">Tapas &amp; Arroces de Autor</span><span class="mn-s">Experiencia mediterránea</span><span class="mn-p">Desde 85 € / persona</span><svg class="pl" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></summary><div class="mn-b"><div class="mn-c"><div class="mn-g"><p class="kick">Aperitivo de Bienvenida</p><ul><li><b>Vermut del Chef</b> infusionado con botánicos del Mediterráneo y notas cítricas.</li></ul></div><div class="mn-g"><p class="kick">Tapas Gourmet (Incluidas)</p><ul><li><b>Gildas de Salmón Gravlax</b> salmón curado artesanal con encurtidos selectos.</li><li><b>Crema Suave de Alcachofa y Trufa</b> crema templada de alcachofa de temporada con aceite de trufa negra y crujiente de jamón.</li><li><b>Huevos de Corral con Jamón Ibérico</b> revuelto con virutas de jamón de bellota.</li><li><b>Escalivada a la Llama</b> Verduras asadas con anchoa del Cantábrico.</li></ul></div><div class="mn-g"><p class="kick">Arroces de Autor (A elegir dos opciones para el grupo)</p><ul><li><b>Arroz del Senyoret</b> con gamba roja, vieiras y calamar (todo limpio).</li><li><b>Arroz Cremoso de Huerta &amp; Romesco</b> verduras de temporada con base de romesco de avellanas.</li><li><b>Arroz de Presa Ibérica</b> meloso de cerdo ibérico de bellota y setas silvestres.</li><li><b>Arroz Negro de Sepia y Gambas</b> con sofrito tradicional y all i oli de mortero.</li></ul></div><div class="mn-g"><p class="kick">Postre</p><ul><li><b>Crema Catalana Contemporánea</b> Cremoso de yema tostada con crujiente de galleta artesana.</li></ul></div></div><aside class="mn-a"><p class="kick">Precios y condiciones</p><ul class="mn-pr"><li><div><b>Menú Tapas &amp; Arroces de Autor</b><span>Incluye vermut de bienvenida, menú completo de tapas y arroces, elaboración in situ, servicio de mesa y recogida.</span></div><em>85 €<small>/ persona · IVA incl.</small></em></li><li><div><b>Menú + Maridaje Mediterráneo</b><span>Incluye selección de 3 vinos de D.O. Catalanas y blancos de crianza costera.</span></div><em>145 €<small>/ persona · IVA incl.</small></em></li></ul><p class="mn-note">Precios válidos dentro de la ciudad de Barcelona. Mínimo de 6 comensales (o tarifa equivalente a 6 cubiertos). Adaptaciones nutricionales y opciones vegetarianas/celíacas disponibles previa solicitud.</p><a class="btn c" href="#reservar" data-menu="Tapas &amp; Arroces de Autor">Reservar este menú</a></aside></div></details></div>
+</section>
+<section class="rs" id="reservar" aria-labelledby="rsT">
+<div class="rs-grid">
+<div class="rs-head">
+<p class="kick">Cuestionario Culinario Exclusivo</p>
+<h2 class="cap" id="rsT" data-rv><span>Diseñemos</span><span class="scr">tu propuesta</span></h2>
+<p data-rv style="--d:120ms">Cuéntanos fechas, invitados y objetivos. Te enviaremos nuestro Cuestionario Culinario Exclusivo para analizar tu perfil exacto y confeccionar una propuesta a medida. La fecha se bloquea con un depósito del 50%; el menú, los invitados y las alergias se cierran 7 días antes.</p>
+<div class="pol" id="politica"><p class="kick">Política de reservas y cancelación</p><div><span>Depósito para bloquear la fecha</span><b>50%</b></div><div><span>Pago restante y cierre de menú e invitados</span><b>7 días antes</b></div><div><span>Cancelación con más de 90 días</span><b>Depósito −10% o bono</b></div><div><span>Cancelación con 7 días o menos</span><b>100% facturado</b></div><button class="lnk pol-open" type="button" data-pol>Ver la política completa</button></div>
+<a class="wa" href="https://wa.me/34661100731?text=Hola%20Pablo%2C%20me%20gustar%C3%ADa%20recibir%20el%20Cuestionario%20Culinario." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg><span>¿Prefieres escribir directamente? +34 661 10 07 31</span></a>
+</div>
+<div><form class="f" id="res" novalidate>
+<div class="fld h"><label for="r-nombre">Nombre <i>*</i></label><input id="r-nombre" name="nombre" autocomplete="name" required></div>
+<div class="fld h"><label for="r-tel">Teléfono <i>*</i></label><input id="r-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required></div>
+<div class="fld"><label for="r-email">Email <i>*</i></label><input id="r-email" name="email" type="email" autocomplete="email" autocapitalize="none" required></div>
+<div class="fld"><label for="r-serv">Servicio <i>*</i></label><select id="r-serv" name="servicio" required><option value="">Elige un servicio</option><option>B2B & Chef Concierge</option><option>Private Batch Cooking & Meal Prep</option><option>Private Dining & Experiencias VIP</option><option>Boutique Catering & Live Cooking</option><option>Elite Athlete & Performance Nutrition</option><option>Coctelería de Autor & Maridaje</option></select></div>
+<div class="fld h"><label for="r-fecha">Fecha o inicio <i>*</i></label><input id="r-fecha" name="fecha" type="date" required></div>
+<div class="fld h"><label for="r-pax">Comensales <i>*</i></label><input id="r-pax" name="comensales" type="number" min="1" inputmode="numeric" required></div>
+<div class="fld"><label for="r-ubi">Ubicación <i>*</i></label><input id="r-ubi" name="ubicacion" autocomplete="street-address" placeholder="Residencia, villa, yate o espacio corporativo" required></div>
+<div class="fld"><label for="r-alerg">Alergias, intolerancias o dietas especiales <i>*</i></label><textarea id="r-alerg" name="alergias" rows="2" placeholder="Escribe «ninguna» si no hay restricciones" required></textarea></div>
+<div class="fld"><label for="r-com">Objetivos y preferencias</label><textarea id="r-com" name="comentarios" rows="2"></textarea></div>
+<label class="chk" for="r-ok"><input type="checkbox" id="r-ok" required><span>He leído y acepto la política de reservas y cancelación.</span></label>
+<div class="send"><button class="btn c" type="submit">Solicitar cuestionario</button></div>
+</form>
+<div class="done" id="done" hidden tabindex="-1"><h3>Gracias, <span id="doneName"></span></h3><p>Tu solicitud se ha abierto en WhatsApp con todos los datos: solo falta pulsar enviar. Te responderemos con el Cuestionario Culinario Exclusivo.</p><div class="acts"><a class="btn c" id="waSend" href="https://wa.me/34661100731" target="_blank" rel="noopener">Abrir WhatsApp</a><button class="btn" id="editRes" type="button">Modificar</button></div></div></div>
+</div>
+</section>
+</main>
+<footer class="ft" aria-label="Pie">
+<div class="ft-top">
+<div><p class="kick">Dirección culinaria</p><h2 class="cap">Pablo Muñoz<span class="scr">gastronomía de autor</span></h2></div>
+<div class="r"><img src="https://pablomunozchef.com/wp-content/uploads/2026/11/pm-logo.png" alt="Pablo Muñoz, chef privado" loading="lazy" decoding="async"><p>Barcelona · Costa Brava · Península · Baleares<br><a href="tel:+34661100731">+34 661 10 07 31</a></p><p class="ft-lk"><a href="https://www.instagram.com/pablo_munoz_chef/" target="_blank" rel="noopener" aria-label="Instagram de Pablo Muñoz: @pablo_munoz_chef"><svg class="ig" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>@pablo_munoz_chef</a><a href="https://www.google.com/search?sca_esv=4643c98f18331257&amp;sxsrf=AKL5yDjEuRRefzO2fh_VnTwgATlr3z2KRg:1794038191724&amp;q=rese%C3%B1as+Pablo+MU%C3%B1oz+Chef&amp;si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95cw5h_A2y8nKmPsi1LQQBjiAp87ekxUo1vtYqTsGO_5C1NgXVTl9edXoIpR6U7AC9zX641Xw%3D&amp;uds=AE2AFgYcgXKcOQKR0sfn4TCYCERBKrdEZSEWw4Llq3aPtGOYCQ_TRu0ovepBrp4Ui3tD4P6ztXpXvpLOr70T5A8DM-mgx2zR-Mur0oMPhRtAS6vShTLzBkBVqChFa2QtsYdb46bxoT0S&amp;sa=X&amp;ved=2ahUKEwik74WJsfWXAxUp1gIHHWLTIlgQ3PALegQIHhAF&amp;biw=1309&amp;bih=707&amp;dpr=2.2" target="_blank" rel="noopener">Reseñas en Google · 4,9 / 5</a></p></div>
+</div>
+<div class="ft-cols">
+    <div><p class="kick">Servicios</p><h3>Seis pilares</h3><p>B2B & Chef Concierge, Private Batch Cooking, Private Dining, Boutique Catering & Live Cooking, Elite Athlete & Performance Nutrition y Coctelería de Autor & Maridaje.</p><a class="lnk" href="/servicios/">Ver servicios</a></div>
+    <div><p class="kick">Menús 2026</p><h3>Menús de celebración</h3><p>Diez menús con elaboración in situ, servicio de mesa y recogida, adaptables a cualquier alergia o intolerancia.</p><a class="lnk" href="/menus/">Ver los menús</a></div>
+    <div><p class="kick">Reservas</p><h3>Planifica tu fecha</h3><p>Depósito del 50% para bloquear la fecha. Menú, invitados y alergias se cierran 7 días antes.</p><a class="lnk" href="/politica-de-reservas/">Política de reservas</a></div>
+    <div><p class="kick">El chef</p><h3>Nuestra historia</h3><p>Una interpretación personal de la tradición mediterránea: producto de temporada, técnica, salud y la brasa como centro.</p><a class="lnk" href="/el-chef/">Conocer a Pablo</a></div>
+  </div>
+  <div class="ft-bot"><span>© 2026 Pablo Muñoz, chef privado · <a href="/contacto/">Contacto</a> · <a href="/politica-de-reservas/">Política de reservas y cancelación</a></span><div class="soc"><a href="https://www.instagram.com/pablo_munoz_chef/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.4-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.4.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.4.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4C15.5 4 15.1 4 12 4zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8a3.1 3.1 0 1 0 0-6.2 3.1 3.1 0 0 0 0 6.2zm6.2-8.2a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg></a><a href="https://www.google.com/search?sca_esv=4643c98f18331257&amp;sxsrf=AKL5yDjEuRRefzO2fh_VnTwgATlr3z2KRg:1794038191724&amp;q=rese%C3%B1as+Pablo+MU%C3%B1oz+Chef&amp;si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95cw5h_A2y8nKmPsi1LQQBjiAp87ekxUo1vtYqTsGO_5C1NgXVTl9edXoIpR6U7AC9zX641Xw%3D&amp;uds=AE2AFgYcgXKcOQKR0sfn4TCYCERBKrdEZSEWw4Llq3aPtGOYCQ_TRu0ovepBrp4Ui3tD4P6ztXpXvpLOr70T5A8DM-mgx2zR-Mur0oMPhRtAS6vShTLzBkBVqChFa2QtsYdb46bxoT0S&amp;sa=X&amp;ved=2ahUKEwik74WJsfWXAxUp1gIHHWLTIlgQ3PALegQIHhAF&amp;biw=1309&amp;bih=707&amp;dpr=2.2" target="_blank" rel="noopener" aria-label="Reseñas en Google"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1a10 10 0 0 0 0 9.2L6.4 14z"/><path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.4L6.4 10c.8-2.4 3-4.1 5.6-4.1z"/></svg></a><a href="https://wa.me/34661100731" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg></a><a href="tel:+34661100731" aria-label="Llamar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a></div></div>
+</footer><a class="fab" id="pmFab" href="#reservar" aria-label="Reservar fecha"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Reservar fecha</a><dialog class="pold" id="polDlg" aria-labelledby="polT">
+<div class="pold-b">
+<button class="pold-x" type="button" data-pol-close aria-label="Cerrar"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1 1 13"/></svg></button>
+<p class="kick">Pablo Muñoz · Dirección culinaria</p>
+<h2 id="polT">Política de reservas y cancelación</h2>
+<div class="pold-l">
+      <section><h3>1. Confirmación de reserva y pagos</h3><ul>
+        <li><b>Depósito:</b> para garantizar y bloquear la fecha, se abonará un 50% del importe total en el momento de confirmar la propuesta.</li>
+        <li><b>Pago restante:</b> el 50% restante se abonará como máximo 7 días antes del evento (para reservas de última hora realizadas con menos de 7 días, se abonará el 100%).</li>
+        <li><b>Método de pago:</b> transferencia bancaria (todos los precios incluyen IVA).</li></ul></section>
+      <section><h3>2. Política de cancelación y cambios</h3><ul>
+        <li><b>Más de 90 días antes:</b> devolución del depósito (descontando un 10% por gastos de gestión) o emisión de un bono del 100% para usar en los siguientes 12 meses.</li>
+        <li><b>Entre 90 y 7 días antes:</b> retención del 50% (depósito inicial).</li>
+        <li><b>7 días o menos:</b> se facturará el 100% del importe total del evento.</li>
+        <li><b>Cambio de fecha:</b> permitido sin coste con más de 60 días de antelación (sujeto a disponibilidad y para celebrar en los siguientes 12 meses).</li></ul></section>
+      <section><h3>3. Cierre de menú, invitados y alergias</h3><ul>
+        <li><b>7 días antes del evento:</b> se fija el menú definitivo, el número final de invitados (vinculante para la facturación) y la lista de alergias e intolerancias.</li></ul></section>
+      <section><h3>4. Espacio y requisitos técnicos</h3><ul>
+        <li>El cliente garantiza las condiciones de cocina, luz y agua acordadas en el espacio.</li>
+        <li>Las autorizaciones del espacio o venue y los cánones o tasas que este pudiera exigir para proveedores externos corresponden íntegramente al cliente.</li></ul></section>
+      <p class="pold-legal"><b>Nota legal:</b> esta información resume los puntos principales. Las condiciones contractuales detalladas se enviarán junto con la propuesta económica y el contrato definitivo del evento.</p>
+    </div>
+<p class="pold-n" style="margin-top:20px"><a class="lnk" href="/politica-de-reservas/">Abrir la política en su página</a></p>
+<p class="pold-n">¿Dudas sobre la política? Escríbenos por <a class="lnk" href="https://wa.me/34661100731" target="_blank" rel="noopener">WhatsApp</a> antes de reservar.</p>
+</div>
+</dialog>
+</div>
+</div>
+<script>
+(function(){var P={};
+var l=document.querySelectorAll("#pm-home img[data-pm]");for(var i=0;i<l.length;i++){var k=l[i].getAttribute("data-pm");if(P[k]){l[i].src=P[k];l[i].removeAttribute("loading")}}var v=document.querySelectorAll("#pm-home video[data-pmp]");for(var j=0;j<v.length;j++){var q=P[v[j].getAttribute("data-pmp")];if(q)v[j].poster=q}})();
+</script>
+<script>
+(function(){
+var root=document.getElementById('pm-home')||document;
+var $=function(s){return root.querySelector(s)},$$=function(s){return [].slice.call(root.querySelectorAll(s))};
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var tick=false,ups=[];
+function frame(){tick=false;ups.forEach(function(f){f()})}
+function req(){if(!tick){tick=true;requestAnimationFrame(frame)}}
+addEventListener('scroll',req,{passive:true});addEventListener('resize',req);
+/* Cabecera: transparente sobre la foto, cristal blanco al bajar; menú a pantalla completa */
+var hdr=$('#pmHdr'),glass=false;
+function abar(){var b=document.getElementById('wpadminbar'),t=0;if(b){var cs=getComputedStyle(b);if(cs.position==='fixed'&&cs.display!=='none')t=b.offsetHeight}hdr.style.setProperty('--abar',t+'px')}
+abar();addEventListener('load',abar);addEventListener('resize',abar);
+if(!$('.pg-img'))hdr.classList.add('solid');
+ups.push(function(){var g=scrollY>36;if(g!==glass){glass=g;hdr.classList.toggle('glass',g)}});
+var mb=$('#menuBtn'),ov=$('#pmMenu');
+function setMenu(o){ov.classList.toggle('open',o);hdr.classList.toggle('open',o);mb.setAttribute('aria-expanded',o);ov.setAttribute('aria-hidden',!o);mb.querySelector('span').textContent=o?'Cerrar':'Menú';document.documentElement.style.overflow=o?'hidden':''}
+mb.addEventListener('click',function(){setMenu(!ov.classList.contains('open'))});
+ov.addEventListener('click',function(e){if(e.target.closest('a'))setMenu(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&ov.classList.contains('open')){setMenu(false);mb.focus()}});
+/* Botón fijo: aparece al dejar la portada y se aparta en el formulario */
+var fab=$('#pmFab'),rsv=$('#reservar');
+ups.push(function(){var H=innerHeight,inRes=false;if(rsv){var r=rsv.getBoundingClientRect();inRes=r.top<H*.85&&r.bottom>H*.15}fab.classList.toggle('on',scrollY>H*.45&&!inRes&&!ov.classList.contains('open'))});
+/* Entradas al aparecer */
+var rv=$$('[data-rv]');
+if(reduce||!('IntersectionObserver' in window))rv.forEach(function(e){e.classList.add('in')});
+else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -6%'});
+rv.forEach(function(e){io.observe(e)});setTimeout(function(){rv.forEach(function(e){var r=e.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)e.classList.add('in')})},2500)}
+/* Menús: la tarjeta abre su desplegable y lleva hasta él */
+$$('[data-open]').forEach(function(a){a.addEventListener('click',function(e){var d=root.querySelector('#'+a.getAttribute('data-open'));if(!d)return;e.preventDefault();d.open=true;
+setTimeout(function(){var y=d.getBoundingClientRect().top+scrollY-90;scrollTo({top:y,behavior:reduce?'auto':'smooth'})},30)})});
+if(location.hash&&/^#menu-\d+$/.test(location.hash)){var d0=root.querySelector(location.hash);if(d0)d0.open=true}
+/* Formulario → WhatsApp */
+var form=$('#res');
+if(form){
+var done=$('#done'),fecha=$('#r-fecha'),d=new Date();d.setDate(d.getDate()+1);
+fecha.min=d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);
+var chk=function(el){var f=el.closest('.fld')||el.closest('.chk'),o=f.querySelector('.err');if(o)o.remove();f.classList.remove('bad');if(el.validity.valid)return true;
+var m=el.type==='checkbox'?'Acepta la política para continuar.':el.validity.valueMissing?'Este campo es obligatorio.':el.validity.typeMismatch?'Revisa el formato.':el.validity.rangeUnderflow?(el.type==='date'?'Elige una fecha a partir de mañana.':'Indica al menos '+el.min+'.'):'Revisa este dato.';
+var s=document.createElement('span');s.className='err';s.textContent=m;f.appendChild(s);f.classList.add('bad');return false};
+var flds=[].slice.call(form.querySelectorAll('input,select,textarea'));
+flds.forEach(function(el){el.addEventListener('blur',function(){if(el.value)chk(el)});el.addEventListener('input',function(){if(el.closest('.bad'))chk(el)});el.addEventListener('change',function(){if(el.closest('.bad'))chk(el)})});
+form.addEventListener('submit',function(e){e.preventDefault();var ok=true,first=null;flds.forEach(function(el){if(!chk(el)){ok=false;if(!first)first=el}});if(!ok){first.focus();return}
+var g=function(id){return(form.querySelector('#'+id).value||'').trim()};
+var dt=new Date(g('r-fecha')+'T12:00:00').toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+var rows=[['Servicio',g('r-serv')],['Nombre',g('r-nombre')],['Teléfono',g('r-tel')],['Email',g('r-email')],['Fecha o inicio',dt],['Comensales',g('r-pax')],['Ubicación',g('r-ubi')],['Alergias',g('r-alerg')],['Objetivos y preferencias',g('r-com')||'—']];
+var url='https://wa.me/34661100731?text='+encodeURIComponent('Hola Pablo, me gustaría recibir el Cuestionario Culinario:\n\n'+rows.map(function(r){return '• '+r[0]+': '+r[1]}).join('\n')+'\n\nHe leído y acepto la política de reservas y cancelación.');
+$('#waSend').href=url;$('#doneName').textContent=g('r-nombre').split(' ')[0];form.hidden=true;done.hidden=false;done.focus({preventScroll:true});try{window.open(url,'_blank','noopener')}catch(err){}});
+$('#editRes').addEventListener('click',function(){done.hidden=true;form.hidden=false;$('#r-nombre').focus()});
+}
+req();addEventListener('load',req);
+})();
+/* v3 · Los botones de cada servicio dejan elegido ese servicio en el formulario */
+(function(){
+var root=document.getElementById('pm-home')||document,sel=root.querySelector('#r-serv');
+if(!sel)return;
+[].slice.call(root.querySelectorAll('[data-serv]')).forEach(function(a){a.addEventListener('click',function(){var v=a.getAttribute('data-serv');
+for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===v){sel.selectedIndex=i;var f=sel.closest('.fld');if(f){f.classList.remove('bad');var e=f.querySelector('.err');if(e)e.remove()}}}})});
+})();
+/* v3 · Tira de fotos: avanza con el scroll solo con ratón (en táctil va sola, sin temblores) */
+(function(){
+var root=document.getElementById('pm-home')||document,gs=root.querySelector('.gs'),t=root.querySelector('#gsT');
+if(!gs||!t)return;
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,touch=matchMedia('(hover: none) and (pointer: coarse)').matches;
+if(reduce||touch)return;
+var tk=false;
+function up(){tk=false;if(innerWidth<=767)return;var r=gs.getBoundingClientRect(),H=innerHeight;if(r.bottom<0||r.top>H)return;
+var p=Math.min(1,Math.max(0,(H-r.top)/(H+r.height))),max=Math.max(0,t.scrollWidth/2-innerWidth*.4);t.style.setProperty('--gx',(-p*max).toFixed(1)+'px')}
+addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up)}},{passive:true});addEventListener('resize',up);up();
+})();
+/* v3 · «Reservar este menú»: deja el menú y el servicio escritos en el formulario */
+(function(){
+var root=document.getElementById('pm-home')||document,sel=root.querySelector('#r-serv'),com=root.querySelector('#r-com');
+[].slice.call(root.querySelectorAll('[data-menu]')).forEach(function(a){a.addEventListener('click',function(){var m=a.getAttribute('data-menu');
+if(com){com.value='Menú: '+m+(com.value&&com.value.indexOf('Menú: ')!==0?'\n'+com.value:'')}
+if(sel){var want=/Executive/.test(m)?'B2B & Chef Concierge':'Private Dining & Experiencias VIP';for(var i=0;i<sel.options.length;i++)if(sel.options[i].text===want)sel.selectedIndex=i}})});
+/* Abrir un menú cierra el anterior, para no perder el hilo */
+var ds=[].slice.call(root.querySelectorAll('.mn-i'));
+ds.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)ds.forEach(function(o){if(o!==d)o.open=false})})});
+})();
+/* v3 · Portada: el fondo desenfocado sigue al vídeo nítido */
+(function(){
+var root=document.getElementById('pm-home')||document,a=root.querySelector('#heroVid'),b=root.querySelector('#heroBg');
+if(!a||!b)return;b.muted=true;b.playsInline=true;
+var go=function(){var q=b.play();if(q&&q.catch)q.catch(function(){})};go();['touchstart','scroll','click'].forEach(function(e){addEventListener(e,go,{passive:true,once:true})});
+setInterval(function(){if(!a.paused&&!b.paused&&Math.abs(a.currentTime-b.currentTime)>.25)b.currentTime=a.currentTime},2000);
+})();
+/* v3 · Política completa en ventana (se cierra con Esc, la X o tocando fuera) */
+(function(){
+var root=document.getElementById('pm-home')||document,d=root.querySelector('#polDlg');
+if(!d)return;
+function open(e){if(e)e.preventDefault();if(d.showModal){if(!d.open)d.showModal()}else d.setAttribute('open','')}
+function close(){if(d.close)d.close();else d.removeAttribute('open')}
+[].slice.call(root.querySelectorAll('[data-pol]')).forEach(function(b){b.addEventListener('click',open)});
+[].slice.call(root.querySelectorAll('[data-pol-close]')).forEach(function(b){b.addEventListener('click',close)});
+d.addEventListener('click',function(e){if(e.target===d)close()});
+})();
+/* v3 · Reseñas: flechas que avanzan una tarjeta */
+(function(){
+var root=document.getElementById('pm-home')||document,vp=root.querySelector('#rvVp');
+if(!vp)return;
+function step(dir){var c=vp.querySelector('.rv-c');vp.scrollBy({left:dir*(c.offsetWidth+16),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
+var p=root.querySelector('#rvPrev'),n=root.querySelector('#rvNext');if(p)p.addEventListener('click',function(){step(-1)});if(n)n.addEventListener('click',function(){step(1)});
+})();
+</script>
+<script>
+(function(){var el=document.getElementById('pm-home');if(!el)return;
+function fit(){var w=document.documentElement.clientWidth;el.style.setProperty('margin-left','0px','important');el.style.setProperty('margin-right','0px','important');
+var l=el.getBoundingClientRect().left;el.style.setProperty('margin-left',(-l)+'px','important');el.style.setProperty('width',w+'px','important');el.style.setProperty('max-width',w+'px','important');}
+fit();window.addEventListener('resize',fit);window.addEventListener('load',fit);window.addEventListener('orientationchange',function(){setTimeout(fit,250)});})();
+</script>
+<div id="google_translate_element" style="display:none"></div><script>(function(){var r=document.getElementById('pm-home')||document,box=r.querySelector('.lang');if(!box)return;var btn=box.querySelector('.lang-b'),list=box.querySelector('.lang-l'),F={};list.querySelectorAll('[data-lang]').forEach(function(b){F[b.dataset.lang]=b.querySelector('.fl').innerHTML});function cur(){var m=document.cookie.match(/googtrans=\/es\/(\w+)/);return m?m[1]:'es'}function show(c){box.querySelector('#langFlag').innerHTML=F[c]||F.es;box.querySelector('#langCode').textContent=c.toUpperCase()}function setC(v){var h=location.hostname,p=h.split('.');var d=p.length>1?'.'+p.slice(-2).join('.'):h;document.cookie='googtrans='+v+';path=/';document.cookie='googtrans='+v+';path=/;domain='+d;document.cookie='googtrans='+v+';path=/;domain='+h}function clr(){var h=location.hostname,p=h.split('.');var d=p.length>1?'.'+p.slice(-2).join('.'):h,x='=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';document.cookie='googtrans'+x;document.cookie='googtrans'+x+';domain='+d;document.cookie='googtrans'+x+';domain='+h}show(cur());function open(o){list.hidden=!o;btn.setAttribute('aria-expanded',o)}btn.addEventListener('click',function(e){e.stopPropagation();open(list.hidden)});document.addEventListener('click',function(){open(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape')open(false)});list.addEventListener('click',function(e){var b=e.target.closest('[data-lang]');if(!b)return;var c=b.dataset.lang;if(c===cur()){open(false);return}if(c==='es')clr();else setC('/es/'+c);location.reload()});if(cur()!=='es'){window.pmGT=function(){new google.translate.TranslateElement({pageLanguage:'es',includedLanguages:'en,ru,fr,es',autoDisplay:false},'google_translate_element')};var s=document.createElement('script');s.src='https://translate.google.com/translate_a/element.js?cb=pmGT';document.head.appendChild(s)}})();</script>
